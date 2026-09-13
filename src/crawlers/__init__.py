@@ -6,6 +6,7 @@ from .japan import YahooJapanCrawler
 from .google_trends import GoogleTrendsCrawler
 from .google_news import GoogleNewsCrawler
 from .hackernews import HackerNewsCrawler
+from .russia import RianCrawler, TassCrawler, LentaCrawler
 
 __all__ = [
     "NewsItem",
@@ -19,4 +20,7 @@ __all__ = [
     "GoogleTrendsCrawler",
     "GoogleNewsCrawler",
     "HackerNewsCrawler",
+    "RianCrawler",
+    "TassCrawler",
+    "LentaCrawler",
 ]

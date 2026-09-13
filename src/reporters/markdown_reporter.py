@@ -3,6 +3,7 @@ from typing import Dict, Any
 
 COUNTRY_ICONS = {
     "中国": "🇨🇳",
+    "俄罗斯": "🇷🇺",
     "美国": "🇺🇸",
     "英国": "🇬🇧",
     "日本": "🇯🇵",
@@ -15,10 +16,15 @@ COUNTRY_ICONS = {
 PLATFORM_ICONS = {
     "微博热搜": "🔥",
     "百度热搜": "🔍",
+    "哔哩哔哩热搜": "📺",
     "哔哩哔哩热门": "📺",
+    "俄新社 (RIA Novosti)": "🇷🇺",
+    "塔斯社 (TASS)": "📡",
+    "Lenta.ru (俄罗斯门户热榜)": "🔥",
     "X (Twitter) 趋势": "🐦",
     "Yahoo! JAPAN 热点要闻": "🇯🇵",
     "Google 每日热搜": "🔎",
+    "主流权威要闻": "📰",
     "Hacker News (科技与商业)": "💻",
 }
 

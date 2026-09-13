@@ -15,6 +15,9 @@ from src.crawlers import (
     GoogleTrendsCrawler,
     GoogleNewsCrawler,
     HackerNewsCrawler,
+    RianCrawler,
+    TassCrawler,
+    LentaCrawler,
 )
 
 logger = logging.getLogger("GlobalNewsCrawler")
@@ -35,6 +38,11 @@ class NewsAggregator:
             GoogleNewsCrawler("美国"),
             GoogleTrendsCrawler("美国"),
             RedditCrawler("美国"),
+
+            # 俄罗斯 (3个主流权威与网络热点门户)
+            RianCrawler(),
+            TassCrawler(),
+            LentaCrawler(),
 
             # 英国 (3个主流平台与热榜)
             TwitterTrendsCrawler("英国"),

@@ -278,6 +278,7 @@ class HTMLReporter:
 
     const countryIcons = {{
       '中国': '🇨🇳',
+      '俄罗斯': '🇷🇺',
       '美国': '🇺🇸',
       '英国': '🇬🇧',
       '日本': '🇯🇵',
@@ -421,6 +422,7 @@ class HTMLReporter:
 
         country_icons = {
             "中国": "🇨🇳",
+            "俄罗斯": "🇷🇺",
             "美国": "🇺🇸",
             "英国": "🇬🇧",
             "日本": "🇯🇵",
@@ -433,6 +435,9 @@ class HTMLReporter:
             "微博热搜": "🔥",
             "百度热搜": "🔍",
             "哔哩哔哩热搜": "📺",
+            "俄新社 (RIA Novosti)": "🇷🇺",
+            "塔斯社 (TASS)": "📡",
+            "Lenta.ru (俄罗斯门户热榜)": "🔥",
             "X (Twitter) 趋势": "🐦",
             "Yahoo! JAPAN 热点要闻": "🇯🇵",
             "Google 每日热搜": "🔎",
