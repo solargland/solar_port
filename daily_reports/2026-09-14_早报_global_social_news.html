@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌍 全球主流社交媒体【早报】(2026-09-14)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-gradient: linear-gradient(135deg, #38bdf8, #818cf8);
+      --gold: #fbbf24;
+      --silver: #cbd5e1;
+      --bronze: #f97316;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.1) 0px, transparent 50%);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding: 2rem 1rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(12px);
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.8rem;
+    }
+    .meta-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .meta-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      border: 1px solid var(--card-border);
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .search-box {
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      border-radius: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 0.5rem 1.1rem;
+      border-radius: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 600;
+      border-color: var(--accent);
+    }
+    .country-section {
+      margin-bottom: 3rem;
+    }
+    .country-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.8rem;
+    }
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+    .platform-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+    .platform-header {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .news-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .news-item {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      padding: 0.5rem 0.6rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .news-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateX(4px);
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+    }
+    .rank-1 { background: var(--gold); color: #000; box-shadow: 0 0 10px rgba(251, 191, 36, 0.4); }
+    .rank-2 { background: var(--silver); color: #000; }
+    .rank-3 { background: var(--bronze); color: #fff; }
+    .news-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .news-title {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      word-break: break-word;
+      display: block;
+      transition: color 0.2s;
+    }
+    .news-title:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .news-extra {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+    .news-summary {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 0.3rem;
+      border-left: 2px solid rgba(255, 255, 255, 0.1);
+      padding-left: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 全球主流社交媒体【早报】Top 5</h1>
+      <div class="meta-bar">
+        <span class="meta-badge">📅 日期: 2026-09-14</span>
+        <span class="meta-badge">⏰ 采集时间: 2026-09-14 00:09:11 (早报)</span>
+        <span class="meta-badge">📊 总归集条目: 18</span>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchInput" class="search-box" placeholder="🔍 搜索热搜话题、国家、平台或关键词...">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="tab-btn active" data-filter="all">全部国家/区域</button>
+      </div>
+    </div>
+
+    <main id="newsContainer"></main>
+
+    <footer>
+      <p>© 2026 Global Daily Social News Crawler • 自动调度生成</p>
+    </footer>
+  </div>
+
+  <script>
+    const rawData = {"中国": {"哔哩哔哩热搜": [{"country": "中国", "platform": "哔哩哔哩热搜", "rank": 1, "title": "AL获得2026LPL总冠军", "url": "https://search.bilibili.com/all?keyword=AL%E8%8E%B7%E5%BE%972026LPL%E6%80%BB%E5%86%A0%E5%86%9B", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 1 位"}], "微博热搜": [{"country": "中国", "platform": "微博热搜", "rank": 1, "title": "Bin回应AL夺冠", "url": "https://s.weibo.com/weibo?q=Bin%E5%9B%9E%E5%BA%94AL%E5%A4%BA%E5%86%A0", "extra": "热度: 1003077", "summary": "Bin回应AL夺冠"}], "百度热搜": [{"country": "中国", "platform": "百度热搜", "rank": 1, "title": "筑牢金砖合作根基 壮大全球南方力量", "url": "https://www.baidu.com/s?wd=%E7%AD%91%E7%89%A2%E9%87%91%E7%A0%96%E5%90%88%E4%BD%9C%E6%A0%B9%E5%9F%BA+%E5%A3%AE%E5%A4%A7%E5%85%A8%E7%90%83%E5%8D%97%E6%96%B9%E5%8A%9B%E9%87%8F&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7904638", "summary": ""}]}, "美国": {"Google 每日热搜": [{"country": "美国", "platform": "Google 每日热搜", "rank": 1, "title": "phil foden", "url": "https://www.bbc.com/sport/football/articles/cn45w80wn5xo", "extra": "热搜量: 1000+", "summary": "关联焦点报道: Manchester derby: Fixed v fluid - opposite approaches Maresca and Carrick are taking"}], "X (Twitter) 趋势": [{"country": "美国", "platform": "X (Twitter) 趋势", "rank": 1, "title": "GO BIRDS", "url": "https://x.com/search?q=GO%20BIRDS", "extra": "实时热门话题", "summary": "X (Twitter) 美国 地区实时热门话题榜第 1 位"}], "主流权威要闻": [{"country": "美国", "platform": "主流权威要闻", "rank": 1, "title": "Tech companies must be responsible for AI safety, Mike Johnson says, not Congress - Politico", "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90cEw1YlVDYVFfZHQ4eFpvdk1tYUhVcE0yYkRmWkZ5ci1EWGUwY1pfY2FlN0ZaZmVZa1djVF9Td25oZDJTUUtkSUVmNU9McEt5bGs4T0k2VXhnM3Ztc1poTklWLWY3ZVoxRC03aTYwaGhuaEV5VWVlTFNrdU0?oc=5", "extra": "媒体: Politico | Sun, 13 Sep 2026", "summary": "各大权威媒体报道精选（来源: Politico）"}], "Reddit (r/news)": [{"country": "美国", "platform": "Reddit (r/news)", "rank": 1, "title": "Teen boy rescued after days adrift in Alaskan waters", "url": "https://www.reddit.com/r/news/comments/1wekedu/teen_boy_rescued_after_days_adrift_in_alaskan/", "extra": "发帖人: /u/ansyhrrian | 日期: 2026-09-12", "summary": "submitted by /u/ansyhrrian [link] [留言]"}]}, "英国": {"X (Twitter) 趋势": [{"country": "英国", "platform": "X (Twitter) 趋势", "rank": 1, "title": "Coventry", "url": "https://x.com/search?q=Coventry", "extra": "实时热门话题", "summary": "X (Twitter) 英国 地区实时热门话题榜第 1 位"}], "主流权威要闻": [{"country": "英国", "platform": "主流权威要闻", "rank": 1, "title": "Reform's £72m donations 'entirely in line with law', Jenrick says - BBC", "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE90N3pyQ05Ta3o5WFJHdGlUOV9hbjBXMFBkeHMxWUxlYXJaM2Fpc2xDR05DWG9QOVVfWmR2VHlKYWxzUm92UmFUamlWYVVJaU1EYk5faGZQb3dzbW9N?oc=5", "extra": "媒体: BBC | Sun, 13 Sep 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}], "Google 每日热搜": [{"country": "英国", "platform": "Google 每日热搜", "rank": 1, "title": "elliot anderson", "url": "https://www.skysports.com/football/news/11662/13584237/man-utd-vs-man-city-ayyoub-bouaddi-elliot-anderson-and-enzo-fernandez-are-the-perfect-answer-to-rodris-summer-exit", "extra": "热搜量: 500+", "summary": "关联焦点报道: Man Utd vs Man City: Ayyoub Bouaddi, Elliot Anderson and Enzo Fernandez are the perfect answer to Rodri's summer exit"}]}, "日本": {"Yahoo! JAPAN 热点要闻": [{"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 1, "title": "古謝氏当選 辺野古容認へ県政転換", "url": "https://news.yahoo.co.jp/pickup/6595199?source=rss", "extra": "发布时间: Sun, 13 Sep 2026 15:10:35 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 1 位"}], "X (Twitter) 趋势": [{"country": "日本", "platform": "X (Twitter) 趋势", "rank": 1, "title": "#VIVANT", "url": "https://x.com/search?q=%23VIVANT", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 1 位"}], "主流权威要闻": [{"country": "日本", "platform": "主流权威要闻", "rank": 1, "title": "沖縄県知事選 高市政権支援の新人、古謝氏が初当選確実 - 毎日新聞", "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE96SzBLTmZTYVM5bEhFVU1fUkU0eUZsaVM1LXM4ZmJQanpGRElZOXR5a3ZTdDhFVjFiQWl0MkE5eU9qakNwbE9yRmZvM2NnWWc5QjNUOENVLS0ycDZVTFZOREtKMTBQanFB?oc=5", "extra": "媒体: 毎日新聞 | Sun, 13 Sep 2026", "summary": "各大权威媒体报道精选（来源: 毎日新聞）"}]}, "德国": {"X (Twitter) 趋势": [{"country": "德国", "platform": "X (Twitter) 趋势", "rank": 1, "title": "#RBLHSV", "url": "https://x.com/search?q=%23RBLHSV", "extra": "实时热门话题", "summary": "X (Twitter) 德国 地区实时热门话题榜第 1 位"}], "主流权威要闻": [{"country": "德国", "platform": "主流权威要闻", "rank": 1, "title": "Ukraine: Russische Drohne trifft Passagierzug nach Warschau - tagesschau.de", "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeU9JWFBJV3Y1MllTdkdYa2d6cENPLXkxVTRhMmw1S2VxZkhUbms2N185QTJJZXZqOHh5Y3FCb2cyb01HMFpCQkdjUWNrUzI3SHVVelpBeGRkMGtHZnZEVFotT2NFcWlybXU1U0VrbTBfeGhMTmFLT3EyOGdwMG5BblNHWGhsYUdHVnZXaWx2Z2JFZw?oc=5", "extra": "媒体: tagesschau.de | Sun, 13 Sep 2026", "summary": "各大权威媒体报道精选（来源: tagesschau.de）"}], "Google 每日热搜": [{"country": "德国", "platform": "Google 每日热搜", "rank": 1, "title": "südwestrundfunk", "url": "https://web.de/magazine/panorama/aus-aller-welt/deutschland/falsche-wohnung-gestuermt-staunt-sek-einsatz-tuer-42720772", "extra": "热搜量: 2000+", "summary": "关联焦点报道: Falsche Wohnung gestürmt – Frau staunt über SEK-Einsatz vor ihrer Tür"}]}, "全球科技": {"Hacker News (科技与商业)": [{"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 1, "title": "Astra and Fable still hack on simple variants of alignment evals from 2025", "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment", "extra": "点赞: 80 | 评论: 22 | 发帖人: Levitating", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=49684393"}]}, "全球": {"Reddit (r/worldnews)": [], "主流权威要闻": [{"country": "全球", "platform": "主流权威要闻", "rank": 1, "title": "Strike on Iranian cargo ship in the Strait of Hormuz kills 1, Iranian media say - AP News", "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMG04XzJlaFg3N0hjVGVucURCODFNSFJKYkdZaHY0aWZxMWJCXzlPY1pGOUNrWHRhWkc3NnJXQms3X1ZxaHBxOTBHTUZVNUFWWXBJV0hLcG9PaEg0Nm9VaTQxbVNfallyV0ZhVzlfMGpqaWMwLTV2ZmYwRGZYNm9EUzFLMnMzZkREbzRlR1JqR0tBd1Fs?oc=5", "extra": "媒体: AP News | Sun, 13 Sep 2026", "summary": "各大权威媒体报道精选（来源: AP News）"}]}};
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    const countryIcons = {
+      '中国': '🇨🇳',
+      '美国': '🇺🇸',
+      '英国': '🇬🇧',
+      '日本': '🇯🇵',
+      '德国': '🇩🇪',
+      '法国': '🇫🇷',
+      '全球科技': '🌐',
+      '全球': '🌍'
+    };
+
+    function initFilters() {
+      const filterTabs = document.getElementById('filterTabs');
+      const countries = Object.keys(rawData);
+      countries.forEach(c => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn';
+        btn.dataset.filter = c;
+        btn.textContent = (countryIcons[c] || '🌐') + ' ' + c;
+        btn.onclick = () => {
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = c;
+          render();
+        };
+        filterTabs.appendChild(btn);
+      });
+
+      document.querySelector('[data-filter="all"]').onclick = function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentFilter = 'all';
+        render();
+      };
+
+      document.getElementById('searchInput').addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        render();
+      });
+    }
+
+    function render() {
+      const container = document.getElementById('newsContainer');
+      container.innerHTML = '';
+
+      const countries = Object.keys(rawData).filter(c => currentFilter === 'all' || currentFilter === c);
+
+      countries.forEach(country => {
+        const platforms = rawData[country];
+        let countryHasMatch = false;
+
+        const countrySection = document.createElement('section');
+        countrySection.className = 'country-section';
+
+        const title = document.createElement('h2');
+        title.className = 'country-title';
+        title.innerHTML = `<span>${countryIcons[country] || '🌐'}</span> <span>${country} 热门社交媒体</span>`;
+
+        const grid = document.createElement('div');
+        grid.className = 'platforms-grid';
+
+        Object.keys(platforms).forEach(platform => {
+          const items = platforms[platform];
+          const matchedItems = items.filter(it => {
+            if (!searchQuery) return true;
+            return it.title.toLowerCase().includes(searchQuery) ||
+                   (it.extra && it.extra.toLowerCase().includes(searchQuery)) ||
+                   (it.summary && it.summary.toLowerCase().includes(searchQuery)) ||
+                   platform.toLowerCase().includes(searchQuery) ||
+                   country.toLowerCase().includes(searchQuery);
+          });
+
+          if (matchedItems.length > 0) {
+            countryHasMatch = true;
+            const card = document.createElement('div');
+            card.className = 'platform-card';
+
+            const header = document.createElement('div');
+            header.className = 'platform-header';
+            header.innerHTML = `<span>${platform}</span> <small style="color: var(--text-muted); font-size: 0.8rem;">Top ${matchedItems.length}</small>`;
+            card.appendChild(header);
+
+            const ul = document.createElement('ul');
+            ul.className = 'news-list';
+
+            matchedItems.forEach(it => {
+              const li = document.createElement('li');
+              li.className = 'news-item';
+              const rankClass = it.rank <= 3 ? `rank-${it.rank}` : '';
+
+              li.innerHTML = `
+                <div class="rank-badge ${rankClass}">${it.rank}</div>
+                <div class="news-content">
+                  <a href="${it.url}" target="_blank" rel="noopener noreferrer" class="news-title">${it.title}</a>
+                  ${it.extra ? `<div class="news-extra">${it.extra}</div>` : ''}
+                  ${it.summary ? `<div class="news-summary">${it.summary}</div>` : ''}
+                </div>
+              `;
+              ul.appendChild(li);
+            });
+
+            card.appendChild(ul);
+            grid.appendChild(card);
+          }
+        });
+
+        if (countryHasMatch) {
+          countrySection.appendChild(title);
+          countrySection.appendChild(grid);
+          container.appendChild(countrySection);
+        }
+      });
+
+      if (container.children.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding: 4rem; color: var(--text-muted);">未找到符合条件的搜索结果。</div>`;
+      }
+    }
+
+    initFilters();
+    render();
+  </script>
+</body>
+</html>

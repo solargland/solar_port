@@ -48,7 +48,7 @@ def run_pipeline(
     if send_email:
         print(f"[*] 正在准备发送【{cur_edition}】邮件...")
         subject = f"【全球社交{cur_edition}】{data.get('date')} 主流国家前五热点聚合"
-        html_content = html_reporter.render(data)
+        html_content = html_reporter.render_email(data)
         text_content = md_reporter.render(data)
         success = notifier.send_report(subject, html_content=html_content, text_content=text_content)
         if success:

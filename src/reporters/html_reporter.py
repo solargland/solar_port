@@ -410,3 +410,135 @@ class HTMLReporter:
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
         return os.path.abspath(filepath)
+
+    def render_email(self, data: Dict[str, Any]) -> str:
+        """专门为邮件客户端（如手机 QQ 邮箱）优化的纯静态 HTML，不依赖 JS"""
+        date_str = data.get("date", "")
+        timestamp = data.get("timestamp", "")
+        edition = data.get("edition", "热点")
+        total_items = data.get("total_items", 0)
+        countries_data = data.get("countries", {})
+
+        country_icons = {
+            "中国": "🇨🇳",
+            "美国": "🇺🇸",
+            "英国": "🇬🇧",
+            "日本": "🇯🇵",
+            "德国": "🇩🇪",
+            "法国": "🇫🇷",
+            "全球科技": "🌐",
+            "全球": "🌍"
+        }
+        platform_icons = {
+            "微博热搜": "🔥",
+            "百度热搜": "🔍",
+            "哔哩哔哩热搜": "📺",
+            "X (Twitter) 趋势": "🐦",
+            "Yahoo! JAPAN 热点要闻": "🇯🇵",
+            "Google 每日热搜": "🔎",
+            "Hacker News (科技与商业)": "💻",
+            "主流权威要闻": "📰",
+        }
+
+        sections_html = []
+        for country, platforms in sorted(countries_data.items()):
+            has_items = any(len(items) > 0 for items in platforms.values())
+            if not has_items:
+                continue
+
+            c_icon = country_icons.get(country, "🌐")
+            cards_html = []
+
+            for platform, items in platforms.items():
+                if not items:
+                    continue
+                p_icon = platform_icons.get(platform, "📌")
+
+                items_rows = []
+                for it in items:
+                    rank = it.rank
+                    if rank == 1:
+                        badge_style = "background:#fbbf24;color:#000;font-weight:bold;display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;font-size:12px;"
+                    elif rank == 2:
+                        badge_style = "background:#cbd5e1;color:#000;font-weight:bold;display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;font-size:12px;"
+                    elif rank == 3:
+                        badge_style = "background:#f97316;color:#fff;font-weight:bold;display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;font-size:12px;"
+                    else:
+                        badge_style = "background:rgba(255,255,255,0.15);color:#94a3b8;font-weight:bold;display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:4px;font-size:12px;"
+
+                    extra_html = f'<div style="font-size:12px;color:#94a3b8;margin-top:2px;">{html.escape(it.extra)}</div>' if it.extra else ""
+                    summary_html = f'<div style="font-size:12px;color:#cbd5e1;margin-top:4px;padding-left:8px;border-left:2px solid #475569;line-height:1.4;">{html.escape(it.summary)}</div>' if it.summary else ""
+
+                    row = f"""
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                      <td style="width:28px;vertical-align:top;padding:10px 0;">
+                        <span style="{badge_style}">{rank}</span>
+                      </td>
+                      <td style="padding:10px 0 10px 8px;vertical-align:top;">
+                        <a href="{it.url}" target="_blank" style="color:#38bdf8;text-decoration:none;font-weight:600;font-size:15px;line-height:1.4;display:block;">{html.escape(it.title)}</a>
+                        {extra_html}
+                        {summary_html}
+                      </td>
+                    </tr>
+                    """
+                    items_rows.append(row)
+
+                card_html = f"""
+                <div style="background:#1e293b;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 16px;margin-bottom:16px;">
+                  <div style="font-size:15px;font-weight:700;color:#38bdf8;padding-bottom:8px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08);">
+                    {p_icon} {html.escape(platform)} <span style="font-size:12px;color:#94a3b8;font-weight:normal;float:right;">Top {len(items)}</span>
+                  </div>
+                  <table style="width:100%;border-collapse:collapse;">
+                    {''.join(items_rows)}
+                  </table>
+                </div>
+                """
+                cards_html.append(card_html)
+
+            country_block = f"""
+            <div style="margin-bottom:28px;">
+              <h2 style="font-size:17px;font-weight:700;color:#f8fafc;margin:0 0 12px 0;padding-left:8px;border-left:4px solid #38bdf8;">
+                {c_icon} {html.escape(country)} 社交热点
+              </h2>
+              {''.join(cards_html)}
+            </div>
+            """
+            sections_html.append(country_block)
+
+        email_html = f"""<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【全球社交{edition}】{date_str}</title>
+</head>
+<body style="margin:0;padding:16px 8px;background-color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#f8fafc;line-height:1.5;">
+  <div style="max-width:680px;margin:0 auto;background-color:#0f172a;">
+    
+    <!-- 头部卡片 -->
+    <div style="background:#1e293b;border:1px solid rgba(56,189,248,0.3);border-radius:16px;padding:22px 16px;text-align:center;margin-bottom:22px;">
+      <h1 style="margin:0 0 8px 0;font-size:22px;color:#38bdf8;font-weight:800;">
+        🌍 全球主流社交媒体【{edition}】Top 5
+      </h1>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.8;">
+        📅 日期: <strong style="color:#f8fafc;">{date_str}</strong> &nbsp;|&nbsp; 
+        ⏰ 采集时间: <strong style="color:#f8fafc;">{timestamp}</strong><br>
+        📊 本期共归集: <strong style="color:#38bdf8;">{total_items}</strong> 条世界前沿舆论动态
+      </div>
+      <div style="margin-top:12px;display:inline-block;padding:4px 12px;background:rgba(56,189,248,0.1);border-radius:20px;font-size:12px;color:#38bdf8;">
+        💡 点击各热点标题可直接跳转至原社交平台或报道
+      </div>
+    </div>
+
+    <!-- 各国热点主体内容 (纯静态渲染，邮件端 100% 直读) -->
+    {''.join(sections_html)}
+
+    <!-- 页脚 -->
+    <div style="text-align:center;padding:24px 0;color:#64748b;font-size:12px;border-top:1px solid rgba(255,255,255,0.08);margin-top:20px;">
+      © {date_str[:4]} solar_port • 全球社交热点自动调度生成
+    </div>
+  </div>
+</body>
+</html>
+"""
+        return email_html
