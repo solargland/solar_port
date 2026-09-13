@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+.vscode/
+.idea/
+
+# 隐私与敏感凭证保护（防止授权码泄露到公开仓库）
+*mail_config.json
+!mail_config.template.json

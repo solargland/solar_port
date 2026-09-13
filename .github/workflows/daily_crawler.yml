@@ -1,0 +1,51 @@
+name: Daily Global Social News Crawler
+
+on:
+  schedule:
+    # 每天 UTC 00:00 执行（对应北京时间早报 08:00）
+    - cron: '0 0 * * *'
+    # 每天 UTC 12:00 执行（对应北京时间晚报 20:00）
+    - cron: '0 12 * * *'
+  workflow_dispatch: # 支持在 GitHub 网页一键手动触发运行测试
+
+jobs:
+  crawl_and_report:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 安装 Python 依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 执行全球热点爬虫并发送邮件
+        env:
+          # 既支持从 GitHub Actions Secrets 读取，也支持回退使用默认/本地配置
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER || 'smtp.qq.com' }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT || '465' }}
+          USE_SSL: 'true'
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          AUTH_CODE: ${{ secrets.AUTH_CODE }}
+          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+        run: |
+          python main.py --limit 5 --send-email
+
+      - name: 提交并推送到仓库
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add daily_reports/
+          git commit -m "chore: 自动归集每日全球社交热点日报 [$(date +'%Y-%m-%d')]" || echo "无新文件需提交"
+          git push

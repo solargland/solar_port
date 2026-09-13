@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐾 小白也能懂的桌面小宠物制作指南</title>
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --primary-light: #e0e7ff;
+      --accent: #f59e0b;
+      --accent-light: #fef3c7;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --sidebar-width: 290px;
+      --code-bg: #1e1e2e;
+      --code-text: #cdd6f4;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.8;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* 侧边栏 */
+    aside.sidebar {
+      width: var(--sidebar-width);
+      background: var(--surface);
+      border-right: 1px solid var(--surface-border);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar-header {
+      padding: 24px 20px 16px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .sidebar-header .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #fef3c7;
+      color: #b45309;
+      margin-bottom: 8px;
+    }
+
+    .sidebar-header h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .sidebar-nav {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 12px;
+    }
+
+    .nav-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      padding: 8px 12px 4px;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .nav-item a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    .nav-item a:hover {
+      color: var(--text-main);
+      background: #f1f5f9;
+    }
+
+    .nav-item a.active {
+      color: var(--primary);
+      background: var(--primary-light);
+      font-weight: 700;
+    }
+
+    .nav-emoji {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* 主内容区 */
+    main.main-content {
+      margin-left: var(--sidebar-width);
+      flex: 1;
+      padding: 36px 56px 80px;
+      max-width: 1020px;
+    }
+
+    /* 顶部欢迎卡片 */
+    .hero-card {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: white;
+      padding: 36px 40px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.3);
+    }
+
+    .hero-card h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .hero-card p {
+      font-size: 1.05rem;
+      color: #e0e7ff;
+      line-height: 1.7;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .hero-badge {
+      background: rgba(255, 255, 255, 0.18);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    /* 章节 */
+    section.step-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 30px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 14px;
+    }
+
+    .step-icon {
+      font-size: 1.8rem;
+      background: #f8fafc;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      flex-shrink: 0;
+    }
+
+    .step-title h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .step-summary {
+      font-size: 0.88rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* 人话通俗说明框 */
+    .plain-speak {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 16px 0 20px;
+      font-size: 0.95rem;
+      color: #1e40af;
+      line-height: 1.7;
+    }
+
+    .plain-speak strong {
+      color: #1d4ed8;
+    }
+
+    /* 比喻卡片 */
+    .analogy-card {
+      background: #fefce8;
+      border: 1px dashed #facc15;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      color: #713f12;
+      font-size: 0.92rem;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #334155;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 22px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: #0f172a;
+    }
+
+    /* 代码块包装 */
+    .code-box {
+      background: var(--code-bg);
+      border-radius: 10px;
+      margin: 18px 0;
+      overflow: hidden;
+    }
+
+    .code-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #181825;
+      padding: 8px 16px;
+      font-size: 0.8rem;
+      color: #a6adc8;
+      font-weight: 600;
+    }
+
+    .copy-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #cdd6f4;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.75rem;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    pre {
+      padding: 16px;
+      overflow-x: auto;
+      font-family: Consolas, Monaco, "Courier New", monospace;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: var(--code-text);
+    }
+
+    code {
+      font-family: inherit;
+    }
+
+    p code, li code {
+      font-family: Consolas, monospace;
+      font-size: 0.88em;
+      background: #e2e8f0;
+      color: #b91c1c;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* 代码内简单颜色 */
+    .kw { color: #cba6f7; font-weight: bold; }
+    .str { color: #a6e3a1; }
+    .cmt { color: #6c7086; font-style: italic; }
+    .num { color: #fab387; }
+    .fn { color: #89b4fa; }
+
+    /* 常见问题解答 */
+    .qa-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      background: #f8fafc;
+    }
+
+    .qa-question {
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .qa-answer {
+      font-size: 0.92rem;
+      color: #475569;
+    }
+
+    /* 移动端菜单按钮 */
+    .menu-btn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+      z-index: 200;
+      cursor: pointer;
+    }
+
+    @media (max-width: 860px) {
+      aside.sidebar {
+        transform: translateX(-100%);
+      }
+      aside.sidebar.open {
+        transform: translateX(0);
+      }
+      main.main-content {
+        margin-left: 0;
+        padding: 20px 16px;
+      }
+      .menu-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="menu-btn" id="menuBtn">☰</button>
+
+  <!-- 左侧目录导航 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="tag">小白超简单教程</span>
+      <h1>🐾 桌面小宠物手册</h1>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-title">快速入门</div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#intro">
+            <span class="nav-emoji">💡</span>
+            <span>1分钟看懂桌宠原理</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-title">拼装步骤（像拼积木一样）</div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#step-1">
+            <span class="nav-emoji">📦</span>
+            <span>第1步：准备工程文件</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-2">
+            <span class="nav-emoji">🪟</span>
+            <span>第2步：做个透明隐形窗口</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-3">
+            <span class="nav-emoji">✋</span>
+            <span>第3步：鼠标抓着走/防掉出屏幕</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-4">
+            <span class="nav-emoji">🎬</span>
+            <span>第4步：放图片让小宠物动起来</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-5">
+            <span class="nav-emoji">📌</span>
+            <span>第5步：右下角托盘图标控制</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-6">
+            <span class="nav-emoji">⚙️</span>
+            <span>第6步：右键调大小与透明度</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-7">
+            <span class="nav-emoji">💾</span>
+            <span>第7步：让它记住你上次放的位置</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#step-8">
+            <span class="nav-emoji">🚀</span>
+            <span>第8步：一键运行起来！</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-title">自己动手做</div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#diy">
+            <span class="nav-emoji">🎨</span>
+            <span>怎么换成我自己的宠物？</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#qa">
+            <span class="nav-emoji">❓</span>
+            <span>新手最常问的 4 个问题</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- 主体内容 -->
+  <main class="main-content">
+
+    <div class="hero-card">
+      <h1>🐾 零基础小白桌宠制作指南</h1>
+      <p>没有深奥的底层大道理，不讲复杂的学术名词！用最直白的人话，带你一步步弄懂电脑桌面上那只蹦蹦跳跳的小宠物是怎么做出来的。</p>
+      <div class="hero-badges">
+        <span class="hero-badge">通俗好懂</span>
+        <span class="hero-badge">只需一个 C# 文件</span>
+        <span class="hero-badge">双击就能玩</span>
+        <span class="hero-badge">换图即换皮</span>
+      </div>
+    </div>
+
+    <!-- 0. 原理 -->
+    <section id="intro" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">💡</div>
+        <div class="step-title">
+          <h2>1分钟看懂桌宠原理</h2>
+          <div class="step-summary">其实它跟普通软件没太大区别，只是玩了几个视觉魔术</div>
+        </div>
+      </div>
+
+      <div class="analogy-card">
+        <strong>💡 通俗打个比方：</strong><br>
+        平常我们打开浏览器或微信，都有一个白底的方框框对吧？桌面小宠物，其实就是<strong>拿了一张透明的塑料纸当窗口</strong>，把白色的背景擦掉，在塑料纸正中间放一张透明底的小猫图片。因为塑料纸是透明的，所以你眼里只能看到这只悬浮在桌面上的小猫！
+      </div>
+
+      <p>整只桌宠一共就负责这 4 件事：</p>
+      <ol>
+        <li><strong>隐形窗口</strong>：把自带的白色框框和叉叉隐藏掉，整个窗体全透明。</li>
+        <li><strong>像翻连环画一样动</strong>：每隔 0.1 秒换下一张图，连起来小动物就在呼吸、眨眼。</li>
+        <li><strong>跟着鼠标跑</strong>：鼠标按住小猫时，小猫跟着鼠标坐标移动，抓起来还会换成“被拎起来”的挣扎图片。</li>
+        <li><strong>右下角小图标</strong>：在电脑右下角（时钟旁边）放个小图标，方便你随时关掉它或者重新叫出来。</li>
+      </ol>
+    </section>
+
+    <!-- 1. 准备 -->
+    <section id="step-1" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">📦</div>
+        <div class="step-title">
+          <h2>第1步：准备工程文件</h2>
+          <div class="step-summary">告诉电脑我们要做的是一个 Windows 程序</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>新建一个 <code>DesktopPet.csproj</code> 文件，就像给电脑一张清单，告诉它：“我要做个 Windows 桌面应用，请把画界面的画笔和右下角托盘的功能借给我用！”
+      </div>
+
+      <div class="code-box">
+        <div class="code-top">
+          <span>DesktopPet.csproj</span>
+          <button class="copy-btn" onclick="copyCode(this)">复制清单</button>
+        </div>
+        <pre><code>&lt;Project Sdk="Microsoft.NET.Sdk"&gt;
+  &lt;PropertyGroup&gt;
+    &lt;!-- 生成桌面窗口程序，不要弹出黑色的命令行黑框框 --&gt;
+    &lt;OutputType&gt;WinExe&lt;/OutputType&gt;
+    &lt;TargetFramework&gt;net8.0-windows&lt;/TargetFramework&gt;
+    
+    &lt;!-- 借用 WPF 的画笔（用来画透明窗口和放图片） --&gt;
+    &lt;UseWPF&gt;true&lt;/UseWPF&gt;
+    
+    &lt;!-- 借用 WinForms 的托盘能力（用来在右下角放小图标） --&gt;
+    &lt;UseWindowsForms&gt;true&lt;/UseWindowsForms&gt;
+  &lt;/PropertyGroup&gt;
+
+  &lt;!-- 自动把 assets 文件夹里的图片打包带上 --&gt;
+  &lt;ItemGroup&gt;
+    &lt;Content Include="assets\**\*.*" CopyToOutputDirectory="PreserveNewest" /&gt;
+  &lt;/ItemGroup&gt;
+&lt;/Project&gt;</code></pre>
+      </div>
+    </section>
+
+    <!-- 2. 透明窗口 -->
+    <section id="step-2" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">🪟</div>
+        <div class="step-title">
+          <h2>第2步：做个透明隐形窗口</h2>
+          <div class="step-summary">拆掉白色的方框，让桌宠像漂在桌面上一样</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>普通的软件都有标题栏、最小化、关闭按钮，背景也是白的。我们需要把这些统统关掉，换成“隐形玻璃”。
+      </div>
+
+      <div class="code-box">
+        <div class="code-top">
+          <span>给窗口设置的 5 个关键开关</span>
+          <button class="copy-btn" onclick="copyCode(this)">复制代码</button>
+        </div>
+        <pre><code><span class="cmt">// 1. 把窗户四周的边框和顶上的标题栏全部扔掉</span>
+WindowStyle = WindowStyle.None;
+
+<span class="cmt">// 2. 开启“隐形玻璃”模式（允许透明）</span>
+AllowsTransparency = <span class="kw">true</span>;
+
+<span class="cmt">// 3. 把默认的白底背景改成完全透明</span>
+Background = Brushes.Transparent;
+
+<span class="cmt">// 4. 永远置顶！这样就算你打开网页或打游戏，小宠物依然坐在最前排</span>
+Topmost = <span class="kw">true</span>;
+
+<span class="cmt">// 5. 不要在屏幕底下的任务栏里占一个长条格子（只留在右下角小托盘就行）</span>
+ShowInTaskbar = <span class="kw">false</span>;</code></pre>
+      </div>
+      <p>就这短短 5 句话，一个“隐形悬浮窗口”就做好了！此时窗口里放什么，桌面上就只看得见什么。</p>
+    </section>
+
+    <!-- 3. 拖拽与防掉出 -->
+    <section id="step-3" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">✋</div>
+        <div class="step-title">
+          <h2>第3步：鼠标抓着走与防掉出屏幕</h2>
+          <div class="step-summary">鼠标按住小宠物就能拽着到处跑，而且不会甩丢</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>小动物不能呆呆地死在一处，得能用鼠标挪位置。而且要加上“防掉落护栏”，防止你手一抖把它甩到屏幕外面找不回来了。
+      </div>
+
+      <p><strong>实现分三小步：</strong></p>
+      <ul>
+        <li><strong>鼠标按下去时</strong>：记录小宠物当前位置，抓住鼠标焦点（<code>CaptureMouse()</code>，防止手滑滑太快断掉）。</li>
+        <li><strong>鼠标拖动时</strong>：鼠标移动了多少距离，小宠物的坐标就跟着加多少距离。</li>
+        <li><strong>电子围栏（防出界）</strong>：每次移动都检查一下，如果坐标小于 0（出了左边）就按在边缘；如果坐标大于屏幕宽度（出了右边）也按在边缘。</li>
+      </ul>
+
+      <div class="code-box">
+        <div class="code-top">
+          <span>简化的防出界代码（电子围栏）</span>
+          <button class="copy-btn" onclick="copyCode(this)">复制代码</button>
+        </div>
+        <pre><code><span class="kw">private void</span> <span class="fn">ClampToScreen</span>()
+{
+    <span class="cmt">// 保证 X 坐标：最小是 0（不超左边），最大是 屏幕宽减去小猫宽（不超右边）</span>
+    Left = Math.<span class="fn">Max</span>(<span class="num">0</span>, Math.<span class="fn">Min</span>(Left, 屏幕宽度 - Width));
+    
+    <span class="cmt">// 保证 Y 坐标：最小是 0（不超顶部），最大是 屏幕高减去小猫高（不超底部）</span>
+    Top = Math.<span class="fn">Max</span>(<span class="num">0</span>, Math.<span class="fn">Min</span>(Top, 屏幕高度 - Height));
+}</code></pre>
+      </div>
+    </section>
+
+    <!-- 4. 动画播放 -->
+    <section id="step-4" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">🎬</div>
+        <div class="step-title">
+          <h2>第4步：放图片让小宠物动起来</h2>
+          <div class="step-summary">像翻动小人书一样，连续切换图片产生动画效果</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>动画其实是骗眼睛的！我们准备几张动作连贯的图片（比如小猫睁眼、闭眼、尾巴晃动），设定一个小闹钟，每隔 0.1 秒换下一张图片贴上去，小动物看起来就像是活的一样！
+      </div>
+
+      <p>在项目中我们准备了两个动作小分组：</p>
+      <ul>
+        <li><code>assets/idle/</code> 目录：放<strong>待机动作</strong>（平时小宠物趴在桌上发呆的连环画）。</li>
+        <li><code>assets/drag/</code> 目录：放<strong>被抓起动作</strong>（鼠标按住拖拽时，立刻换成手忙脚乱的动作）。</li>
+      </ul>
+
+      <div class="code-box">
+        <div class="code-top">
+          <span>动画切换原理</span>
+          <button class="copy-btn" onclick="copyCode(this)">复制代码</button>
+        </div>
+        <pre><code><span class="cmt">// 设定一个小闹钟（每隔 50 毫秒响一次）</span>
+_timer = <span class="kw">new</span> DispatcherTimer { Interval = TimeSpan.<span class="fn">FromMilliseconds</span>(<span class="num">50</span>) };
+_timer.Tick += (s, e) =&gt; 
+{
+    <span class="cmt">// 如果鼠标正在抓它，就放抓取的连环画；如果平时发呆，就播放待机连环画</span>
+    <span class="kw">var</span> 当前图集 = 正在拖拽 ? 抓起动画组 : 待机动画组;
+    当前显示第几张 = (当前显示第几张 + <span class="num">1</span>) % 当前图集.Length;
+    
+    <span class="cmt">// 重新刷新屏幕上的图像</span>
+    <span class="fn">InvalidateVisual</span>();
+};
+_timer.<span class="fn">Start</span>();</code></pre>
+      </div>
+    </section>
+
+    <!-- 5. 托盘控制 -->
+    <section id="step-5" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">📌</div>
+        <div class="step-title">
+          <h2>第5步：右下角托盘图标控制</h2>
+          <div class="step-summary">像微信、QQ 一样，在电脑右下角放一个小图标</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>平时桌宠漂在屏幕上，如果你想让它暂时退下，或者彻底退出程序，最符合习惯的办法就是在右下角时钟边上常驻一个图标。
+      </div>
+
+      <ul>
+        <li><strong>鼠标双击托盘图标</strong>：把可能藏在某个窗口后面的桌宠重新唤醒置顶。</li>
+        <li><strong>鼠标右键托盘图标</strong>：弹出菜单，可以选择“显示桌宠”或“退出程序”。</li>
+      </ul>
+    </section>
+
+    <!-- 6. 右键调大小 -->
+    <section id="step-6" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">⚙️</div>
+        <div class="step-title">
+          <h2>第6步：右键调大小与透明度</h2>
+          <div class="step-summary">右键点击桌宠弹出一个可爱的小菜单</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>有的人屏幕大觉得桌宠太小，有的人觉得挡视线想调半透明。我们在桌宠身上监听鼠标右键，一点右键就弹出一个无边框的设置小卡片。
+      </div>
+
+      <p>菜单里提供了三个非常直观的拖动滑块：</p>
+      <ol>
+        <li><strong>透明度滑块</strong>：拉到左边若隐若现（20%），拉到右边完全不透明（100%）。</li>
+        <li><strong>播放速度滑块</strong>：可以让它慢悠悠地发呆（0.5x），也可以让它像疯了一样快动（2.0x）。</li>
+        <li><strong>体型大小滑块</strong>：直接改变窗口宽度和高度，小动物就会等比例变大或变小。</li>
+      </ol>
+      <div class="analogy-card">
+        <strong>贴心小设计：</strong>当你调完之后，只要在桌面空白处点一下，这个设置菜单就会自动悄悄关闭，完全不打扰你。
+      </div>
+    </section>
+
+    <!-- 7. 记忆位置 -->
+    <section id="step-7" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">💾</div>
+        <div class="step-title">
+          <h2>第7步：让它记住你上次放的位置</h2>
+          <div class="step-summary">关机重开后，小宠物依然乖乖待在上次那个角落</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>如果每次开电脑，桌宠都重置到左上角，大小透明度都要重新调，那就太烦了！所以每次关掉前，它会悄悄在你的电脑里写个小记事本（<code>settings.json</code>）。
+      </div>
+
+      <p>记事本里就记着这几行字：</p>
+      <div class="code-box">
+        <div class="code-top">
+          <span>%LOCALAPPDATA%\DesktopPet\settings.json</span>
+        </div>
+        <pre><code>{
+  "Opacity": 1.0,         <span class="cmt">// 透明度：100%</span>
+  "PlaybackSpeed": 1.3,   <span class="cmt">// 速度：1.3倍速</span>
+  "Size": 0.8,            <span class="cmt">// 大小：80%</span>
+  "Left": 935,            <span class="cmt">// 横坐标：在屏幕横向 935 像素处</span>
+  "Top": 140              <span class="cmt">// 纵坐标：在屏幕纵向 140 像素处</span>
+}</code></pre>
+      </div>
+      <p>下次再打开它时，先看一眼记事本，直接把小宠物放到上次的坐标上去！</p>
+    </section>
+
+    <!-- 8. 编译运行 -->
+    <section id="step-8" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">🚀</div>
+        <div class="step-title">
+          <h2>第8步：一键运行起来！</h2>
+          <div class="step-summary">不需要装臃肿的开发软件，直接双击运行</div>
+        </div>
+      </div>
+
+      <div class="plain-speak">
+        <strong>👉 人话解释：</strong>很多小白学编程最头疼的就是“配置开发环境、下载好几个 G 的大软件”。这个项目最大的好处之一就是<strong>已经把成品编译好了</strong>！
+      </div>
+
+      <p><strong>怎么玩它？</strong></p>
+      <ol>
+        <li>直接打开 <code>D:\to_project2\desktop-pet\bin\DesktopPet.exe</code>，双击它！</li>
+        <li>你的屏幕上就会立刻跳出这只小宠物。</li>
+        <li>用鼠标左键拖它，右键调大小，右下角托盘随时可以关掉它。</li>
+      </ol>
+    </section>
+
+    <!-- DIY 换皮 -->
+    <section id="diy" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">🎨</div>
+        <div class="step-title">
+          <h2>新手动手玩：怎么换成我自己喜欢的角色？</h2>
+          <div class="step-summary">无需改任何代码，只换图片就能给桌宠“换皮”！</div>
+        </div>
+      </div>
+
+      <p>这是最适合新手折腾的地方！只要你把图片名字按规则命名，程序就会自动读取：</p>
+      
+      <ol>
+        <li>找到你的图片，必须是<strong>背景透明的 PNG 格式</strong>（白底的不行，会挡住桌面）。</li>
+        <li><strong>准备待机动作</strong>：放入 <code>assets/idle/</code> 文件夹，名字叫 <code>idle-1.png</code>, <code>idle-2.png</code>。</li>
+        <li><strong>准备拖拽动作</strong>：放入 <code>assets/drag/</code> 文件夹，名字叫 <code>drag-1.png</code>, <code>drag-2.png</code>。</li>
+        <li>再次打开程序，小宠物就瞬间变成你换上的新角色啦！</li>
+      </ol>
+
+      <div class="analogy-card">
+        <strong>小妙招：</strong>如果你在网上看到一个喜欢的 GIF 动图，可以搜“GIF 在线逐帧拆分”，把动图拆成一帧帧透明 PNG，按序号排好放进去就行！
+      </div>
+    </section>
+
+    <!-- 问答 -->
+    <section id="qa" class="step-section">
+      <div class="step-header">
+        <div class="step-icon">❓</div>
+        <div class="step-title">
+          <h2>新手最常问的 4 个问题</h2>
+          <div class="step-summary">踩坑排错手册</div>
+        </div>
+      </div>
+
+      <div class="qa-box">
+        <div class="qa-question">Q1：为什么我换了自己的图片后，小宠物身上有难看的白色方框底色？</div>
+        <div class="qa-answer">答：因为你的图片不是“透明底 PNG”。如果是白底 JPG，程序会把白色也画在桌面上。可以用手机或网页抠图工具把背景扣掉，存成透明 PNG 即可。</div>
+      </div>
+
+      <div class="qa-box">
+        <div class="qa-question">Q2：如果不小心把小宠物拖到了屏幕外面，看不到了怎么办？</div>
+        <div class="qa-answer">答：别慌！直接在电脑右下角托盘图标上双击，或者关掉后在记事本里把 <code>settings.json</code> 中的 <code>Left</code> 和 <code>Top</code> 改成 100，它就回到屏幕左上方了。</div>
+      </div>
+
+      <div class="qa-box">
+        <div class="qa-question">Q3：它会占用很多电脑内存或卡电脑吗？</div>
+        <div class="qa-answer">答：完全不会！这个项目只有 1 个文件，不加载任何乱七八糟的外部库，运行时内存占用仅二三十兆，比打开一个网页还要轻巧得多。</div>
+      </div>
+
+      <div class="qa-box">
+        <div class="qa-question">Q4：我想修改动作播放得再慢一点怎么办？</div>
+        <div class="qa-answer">答：最简单的方法是右键点击桌宠，把“播放速度”滑块往左拉；或者在代码里把每隔 50ms 触发的闹钟改成 100ms 即可。</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // 复制代码块内容
+    function copyCode(btn) {
+      const codeBlock = btn.closest('.code-box').querySelector('code');
+      const text = codeBlock.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const oldText = btn.innerText;
+        btn.innerText = '已复制 ✓';
+        btn.style.background = '#22c55e';
+        btn.style.color = 'white';
+        setTimeout(() => {
+          btn.innerText = oldText;
+          btn.style.background = '';
+          btn.style.color = '';
+        }, 1500);
+      });
+    }
+
+    // 移动端菜单开关
+    const menuBtn = document.getElementById('menuBtn');
+    const sidebar = document.getElementById('sidebar');
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+
+    // 侧边栏点击关闭移动端菜单
+    const navLinks = document.querySelectorAll('.nav-item a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 860) {
+          sidebar.classList.remove('open');
+        }
+      });
+    });
+
+    // 滚动高亮对应的侧边栏项
+    const sections = document.querySelectorAll('section.step-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>

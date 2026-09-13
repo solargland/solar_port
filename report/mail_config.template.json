@@ -1,0 +1,8 @@
+{
+  "smtp_server": "smtp.qq.com",
+  "smtp_port": 465,
+  "use_ssl": true,
+  "sender_email": "your_email@qq.com",
+  "auth_code": "your_email_smtp_auth_code",
+  "receiver_email": "target_email@qq.com"
+}
