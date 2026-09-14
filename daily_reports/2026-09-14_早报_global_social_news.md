@@ -1,6 +1,6 @@
 # 🌍 全球主流社交媒体【早报】聚焦 Top 5 (2026-09-14)
 
-> 📅 **采集时间**: `2026-09-14 00:17:36` (早报)  
+> 📅 **采集时间**: `2026-09-14 03:31:46` (早报)  
 > 📊 **数据规模**: 覆盖 `8` 个国家/区域，共归集 `105` 条最新前沿舆论动态。  
 > 💡 **注**: 点击各条目可直接跳转至原平台查看详细推文、讨论或新闻源。
 
@@ -22,49 +22,49 @@
 
 ### 📺 哔哩哔哩热搜 Top 5
 
-**1.** [AL获得2026LPL总冠军](https://search.bilibili.com/all?keyword=AL%E8%8E%B7%E5%BE%972026LPL%E6%80%BB%E5%86%A0%E5%86%9B) `[B站热门话题]`
+**1.** [AL夺冠后爱笑发文](https://search.bilibili.com/all?keyword=AL%E5%A4%BA%E5%86%A0%E5%90%8E%E7%88%B1%E7%AC%91%E5%8F%91%E6%96%87) `[B站热门话题]`
    > *Bilibili 搜索实时热门热词榜第 1 位*
 
-**2.** [AI正成为危险是危言耸听吗](https://search.bilibili.com/all?keyword=AI%E6%AD%A3%E6%88%90%E4%B8%BA%E5%8D%B1%E9%99%A9%E6%98%AF%E5%8D%B1%E8%A8%80%E8%80%B8%E5%90%AC%E5%90%97) `[B站热门话题]`
+**2.** [曼联0-1十人曼城](https://search.bilibili.com/all?keyword=%E6%9B%BC%E8%81%940-1%E5%8D%81%E4%BA%BA%E6%9B%BC%E5%9F%8E) `[B站热门话题]`
    > *Bilibili 搜索实时热门热词榜第 2 位*
 
-**3.** [特大暴雨来了](https://search.bilibili.com/all?keyword=%E7%89%B9%E5%A4%A7%E6%9A%B4%E9%9B%A8%E6%9D%A5%E4%BA%86) `[B站热门话题]`
+**3.** [花少8全员唯爱厕所](https://search.bilibili.com/all?keyword=%E8%8A%B1%E5%B0%918%E5%85%A8%E5%91%98%E5%94%AF%E7%88%B1%E5%8E%95%E6%89%80) `[B站热门话题]`
    > *Bilibili 搜索实时热门热词榜第 3 位*
 
-**4.** [Bin回应不敌AL](https://search.bilibili.com/all?keyword=Bin%E5%9B%9E%E5%BA%94%E4%B8%8D%E6%95%8CAL) `[B站热门话题]`
+**4.** [多车队宣布永久退出China GT](https://search.bilibili.com/all?keyword=%E5%A4%9A%E8%BD%A6%E9%98%9F%E5%AE%A3%E5%B8%83%E6%B0%B8%E4%B9%85%E9%80%80%E5%87%BAChina%20GT) `[B站热门话题]`
    > *Bilibili 搜索实时热门热词榜第 4 位*
 
-**5.** [世界周刊评德国选择党选举获胜](https://search.bilibili.com/all?keyword=%E4%B8%96%E7%95%8C%E5%91%A8%E5%88%8A%E8%AF%84%E5%BE%B7%E5%9B%BD%E9%80%89%E6%8B%A9%E5%85%9A%E9%80%89%E4%B8%BE%E8%8E%B7%E8%83%9C) `[B站热门话题]`
+**5.** [怎么看津巴布韦禁止出口钨和锑](https://search.bilibili.com/all?keyword=%E6%B4%A5%E5%B7%B4%E5%B8%83%E9%9F%A6%E7%A6%81%E6%AD%A2%E5%87%BA%E5%8F%A3%E9%92%A8%E5%92%8C%E9%94%91) `[B站热门话题]`
    > *Bilibili 搜索实时热门热词榜第 5 位*
 
 ### 🔥 微博热搜 Top 5
 
-**1.** [王曼昱登顶世界第一](https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9B%BC%E6%98%B1%E7%99%BB%E9%A1%B6%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80) `[热度: 954779 | 新]`
-   > *王曼昱登顶世界第一*
+**1.** [罗永浩 野人先生西贝](https://s.weibo.com/weibo?q=%E7%BD%97%E6%B0%B8%E6%B5%A9%20%E9%87%8E%E4%BA%BA%E5%85%88%E7%94%9F%E8%A5%BF%E8%B4%9D) `[热度: 1459297 | 新]`
+   > *罗永浩 野人先生西贝*
 
-**2.** [Bin回应AL夺冠](https://s.weibo.com/weibo?q=Bin%E5%9B%9E%E5%BA%94AL%E5%A4%BA%E5%86%A0) `[热度: 681491]`
-   > *Bin回应AL夺冠*
+**2.** [上5休1上5休3上3休7上3休1](https://s.weibo.com/weibo?q=%E4%B8%8A5%E4%BC%911%E4%B8%8A5%E4%BC%913%E4%B8%8A3%E4%BC%917%E4%B8%8A3%E4%BC%911) `[热度: 1299280 | 热]`
+   > *上5休1上5休3上3休7上3休1*
 
-**3.** [服贸会十四年成绩单](https://s.weibo.com/weibo?q=%E6%9C%8D%E8%B4%B8%E4%BC%9A%E5%8D%81%E5%9B%9B%E5%B9%B4%E6%88%90%E7%BB%A9%E5%8D%95) `[热度: 614872]`
-   > *服贸会十四年成绩单*
+**3.** [2026年国家网络安全宣传周](https://s.weibo.com/weibo?q=2026%E5%B9%B4%E5%9B%BD%E5%AE%B6%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0%E5%91%A8) `[热度: 719903 | 新]`
+   > *2026年国家网络安全宣传周*
 
-**4.** [井柏然孙千偷偷牵手](https://s.weibo.com/weibo?q=%E4%BA%95%E6%9F%8F%E7%84%B6%E5%AD%99%E5%8D%83%E5%81%B7%E5%81%B7%E7%89%B5%E6%89%8B) `[热度: 593178 | 热]`
-   > *井柏然孙千偷偷牵手*
+**4.** [罗永浩吐槽野人先生后特意提示](https://s.weibo.com/weibo?q=%E7%BD%97%E6%B0%B8%E6%B5%A9%E5%90%90%E6%A7%BD%E9%87%8E%E4%BA%BA%E5%85%88%E7%94%9F%E5%90%8E%E7%89%B9%E6%84%8F%E6%8F%90%E7%A4%BA) `[热度: 454339]`
+   > *罗永浩吐槽野人先生后特意提示*
 
-**5.** [白桃星座一周运势](https://s.weibo.com/weibo?q=%E7%99%BD%E6%A1%83%E6%98%9F%E5%BA%A7%E4%B8%80%E5%91%A8%E8%BF%90%E5%8A%BF) `[热度: 589857 | 新]`
-   > *白桃星座一周运势*
+**5.** [亚马尔说世界杯夺冠后并不开心](https://s.weibo.com/weibo?q=%E4%BA%9A%E9%A9%AC%E5%B0%94%E8%AF%B4%E4%B8%96%E7%95%8C%E6%9D%AF%E5%A4%BA%E5%86%A0%E5%90%8E%E5%B9%B6%E4%B8%8D%E5%BC%80%E5%BF%83) `[热度: 453937 | 新]`
+   > *亚马尔说世界杯夺冠后并不开心*
 
 ### 🔍 百度热搜 Top 5
 
-**1.** [筑牢金砖合作根基 壮大全球南方力量](https://www.baidu.com/s?wd=%E7%AD%91%E7%89%A2%E9%87%91%E7%A0%96%E5%90%88%E4%BD%9C%E6%A0%B9%E5%9F%BA+%E5%A3%AE%E5%A4%A7%E5%85%A8%E7%90%83%E5%8D%97%E6%96%B9%E5%8A%9B%E9%87%8F&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7904349]`
+**1.** [共同书写全球南方团结自强新篇章](https://www.baidu.com/s?wd=%E5%85%B1%E5%90%8C%E4%B9%A6%E5%86%99%E5%85%A8%E7%90%83%E5%8D%97%E6%96%B9%E5%9B%A2%E7%BB%93%E8%87%AA%E5%BC%BA%E6%96%B0%E7%AF%87%E7%AB%A0&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7904360]`
 
-**2.** [造假景区“早就没人了”](https://www.baidu.com/s?wd=%E9%80%A0%E5%81%87%E6%99%AF%E5%8C%BA%E2%80%9C%E6%97%A9%E5%B0%B1%E6%B2%A1%E4%BA%BA%E4%BA%86%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7809763]`
+**2.** [上5休1上5休3上3休7上3休1](https://www.baidu.com/s?wd=%E4%B8%8A5%E4%BC%911%E4%B8%8A5%E4%BC%913%E4%B8%8A3%E4%BC%917%E4%B8%8A3%E4%BC%911&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7809461]`
 
-**3.** [渔民落水11天后事都办了 人回来了](https://www.baidu.com/s?wd=%E6%B8%94%E6%B0%91%E8%90%BD%E6%B0%B411%E5%A4%A9%E5%90%8E%E4%BA%8B%E9%83%BD%E5%8A%9E%E4%BA%86+%E4%BA%BA%E5%9B%9E%E6%9D%A5%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7712346]`
+**3.** [人民日报曝光后 苏州市委表态：严查](https://www.baidu.com/s?wd=%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E6%9B%9D%E5%85%89%E5%90%8E+%E8%8B%8F%E5%B7%9E%E5%B8%82%E5%A7%94%E8%A1%A8%E6%80%81%EF%BC%9A%E4%B8%A5%E6%9F%A5&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7714222]`
 
-**4.** [寻找“金砖温度”的答案](https://www.baidu.com/s?wd=%E5%AF%BB%E6%89%BE%E2%80%9C%E9%87%91%E7%A0%96%E6%B8%A9%E5%BA%A6%E2%80%9D%E7%9A%84%E7%AD%94%E6%A1%88&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7616823]`
+**4.** [词元出海怎么实现？服贸会上有答案](https://www.baidu.com/s?wd=%E8%AF%8D%E5%85%83%E5%87%BA%E6%B5%B7%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%EF%BC%9F%E6%9C%8D%E8%B4%B8%E4%BC%9A%E4%B8%8A%E6%9C%89%E7%AD%94%E6%A1%88&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7616543]`
 
-**5.** [四大国有行今年缩招7000余人](https://www.baidu.com/s?wd=%E5%9B%9B%E5%A4%A7%E5%9B%BD%E6%9C%89%E8%A1%8C%E4%BB%8A%E5%B9%B4%E7%BC%A9%E6%8B%9B7000%E4%BD%99%E4%BA%BA&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7519674]`
+**5.** [“次抛衣”走红](https://www.baidu.com/s?wd=%E2%80%9C%E6%AC%A1%E6%8A%9B%E8%A1%A3%E2%80%9D%E8%B5%B0%E7%BA%A2&sa=fyb_news&rsv_dl=fyb_news) `[热搜指数: 7522858]`
 
 ---
 
@@ -72,54 +72,54 @@
 
 ### 🇷🇺 俄新社 (RIA Novosti) Top 5
 
-**1.** [В Курске из-за ракетной атаки повреждены восемь домов и два автомобиля](https://ria.ru/20260913/kursk-2117462319.html) `[发布时间: Sun, 13 Sep 2026]`
+**1.** [Беспилотник "Дань-Т" можно запускать как с самолетов, так и с вертолетов](https://ria.ru/20260914/bespilotnik-2117495402.html) `[发布时间: Mon, 14 Sep 2026]`
    > *俄罗斯国家通讯社（俄新社）实时焦点*
 
-**2.** [Жесткое предупреждение Путина вызвало бурную реакцию в Британии](https://ria.ru/20260913/putin-2117461904.html) `[发布时间: Sun, 13 Sep 2026]`
+**2.** [В турецком правительстве рассказали о предложении по переговорам по Украине](https://ria.ru/20260914/turtsija-2117495216.html) `[发布时间: Mon, 14 Sep 2026]`
    > *俄罗斯国家通讯社（俄新社）实时焦点*
 
-**3.** [Поставившая под сомнение пол Брижит Макрон журналистка выиграла суд](https://ria.ru/20260913/makron-2117461727.html) `[发布时间: Sun, 13 Sep 2026]`
+**3.** [В аэропорту Тамбова сняли временные ограничения](https://ria.ru/20260914/aeroport-2117495074.html) `[发布时间: Mon, 14 Sep 2026]`
    > *俄罗斯国家通讯社（俄新社）实时焦点*
 
-**4.** [Правительство утвердило перечень продуктов для мониторинга цен](https://ria.ru/20260913/pravitelstvo-2117461393.html) `[发布时间: Sun, 13 Sep 2026]`
+**4.** [Суд в США предложил россиянину Филимонову готовиться к сделке со следствием](https://ria.ru/20260914/ssha-2117494637.html) `[发布时间: Mon, 14 Sep 2026]`
    > *俄罗斯国家通讯社（俄新社）实时焦点*
 
-**5.** [Министра благосостояния Латвии лишили должности из-за пьяной езды](https://ria.ru/20260913/latvija-2117461023.html) `[发布时间: Sun, 13 Sep 2026]`
+**5.** [Россия опережает противников по производству оружия, пишут СМИ](https://ria.ru/20260914/rossija-2117494459.html) `[发布时间: Mon, 14 Sep 2026]`
    > *俄罗斯国家通讯社（俄新社）实时焦点*
-
-### 📡 塔斯社 (TASS) Top 5
-
-**1.** [Решетников допустил отмену сбора в РФ за электронные визы для граждан Индии](https://tass.ru/ekonomika/28108455) `[塔斯社国家通讯社]`
-   > *Глава Минэкономразвития рассказал, что индийской стороне предлагали сделать групповые безвизовые поездки*
-
-**2.** [Батраков остался в запасе на матч чемпионата Турции с "Коджаэлиспором"](https://tass.ru/sport/28108479) `[塔斯社国家通讯社]`
-   > *Российский полузащитник провел за "Галатасарай" три матча и не отметился результативными действиями*
-
-**3.** ["Спартак" разгромил "Ростов" и вышел на второе место в РПЛ](https://tass.ru/sport/28108477) `[塔斯社国家通讯社]`
-   > *Встреча завершилась со счетом 3:0*
-
-**4.** [Карпин считает заслуженным попадание Сафонова в номинацию на приз Яшина](https://tass.ru/sport/28108475) `[塔斯社国家通讯社]`
-   > *На получение награды претендуют 10 голкиперов*
-
-**5.** [МО РФ показало кадры установления контроля над Черняковым Харьковской области](https://tass.ru/armiya-i-opk/28108469) `[塔斯社国家通讯社]`
-   > *В ходе боев активно применялись артиллерийские системы*
 
 ### 🔥 Lenta.ru (俄罗斯门户热榜) Top 5
 
-**1.** [Трамп призвал Зеленского не мешать России экспортировать дизель](https://lenta.ru/news/2026/09/13/tramp-prizval-zelenskogo-ne-meshat-rossii-eksportirovat-dizel/) `[分类: Экономика]`
+**1.** [«Он должен прекратить!» Трамп призвал Зеленского перестать наносить удары по российским НПЗ. Как атаки вредят США?](https://lenta.ru/news/2026/09/14/long-on-dolzhen-prekratit-tramp-prizval-zelenskogo-perestat-nanosit-udary-po-rossiyskim-npz/) `[分类: Мир]`
    > *Lenta.ru 俄罗斯全网高关注度热点第 1 位*
 
-**2.** [Россиянка родила прямо в самолете](https://lenta.ru/news/2026/09/13/rossiyanka-rodila-pryamo-v-samolete/) `[分类: Путешествия]`
+**2.** [Мошенники начали использовать комбинированные атаки на россиян](https://lenta.ru/news/2026/09/14/moshenniki-nachali-ispolzovat-kombinirovannye-ataki-na-rossiyan/) `[分类: Интернет и СМИ]`
    > *Lenta.ru 俄罗斯全网高关注度热点第 2 位*
 
-**3.** [В Британии высказались о молчании Лондона после поимки агента СБУ в посольстве в Москве](https://lenta.ru/news/2026/09/13/v-britanii-vyskazalis-o-molchanii-londona-posle-poimki-agenta-sbu-v-posolstve-v-moskve/) `[分类: Мир]`
+**3.** [Стало известно о планах Канады поучаствовать в кредите ЕС для Украины](https://lenta.ru/news/2026/09/14/stalo-izvestno-o-planah-kanady-pouchastvovat-v-kredite-es-dlya-ukrainy/) `[分类: Мир]`
    > *Lenta.ru 俄罗斯全网高关注度热点第 3 位*
 
-**4.** [В московской многоэтажке рванули трубы из-за желания коммунальщиков сэкономить](https://lenta.ru/news/2026/09/13/v-moskovskoy-mnogoetazhke-rvanuli-truby-iz-za-zhelaniya-kommunalschikov-sekonomit/) `[分类: Россия]`
+**4.** [Трамп высказался о передаче Украине лицензий на Patriot](https://lenta.ru/news/2026/09/14/tramp-vyskazalsya-o-peredache-ukraine-litsenziy-na-patriot/) `[分类: Мир]`
    > *Lenta.ru 俄罗斯全网高关注度热点第 4 位*
 
-**5.** [«Спартак» разгромил «Ростов» в матче РПЛ](https://lenta.ru/news/2026/09/13/spartak-razgromil-rostov-v-matche-rpl/) `[分类: Спорт]`
+**5.** [Тревел-блогер описал Индию фразой «искал просветления и нашел расстройство желудка»](https://lenta.ru/news/2026/09/14/trevel-bloger-opisal-indiyu-frazoy-iskal-prosvetleniya-i-nashel-rasstroystvo-zheludka/) `[分类: Путешествия]`
    > *Lenta.ru 俄罗斯全网高关注度热点第 5 位*
+
+### 📡 塔斯社 (TASS) Top 5
+
+**1.** [Токио усилит оборонные меры на Окинаве после избрания там нового губернатора](https://tass.ru/mezhdunarodnaya-panorama/28108987) `[塔斯社国家通讯社]`
+   > *В последнее время юго-запад этой префектуры в непосредственной близости от Тайваня становится центром оборонных усили...*
+
+**2.** [В Переделкине самый дорогой дом в писательском городке стоит 1,35 млрд рублей](https://tass.ru/nedvizhimost/28108985) `[塔斯社国家通讯社]`
+   > *俄罗斯塔斯社焦点要闻报道*
+
+**3.** [Эксперт Подоплёкин: ситуация с "Молчановым" может быть решена в правовом поле](https://tass.ru/obschestvo/28108981) `[塔斯社国家通讯社]`
+   > *Уход судна из Баренцбурга без снятия запрета невозможен, заявил заместитель директора по международному сотрудничеств...*
+
+**4.** [Лавров на саммите БРИКС удивил журналиста своей силой](https://tass.ru/obschestvo/28108983) `[塔斯社国家通讯社]`
+   > *Во время мероприятия операторы перегородили дорогу главе МИД РФ, и он пробил себе путь, отодвинув их руками*
+
+**5.** [В МВД по Москве назвали мошенничество с инвестициями классической пирамидой](https://tass.ru/obschestvo/28108975) `[塔斯社国家通讯社]`
+   > *俄罗斯塔斯社焦点要闻报道*
 
 ---
 
@@ -127,20 +127,20 @@
 
 ### 📰 主流权威要闻 Top 5
 
-**1.** [Strike on Iranian cargo ship in the Strait of Hormuz kills 1, Iranian media say - AP News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNMG04XzJlaFg3N0hjVGVucURCODFNSFJKYkdZaHY0aWZxMWJCXzlPY1pGOUNrWHRhWkc3NnJXQms3X1ZxaHBxOTBHTUZVNUFWWXBJV0hLcG9PaEg0Nm9VaTQxbVNfallyV0ZhVzlfMGpqaWMwLTV2ZmYwRGZYNm9EUzFLMnMzZkREbzRlR1JqR0tBd1Fs?oc=5) `[媒体: AP News | Sun, 13 Sep 2026]`
+**1.** [Russian Strikes on Ukraine Hits Near David Petraeus, ex-C.I.A. Chief - The New York Times](https://news.google.com/rss/articles/CBMijAFBVV95cUxOUEdwM095OUd0Q1Z5dmJlelpnOFBHX3JzSkhnOEhfTW1rOXdBeVJ4dDdwelB3S3Z3Uk41aFpXUGZwd2d2M19heE1WVVV5d3l6STVPN1pmRFFHOE5neHlfVHZWU0I5OGdXTzZPZFotY2pWTmJ2RXh4RkpFdjdOTFZJVDNzUmVLVXRQZjJWWA?oc=5) `[媒体: The New York Times | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: The New York Times）*
+
+**2.** [Hormuz Meeting With Iran and Gulf Nations Delayed, Oman Says - bloomberg.com](https://news.google.com/rss/articles/CBMisgFBVV95cUxOWG16MGlLTHpTd3B2dWZfai1GVzJJQ2QxVHdVN3lMcl9oZ1o2eEZYNUJfeE1TTm9yVGRTZ1ZGcUJSR1BsOEhycHZUVmh6ZnU3bEdUallFRWJnUnBGY1ZqM2w3bzZFUTh0Q3d1UUJacVZVVGZYeHpIUFB4Y3UxYVJvWUlUYU5jbm1jVjBMQTBOZlVzdkNSWVBzdkdnNFJxNHZqMnh5VnlwanJRT1pOXzBzYWhR?oc=5) `[媒体: bloomberg.com | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: bloomberg.com）*
+
+**3.** [Indonesia rescuers searching for 129 people still missing after passenger ship capsizes - Reuters](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV2x6VkxsSnR0bWg1ZGtiYllMeWo3eVQzRlRoMjhWTEc5bDdFYUVDLS1pZ3haS3VXTndCWlE4YXI3TEd2MUpKaFF4UW4ycVBYYU9vSmJHSnVEX0JaX2lwQTF3UUxrbENjVS1RajRtZmI2MmoyTzZjOERRT0VaWHcweE1uM2VXTlBNUk5KakRGS09EaS1rVXFITWJKd1AwY2V6c0pwX1hLa1A5TExzdWNuOWRNdkRkemFaMDQxZlczVWxKQ2xZSFR2LQ?oc=5) `[媒体: Reuters | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Reuters）*
+
+**4.** [Iranian cargo ship is struck, and talks between Tehran and its neighbors are postponed - AP News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNMG04XzJlaFg3N0hjVGVucURCODFNSFJKYkdZaHY0aWZxMWJCXzlPY1pGOUNrWHRhWkc3NnJXQms3X1ZxaHBxOTBHTUZVNUFWWXBJV0hLcG9PaEg0Nm9VaTQxbVNfallyV0ZhVzlfMGpqaWMwLTV2ZmYwRGZYNm9EUzFLMnMzZkREbzRlR1JqR0tBd1Fs?oc=5) `[媒体: AP News | Mon, 14 Sep 2026]`
    > *各大权威媒体报道精选（来源: AP News）*
 
-**2.** [Rescuers search for about 130 missing people after Indonesia ferry capsizes - Al Jazeera](https://news.google.com/rss/articles/CBMirgFBVV95cUxQY3N3MjRqeGNubUMzYnVCdE9XanZHRUtLOHAwc2VMYlNJUWZMQzYwdDJoMlhiVGV1ZnpNQklheDBremRyam9jNG9YbWhCb05CS1hmektqWS0zS01TbW90dnNyUk5jVEdTRGd1OFpmaUotcTNHemdXa1BEYzNFR0RQY3VFM1BmdFJlakQxOUU5bVVDdWZXcjNiZGRZdEtsZjJ4czdxZUlQbU9NY3R4TEHSAbMBQVVfeXFMTVMzNDVXbjdSWHRUNTRkYVcyV3JNVXMtOGkxaGhFQ1ZKeExZZlpwSWNtTVlHa19XYlNyNTdNWS1ibGMtN3dTVUFXNlRTRGNxakcyQUg0NVdhTVRuSGtYWXU5Q3F4NC1vQngwTXVDNFZqaWNoLU9rZ19ubGVVaUNzekZ0Z3RaY0RSU1NBaEt0Y1ZxbnBlYUR6OUJ6Rm05eVZWNV8xS0ZFd3dWV0k2NS1BdEFOVnM?oc=5) `[媒体: Al Jazeera | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: Al Jazeera）*
-
-**3.** [Why Saudi Arabia has few options in its conflict with the Houthis - CNN](https://news.google.com/rss/articles/CBMif0FVX3lxTE9Zb1kzVFpiVEdBdDJ0c1l5YlBUbnhJLUg1QlBMdkJQUXFHLTR3RjBVQlFMNzhkdldNczZsWXVXWWp4eVU5Ny1PaVQ2QVdhMXk1WEZfa3NnRFR6d3lnbWFZNVJpajlpOXBKRVlaZ1FyVzJkcmpUbXFTLUN6TjBUcUE?oc=5) `[媒体: CNN | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: CNN）*
-
-**4.** [Exclusive | Mark Carney’s Audacious Bid to Make Canada an ‘Associate Member’ of the EU - WSJ](https://news.google.com/rss/articles/CBMidkFVX3lxTE5zMUd1WkZ4SmNfSHlGUmFOTnkySVBSYmdIZHNjakFidkNqeThycGNEQVF4R1pGOFRiZU9USDBkTHFPSFBSVzc5TERGQkJlRkpUc19lWXhVcFkxb2xFNWszcm5KMENHN2xsYk5IdG1mRk96T3VUWlE?oc=5) `[媒体: WSJ | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: WSJ）*
-
-**5.** [Russian drone hits Kyiv-Warsaw passenger train near Polish border - theguardian.com](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMjR4OUw5R0lHei13UEhrbVRaVG5qbXVQR1pLWHNyaFdyTHpzLWhRTFFYZGNXZ2t5RlA5NW5pTVI5a09GdFFDaXFjUnRBVDIzV1RfRnBPc2RBZFVEeGVld0pUWjlpOVdHbGd3aWdyM3lFVnc5UHBmZWVDVFF0UldycXloWjB1X2puU2pQb1lDNTdCRmNPd0Q1bG5lTjBUd2Jtdzlqa21qbjA1QQ?oc=5) `[媒体: theguardian.com | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: theguardian.com）*
+**5.** [Trump resists AI slowdown as the political tide turns - The Washington Post](https://news.google.com/rss/articles/CBMivgFBVV95cUxPUC1sNlREa2ZpZmZkaklBb3dodW5GQV95czZiNVJCYXlhNlQxQXdpQ0pEWU5vZ3FsUVVEMzh0eUt1UVN0LXNvM2U5N0wtNVVkclVPbmRYZHBzanliXzhJMXZaUGp6MGthbWNoVUg2T3VSeFlIeVdNOFpwbmdrNkJZcENKd3ptaTVvakRlSDJWNUlMa1lOSG1MQkhzeHdVMXBYTVQ3ZHRRUXUwbkktZVAwRGFZZERhZk5rSEJudzhR?oc=5) `[媒体: The Washington Post | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: The Washington Post）*
 
 ---
 
@@ -148,130 +148,130 @@
 
 ### 💻 Hacker News (科技与商业) Top 5
 
-**1.** [Astra and Fable still hack on simple variants of alignment evals from 2025](https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment) `[点赞: 94 | 评论: 26 | 发帖人: Levitating]`
-   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49684393*
+**1.** [Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher](https://www.vals.ai/blogs/fable-solves-cyphral-distich) `[点赞: 558 | 评论: 246 | 发帖人: u1hcw9nx]`
+   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49688695*
 
-**2.** [JetKVM Mini](https://jetkvm.com/blog/introducing-jetkvm-mini) `[点赞: 355 | 评论: 137 | 发帖人: taubek]`
-   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49681152*
+**2.** [Spaceships (Reverse Asteroid)](https://spaceships.treybastian.com/) `[点赞: 58 | 评论: 15 | 发帖人: zdw]`
+   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49638510*
 
-**3.** ['Fingerprints' inside the Sun could reveal if it once swallowed a planet](https://ras.ac.uk/news-and-press/research-highlights/fingerprints-inside-sun-could-reveal-if-it-once-swallowed-planet) `[点赞: 69 | 评论: 18 | 发帖人: blincoln]`
-   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49683033*
+**3.** [Why is Google still serving dodgy ads?](https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads) `[点赞: 650 | 评论: 304 | 发帖人: iamflimflam1]`
+   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49686445*
 
-**4.** [Libraries Run Rust Inside Python (With PyO3)](https://belderbos.dev/blog/how-libraries-run-rust-inside-python/) `[点赞: 12 | 评论: 8 | 发帖人: lumpa]`
-   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49685037*
+**4.** [Registration without a phone number on Signal will use zero-knowledge proofs](https://community.signalusers.org/t/registration-without-a-phone-number/2222?page=10) `[点赞: 113 | 评论: 58 | 发帖人: Cider9986]`
+   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49689048*
 
-**5.** [Why is the x86 undefined instruction called ud2? Why 2?](https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689) `[点赞: 36 | 评论: 11 | 发帖人: ibobev]`
-   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49683262*
+**5.** [Show HN: Is It Greg?](https://github.com/antoineleclair/is-it-greg) `[点赞: 40 | 评论: 12 | 发帖人: antoineleclair]`
+   > *Hacker News 讨论链接: https://news.ycombinator.com/item?id=49690943*
 
 ---
 
 <h2 id="德国">🇩🇪 德国 社交与舆论热点</h2>
 
+### 📰 主流权威要闻 Top 5
+
+**1.** [Kommunalwahl in Niedersachsen live: Neue Hochrechnung sieht CDU vor SPD – und deutliche Zugewinne für AfD - Frankfurter Rundschau](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS2hKUUI2c3lPYUQ4TThCbmdCci0wVXY1c0Zpd0EzdF9aMUcyVl9PSTk4Y1Z3YUNHY2RrRFhvanVwNkNfWkNjQjZUdmZwbklwVmh4TE9CR3BuU0tHZUVQQmdvRElNa0pfNTFlQk9kMXgxQnk2cTFITWV5TWpob2xsMFVjX2RYeEYzc2RiR29fMGtlZlpjYXVHUzRzMlZXWVNFekhGRmxZdnY0RmlOY0RqNERGYmtUc0xx?oc=5) `[媒体: Frankfurter Rundschau | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Frankfurter Rundschau）*
+
+**2.** [Schweden-Wahl: Sozialdemokraten stärkste Kraft – Ausgang offen - Spiegel](https://news.google.com/rss/articles/CBMivgFBVV95cUxQWmdkVzVRa0dNX2FnS2xKYzZXVVp6N1I4WHF5LUxsT1FabkVKSjFFbWdmekt2Q2Z4QkdQR0ZobWppQzdMTDlWQlZkMVNnXzBIdHNpVmQ3TlVJUUFRc3hYZ2pFZmVPYTNGVEZPb0RFZlNYQlZEQ0JvVEVUdVdXanVYM09oTTRYOEplT1ZFQWdyLXl2MFVOQmlKbXdkVjVqRmVrTXlMOVBPZXhhQXBKTlhodWNRYkNZdXNrazZDVkxB?oc=5) `[媒体: Spiegel | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Spiegel）*
+
+**3.** [Merz wird zum Regierungschef auf Abruf Der Bundeskanzler erlebt einen Autoritätsverfall auf offener Bühne - Tagesspiegel](https://news.google.com/rss/articles/CBMimgFBVV95cUxNLWJlZHdYWnJEYXBBZUlpTFBCZ1ZZcTg4dVpoOTlMYWx4VXotZ1ZYcXpwMF9uQlV1TkxHZG1oLTZZT3dhN3BKUXBxUTNFbTI0SUR2SW9IUnJTd18tUU9pWjdsdmpSd0paQWpPRVBxOGVIbXJLWFptejVSSHY1RnUyNWZqblBlb09tSjRvZzBtSkhvWC1qa3pPR1ZB?oc=5) `[媒体: Tagesspiegel | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Tagesspiegel）*
+
+**4.** [Rückholung von Geheimplan – Reservisten fordern drastische Maßnahme - T-Online](https://news.google.com/rss/articles/CBMizwFBVV95cUxPd1VZZE5jMGQ4TTRSSm9kX2pWT2JFYVkwanNrQk83N3d6aUtZUUt0WHI0T2pvMkQ0WmItWlZiMGhqYXotRW5QYmZneXVKS1pKNWNmSHhaOW5XTzJuVXItczRQRGJEY0EyT2pFVjFoOTJLZnFXNVdkTlNaOFRzNW40NGRaZGNLcHdobnpzWWgxd1lnSHB4WXY1Mk5pZVI4S1BHblNmSTNjdTNYZGQwVXFSVl9aSXZGeTZ6VWh3eXJDRVJJYzhibk5ONy1fa3QwYUk?oc=5) `[媒体: T-Online | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: T-Online）*
+
+**5.** [Onay klar vorn: Hannover zählt Stimmen für Stadt- und Regionsspitze aus - NDR.de](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQalFaZXVySFpRUjgwaUNuYXFubHFkOWpBX3JSVTQ2dXQ0cE0zN2hHeXhXcmhJWXpOT1FCNVlvRFdDX29tQ3kybjhVaHlmZ1BfTk1vOXYyb0tFU2tnUTRNQXJpX0hCOHZTaDBlZHAwbFlLNENtTHBLTkFPS0o3ZDhERk5sRU5IMkJjUlZBcVRPSUJ6aHpXVUFWN2dqVFMxTjJzZW1ZSFVvX2pneTkwOWVrM2hlUmZ0eEstZ29qTDA0MEZtbWJ2VVYwclY1RTM1dGZMemtNS1FVOE1tTkZmdWc?oc=5) `[媒体: NDR.de | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: NDR.de）*
+
 ### 🐦 X (Twitter) 趋势 Top 5
 
-**1.** [#RBLHSV](https://x.com/search?q=%23RBLHSV) `[实时热门话题]`
+**1.** [#ELVFCB](https://x.com/search?q=%23ELVFCB) `[实时热门话题]`
    > *X (Twitter) 德国 地区实时热门话题榜第 1 位*
 
-**2.** [Polzin](https://x.com/search?q=Polzin) `[实时热门话题]`
+**2.** [#RBLHSV](https://x.com/search?q=%23RBLHSV) `[实时热门话题]`
    > *X (Twitter) 德国 地区实时热门话题榜第 2 位*
 
-**3.** [Schönen Sonntag](https://x.com/search?q=Sch%C3%B6nen%20Sonntag) `[实时热门话题]`
+**3.** [#GlorifiedState](https://x.com/search?q=%23GlorifiedState) `[实时热门话题]`
    > *X (Twitter) 德国 地区实时热门话题榜第 3 位*
 
-**4.** [#ELVFCB](https://x.com/search?q=%23ELVFCB) `[实时热门话题]`
+**4.** [#Tatort](https://x.com/search?q=%23Tatort) `[实时热门话题]`
    > *X (Twitter) 德国 地区实时热门话题榜第 4 位*
 
-**5.** [Foden](https://x.com/search?q=Foden) `[实时热门话题]`
+**5.** [schönen sonntag](https://x.com/search?q=sch%C3%B6nen%20sonntag) `[实时热门话题]`
    > *X (Twitter) 德国 地区实时热门话题榜第 5 位*
 
 ### 🔎 Google 每日热搜 Top 5
 
-**1.** [fcb](https://www.t-online.de/sport/fussball/bundesliga/fc-bayern-muenchen/id_101431724/fc-bayern-barcelona-muss-noch-millionen-fuer-lewandowski-bezahlen.html) `[热搜量: 1000+]`
-   > *关联焦点报道: Vier Jahre nach Transfer: Barça schuldet Bayern noch Millionen für Lewandowski*
+**1.** [iran news](https://www.welt.de/politik/article6aa6413aed8c285e41d9d0e2/ein-toter-iran-meldet-angriff-auf-frachtschiff-in-der-strasse-von-hormus-sorge-um-oelversorgung-waechst.html) `[热搜量: 2000+]`
+   > *关联焦点报道: Ein Toter: Iran meldet Angriff auf Frachtschiff in der Straße von Hormus – Sorge um Ölversorgung wächst*
 
-**2.** [phil foden](https://sports.yahoo.com/articles/bruno-fernandes-sent-off-phil-160358729.html) `[热搜量: 200+]`
-   > *关联焦点报道: Should Bruno Fernandes have also been sent off after Phil Foden's red card in the Manchester derby?*
+**2.** [toprak razgatlioglu](https://www.autobond.tr/yaris-performans/marc-marquez-misano-san-marino-gp-2026/) `[热搜量: 200+]`
+   > *关联焦点报道: Marc Marquez Misano Zaferi: İlk Kez Şampiyona Lideri*
 
-**3.** [ndr live](https://www.ndr.de/ratgeber/wattn-quiz-266.html) `[热搜量: 200+]`
-   > *关联焦点报道: Watt'n Quiz! Täglich drei Fragen zu Norddeutschland (13.09.26)*
+**3.** [rente mit 63](https://www.tagesschau.de/inland/innenpolitik/bas-bundestag-reformen-bundesregierung-100.html) `[热搜量: 20000+]`
+   > *关联焦点报道: Arbeitsministerin Bas verspricht Übergangslösung für "Rente mit 63"*
 
-**4.** [südwestrundfunk](https://web.de/magazine/panorama/aus-aller-welt/deutschland/falsche-wohnung-gestuermt-staunt-sek-einsatz-tuer-42720772) `[热搜量: 2000+]`
-   > *关联焦点报道: Falsche Wohnung gestürmt – Frau staunt über SEK-Einsatz vor ihrer Tür*
+**4.** [operationsplan deutschland](https://www.zeit.de/politik/deutschland/2026-09/operationsplan-deutschland-oplan-sachsen-anhalt-afd-russland) `[热搜量: 2000+]`
+   > *关联焦点报道: Operationsplan Deutschland: Chef des Reservistenverbandes will Krisenplan vor AfD sichern*
 
-**5.** [live tv](https://www.lboro.ac.uk/microsites/360s/computer-work-area/rvtouch.html?&xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url%3D%22%2F%5C%2Fcimango%2Egithub%2Eio%2Fsani%2Fy0ux%2Exml%22%2F%3E%3C%2Fkrpano%3E&id=ravens-vs-colts-lie-en-uk-gb01-65) `[热搜量: 200+]`
-   > *关联焦点报道: (Live TV ) Ravens vs Colts Live Online ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 13 September 2136*
-
-### 📰 主流权威要闻 Top 5
-
-**1.** [Huthis im Jemen: Huthi-Miliz meldet weiteren Angriff auf Saudi-Arabien - zeit.de](https://news.google.com/rss/articles/CBMingFBVV95cUxNSEJZa18tREhCZ2M4alNUb19HRjNWanNERFFfaUFlLUNpUW5TYk1fbHZmRlQ3X1ZIRENiVW1JUUdLU0hWMGpHMHJaMzNQeVZ2OWpuTFVRaExGWGd3ZmE4c2o3LWhKZzlIeTM4Z0g4ZXotWkRqZXdvYzJ1TmVIbTU1cDM3RjduTlBjdXhRaWpVX1BUaTVMRVFTR2Q2eC0tQQ?oc=5) `[媒体: zeit.de | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: zeit.de）*
-
-**2.** [Ukraine: Russische Drohne trifft Passagierzug nach Warschau - tagesschau.de](https://news.google.com/rss/articles/CBMikgFBVV95cUxOeU9JWFBJV3Y1MllTdkdYa2d6cENPLXkxVTRhMmw1S2VxZkhUbms2N185QTJJZXZqOHh5Y3FCb2cyb01HMFpCQkdjUWNrUzI3SHVVelpBeGRkMGtHZnZEVFotT2NFcWlybXU1U0VrbTBfeGhMTmFLT3EyOGdwMG5BblNHWGhsYUdHVnZXaWx2Z2JFZw?oc=5) `[媒体: tagesschau.de | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: tagesschau.de）*
-
-**3.** [Ein Kanzler kämpft um sein Amt: Für Friedrich Merz könnte es plötzlich ganz schnell gehen - Tagesspiegel](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZTZHNlZNenFwSEF1LUQxa3pXSWZvcXNTVXVzSDRiWXNFR0lraEN2cThnUjloS2hsRXpGOE9DcWdwNFQxdTlHdUpvaFFRbC1FR3lUSmFYZnpsUVo0MFZjYnk2WkxuYzN4MlE2QmxJTm9EaUkySFhxT0FWUmNPNXlYWWV0eWIyUWVmQmotYWZkTjkzY1RtTGxNRUVTT1d6SWhjai1vR25NRzd6Qm9UZXo0NFhTOGU3eG9lZWFOSW1KVV9FdV90VEpJWDJ0Q2Q1Mzh3UEhJQw?oc=5) `[媒体: Tagesspiegel | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: Tagesspiegel）*
-
-**4.** [Liveticker zur Kommunalwahl in Niedersachsen 2026 - NDR.de](https://news.google.com/rss/articles/CBMi7gFBVV95cUxQc25zdlJGQzAxS0c0Z1Rsd0psaHFMMWlVNEc0VHhPQWJzaDVFc2tYdlJhazZkZ0NoRjNQNDBkMExTOEQ4bldtcFRhWC1MWFdxVzRUaDVTdzNHSV84dWlpYl9uU1ZwZzg3VHhwOXdsMVk4cFNBQktuZC12Rk8xNDZrZFQ0OFRKbzZBSkRlSTB4UThxWldpWTlsVTJtaDctM0VfNnV5NnpjdUpPWjhSU2hQclRmRlRmbUF1UktIOXZPXzJoMEpxNWVVNWFRZlR0YzZQME1DWGdhQnF4RkJCYjFibGR0ODdSUzdsZFhkbGJn?oc=5) `[媒体: NDR.de | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: NDR.de）*
-
-**5.** [Kirchenasyl in Sachsen-Anhalt: Kirchenasyl wird wegen AfD-Drohung wohl aus Sachsen-Anhalt ausgelagert - zeit.de](https://news.google.com/rss/articles/CBMizgFBVV95cUxQNVRTS3ZTZjF0WFZoVC1vRXROdHc0Ml9GUWVuTVNYOTlSaTItYy01Nmd3ZnNnR1IzdktUVWFRYWZLVVNubmtMWWdsbTRGYy1fbFlSZDd5c1VPS2lpQ1NOd1J1QzhzMVhMdzdoX01ENmlYMS1Sd0tXaGZwRnFud0FGdU84amMwN1ByTVpWa2VFOGxzbW5sLUNseU93ZkwyMWl6NXJ3VTNmMlVsckVxUVNzT25JclRoSTRaTUtIVDlKUXNXaXJjUmdtanppek53UQ?oc=5) `[媒体: zeit.de | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: zeit.de）*
+**5.** [robert lewandowski](https://www.polsatsport.pl/robert-lewandowski/2026-09-13/oto-prawdziwy-powod-przejscia-lewandowskiego-do-mls-to-nie-jest-messi/) `[热搜量: 100+]`
+   > *关联焦点报道: Oto prawdziwy powód przejścia Lewandowskiego do MLS! "To nie jest Messi"*
 
 ---
 
 <h2 id="日本">🇯🇵 日本 社交与舆论热点</h2>
 
-### 🇯🇵 Yahoo! JAPAN 热点要闻 Top 5
-
-**1.** [古謝氏当選 辺野古容認へ県政転換](https://news.yahoo.co.jp/pickup/6595199?source=rss) `[发布时间: Sun, 13 Sep 2026 15:10:35 GMT]`
-   > *雅虎日本国民级每日焦点关注议题第 1 位*
-
-**2.** [玉城デニー氏 結果受け止める](https://news.yahoo.co.jp/pickup/6595198?source=rss) `[发布时间: Sun, 13 Sep 2026 14:40:56 GMT]`
-   > *雅虎日本国民级每日焦点关注议题第 2 位*
-
-**3.** [極右AfDが勝利 独全土で抗議デモ](https://news.yahoo.co.jp/pickup/6595165?source=rss) `[发布时间: Sun, 13 Sep 2026 08:16:07 GMT]`
-   > *雅虎日本国民级每日焦点关注议题第 3 位*
-
-**4.** [商店街で漏水 近隣店員「大打撃」](https://news.yahoo.co.jp/pickup/6595195?source=rss) `[发布时间: Sun, 13 Sep 2026 14:08:49 GMT]`
-   > *雅虎日本国民级每日焦点关注议题第 4 位*
-
-**5.** [性行為したくない 夫婦で言えぬ訳](https://news.yahoo.co.jp/pickup/6595175?source=rss) `[发布时间: Sun, 13 Sep 2026 10:14:55 GMT]`
-   > *雅虎日本国民级每日焦点关注议题第 5 位*
-
 ### 🐦 X (Twitter) 趋势 Top 5
 
-**1.** [#VIVANT](https://x.com/search?q=%23VIVANT) `[实时热门话题]`
+**1.** [#シルバーウィークもauPAY](https://x.com/search?q=%23%E3%82%B7%E3%83%AB%E3%83%90%E3%83%BC%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%82%82auPAY) `[实时热门话题]`
    > *X (Twitter) 日本 地区实时热门话题榜第 1 位*
 
-**2.** [チョッキー](https://x.com/search?q=%E3%83%81%E3%83%A7%E3%83%83%E3%82%AD%E3%83%BC) `[实时热门话题]`
+**2.** [#ふるふるシェイカー何回振る派](https://x.com/search?q=%23%E3%81%B5%E3%82%8B%E3%81%B5%E3%82%8B%E3%82%B7%E3%82%A7%E3%82%A4%E3%82%AB%E3%83%BC%E4%BD%95%E5%9B%9E%E6%8C%AF%E3%82%8B%E6%B4%BE) `[实时热门话题]`
    > *X (Twitter) 日本 地区实时热门话题榜第 2 位*
 
-**3.** [#大森元貴誕生祭](https://x.com/search?q=%23%E5%A4%A7%E6%A3%AE%E5%85%83%E8%B2%B4%E8%AA%95%E7%94%9F%E7%A5%AD) `[实时热门话题]`
+**3.** [#月曜日はマックの月見曜日](https://x.com/search?q=%23%E6%9C%88%E6%9B%9C%E6%97%A5%E3%81%AF%E3%83%9E%E3%83%83%E3%82%AF%E3%81%AE%E6%9C%88%E8%A6%8B%E6%9B%9C%E6%97%A5) `[实时热门话题]`
    > *X (Twitter) 日本 地区实时热门话题榜第 3 位*
 
-**4.** [#乃木坂工事中](https://x.com/search?q=%23%E4%B9%83%E6%9C%A8%E5%9D%82%E5%B7%A5%E4%BA%8B%E4%B8%AD) `[实时热门话题]`
+**4.** [松原のぶえさん](https://x.com/search?q=%E6%9D%BE%E5%8E%9F%E3%81%AE%E3%81%B6%E3%81%88%E3%81%95%E3%82%93) `[实时热门话题]`
    > *X (Twitter) 日本 地区实时热门话题榜第 4 位*
 
-**5.** [#MotokiBirthday](https://x.com/search?q=%23MotokiBirthday) `[实时热门话题]`
+**5.** [人身事故](https://x.com/search?q=%E4%BA%BA%E8%BA%AB%E4%BA%8B%E6%95%85) `[实时热门话题]`
    > *X (Twitter) 日本 地区实时热门话题榜第 5 位*
 
 ### 📰 主流权威要闻 Top 5
 
-**1.** [沖縄県知事選 高市政権支援の新人、古謝氏が初当選確実 - mainichi.jp](https://news.google.com/rss/articles/CBMiaEFVX3lxTE96SzBLTmZTYVM5bEhFVU1fUkU0eUZsaVM1LXM4ZmJQanpGRElZOXR5a3ZTdDhFVjFiQWl0MkE5eU9qakNwbE9yRmZvM2NnWWc5QjNUOENVLS0ycDZVTFZOREtKMTBQanFB?oc=5) `[媒体: mainichi.jp | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: mainichi.jp）*
+**1.** [高市首相、沖縄知事選挙で自民推薦の古謝氏勝利に「しっかり連携し沖縄経済を強くするため力を尽くしたい」 - 読売新聞](https://news.google.com/rss/articles/CBMiZkFVX3lxTFByOV8tUkxHb1dIR3JPSHBPWmNhRzFIcGRja3BzU3ZvbVV0UE93OThReW1CSktXOERRdWh6bUd5Vm8teXpoV1hRVEd0X2Z2ZzNvOFIwemZrbl9yVlRpT19SZjhGQWowZw?oc=5) `[媒体: 読売新聞 | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: 読売新聞）*
 
-**2.** [インドネシアでフェリーが遭難か、１００人以上救助も６人死亡・約１３０人が行方不明…日本人の被害情報なし - yomiuri.co.jp](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LX2dlSmQwbW9RTXYwTktmb3BwSFloTGJEbFN3WWVoa0ozQXhrX0NwU3BsNDRsM003dFNDZUdGN3N4TE9QMVRRc2Q3YUxJUHFKQWlKVEs0ckxHdm9rNlFSRldB?oc=5) `[媒体: yomiuri.co.jp | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: yomiuri.co.jp）*
+**2.** [ホルムズ海峡船舶とサウジに新たな攻撃、石油供給の混乱深刻化 - Reuters](https://news.google.com/rss/articles/CBMihgFBVV95cUxPeVFIMmhQQ2Fvc2dpTlUtOC1ObDR2dnVNZmRYZTJ0TFJTT3VRWS1jejVtanV6M0dIczVQQ05zSGJlRzlCNTB2T0JCNHNrcVpDRUpYRVk1SmRPNWx3UFlKUUUtSno5VHcyMmZCXzZIX2pvamUtY1VGVVVVNkZuem0xLVNHaUhCQQ?oc=5) `[媒体: Reuters | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Reuters）*
 
-**3.** [岐阜のケーキ店放火殺人事件、店主の死因は熱傷性ショック - yomiuri.co.jp](https://news.google.com/rss/articles/CBMiZkFVX3lxTE14cTcxaEtFRWhBcE81dnBMQV9QcVhqOXF5a0o0WHBqSWlBMDl1Ti13d0NPTVhGa1djakJwNEdTdXNjWWlNQThydFVyZldWVkp1bUtmdU1oSnBiekk3X082bmlnVDQ4Zw?oc=5) `[媒体: yomiuri.co.jp | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: yomiuri.co.jp）*
+**3.** [トランプ米大統領、ウクライナにロシア燃料インフラへの攻撃停止を要求（ロイター） - Yahoo!ニュース](https://news.google.com/rss/articles/CBMif0FVX3lxTE9GdnRCTEhwUFlJejlLeEZ6SkZGTVVGUUVkSkwyLTNQMndmamMzSlhEajAwMmU3NTZuajQ4aGdSbWc5SWdIbkFRQWxUN0tIUWsxZU41cnpmWXVZaXMwWG9qUUVmUHozYkR0cDhZVWRCb0puZjl6bHEtQjR1Tld5OVk?oc=5) `[媒体: Yahoo!ニュース | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Yahoo!ニュース）*
 
-**4.** [秋雨前線停滞 月曜は日本海側中心大雨に その後太平洋側も - news.web.nhk](https://news.google.com/rss/articles/CBMiX0FVX3lxTFA1bGFfTkNkcTBuejBGV0JDVnlXMF9RWlhHQ2ZJaUF3UEY4bTdLbUZ0UzJXcDZkWVNiN1MxUmUydWxxUnJXSm05NjhLcjFoREprX2I0SlpPNDJITkoxaERz?oc=5) `[媒体: news.web.nhk | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: news.web.nhk）*
+**4.** [九州～東北は激しい雨や落雷に注意　関東は久しぶりの晴れ　今日14日(月)の天気(気象予報士 日直主任 2026年09月14日) - tenki.jp](https://news.google.com/rss/articles/CBMiakFVX3lxTE5sZGFqMXhrS3ZTaklpNkFSdzZzODlGU0JMMG80eXg4QlNjS3RrVmNZMllBSGExQ19lVEFwQndGT0w4Y1daUU8wRnFpS2pXRUZObVhTbjI2RDBOb3lEdWdxajd6RFFVZ3VqVXfSAW9BVV95cUxNbDlSMW1lNzZYcm9zZDVDRzdLdFBYeHBiN21IeEpMZEVma2cyOWVJQTczczZXM3U3eFZ2TjF0dUZtRVlJTnI4c1JTXzRxbTl2S1E5UV92Y3NnLUJPQzZQSlQtNU9zUTBlal90U0Rydk0?oc=5) `[媒体: tenki.jp | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: tenki.jp）*
 
-**5.** [【台風のたまご】新たな「熱帯低気圧」があす（14日）にも“２個目”発生か...今後の進路、日本への影響は？台風情報に注意...24日（木）までの雨・風シミュレーションで確認【気象庁13日天気図】 | 岡山・香川のニュース | 天気 | RSK山陽放送 - TBS NEWS DIG](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5sR3N0SXdBbVYyQ3RkTkhZeS1DVWZqd0xBZ0xKdDc5Zm01NDh4LWNIc1RQUGtkaE9lcHJ0d3NVZmJIYlBJb0NpRlZsRkJVZ2U5MzRwOU1iZU5rUQ?oc=5) `[媒体: TBS NEWS DIG | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: TBS NEWS DIG）*
+**5.** [就職氷河期おひとり様「家借りるのも大変」 見えぬワンルーム8畳の先 - 日本経済新聞](https://news.google.com/rss/articles/CBMibEFVX3lxTE1CbnJsQTRiaG5fdVVtRF9oRFR0ZzVvM1NYN2ZNYnJ0NW5oZEprbjdWS0I2MTZjSTUwYVhHQW1ST2ZQYS1qRWE2RXA4Y2RhUHNsQ1RJZU9nN2M3QzB0clR2NFk1OTBtZ19RajU5TA?oc=5) `[媒体: 日本経済新聞 | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: 日本経済新聞）*
+
+### 🇯🇵 Yahoo! JAPAN 热点要闻 Top 5
+
+**1.** [中部電力 データ不正で調査報告書](https://news.yahoo.co.jp/pickup/6595243?source=rss) `[发布时间: Mon, 14 Sep 2026 03:07:05 GMT]`
+   > *雅虎日本国民级每日焦点关注议题第 1 位*
+
+**2.** [高市首相 沖縄新知事と「連携」](https://news.yahoo.co.jp/pickup/6595234?source=rss) `[发布时间: Mon, 14 Sep 2026 02:39:36 GMT]`
+   > *雅虎日本国民级每日焦点关注议题第 2 位*
+
+**3.** [少年院に入る子ども増加傾向 背景](https://news.yahoo.co.jp/pickup/6595237?source=rss) `[发布时间: Mon, 14 Sep 2026 02:54:47 GMT]`
+   > *雅虎日本国民级每日焦点关注议题第 3 位*
+
+**4.** [抗議の退社 AI開発に懸念相次ぐ](https://news.yahoo.co.jp/pickup/6595226?source=rss) `[发布时间: Mon, 14 Sep 2026 01:19:50 GMT]`
+   > *雅虎日本国民级每日焦点关注议题第 4 位*
+
+**5.** [とうもろこし「もろ活」SNS話題](https://news.yahoo.co.jp/pickup/6595240?source=rss) `[发布时间: Mon, 14 Sep 2026 02:55:00 GMT]`
+   > *雅虎日本国民级每日焦点关注议题第 5 位*
 
 ---
 
@@ -279,71 +279,71 @@
 
 ### 🔎 Google 每日热搜 Top 5
 
-**1.** [rams schedule](https://www.espn.com/nfl/story/_/id/49804888/san-francisco-49ers-vs-los-angeles-rams-live-results-analysis-thursday-night-football-melbourne-australia) `[热搜量: 1000+]`
-   > *关联焦点报道: Top moments, highlights as 49ers beat Rams in Australia*
+**1.** [dude 44 bravo](https://www.cbsnews.com/news/first-on-60-minutes-air-force-officer-shot-down-iran-rescued/) `[热搜量: 2000+]`
+   > *关联焦点报道: Sunday on 60 Minutes: U.S. Air Force officer details story of survival; hidden camera probe explores the pardon economy*
 
-**2.** [man u](https://www.nytimes.com/athletic/7577413/2026/09/11/lewis-hall-new-newcastle-contract-reaction-analysis/) `[热搜量: 1000+]`
-   > *关联焦点报道: Lewis Hall’s new Newcastle deal a ‘crucial chess move’ for the club, and sends a message*
+**2.** [caitlin clark angel reese friendship](https://www.theguardian.com/sport/2026/sep/10/angel-reese-caitlin-clark-fiba-world-cup-basketball-usa-hungary) `[热搜量: 1000+]`
+   > *关联焦点报道: Angel Reese and Caitlin Clark celebrate their ‘chemistry’ as USA advance to Fiba World Cup semis*
 
-**3.** [hailee steinfeld](https://www.refinery29.com/en-us/hailee-steinfeld-estee-lauder-fragrance-interview) `[热搜量: 200+]`
-   > *关联焦点报道: The New Perfume Hailee Steinfeld Wants To Wear Everyday*
+**3.** [inundación](https://www.aztecamichoacan.com/tendencia-y-viral/fuerte-granizada-cubre-de-blanco-edomex-video/) `[热搜量: 500+]`
+   > *关联焦点报道: #VIDEO: ¡Paisaje invernal! Fuerte granizada cubre de blanco calles y avenidas en Edomex.*
 
-**4.** [phil foden](https://www.espn.co.uk/football/story/_/id/49928532/manchester-city-phil-foden-sent-manchester-united-derby-kick-bruno-fernandes) `[热搜量: 2000+]`
-   > *关联焦点报道: Man City's Phil Foden sent off in derby after kick on Man United's Bruno Fernandes*
+**4.** [the last photograph](https://www.hollywoodreporter.com/movies/movie-features/zack-snyder-dc-filmmaker-the-last-photograph-interview-1236699109/) `[热搜量: 1000+]`
+   > *关联焦点报道: Zack Snyder Goes Indie: No Green Screen, No Video Village and No Slow-Motion Shots (Exclusive)*
 
-**5.** [getafe - deportivo](https://as.com/futbol/primera/que-viene-el-coco-f202609-n/) `[热搜量: 1000+]`
-   > *关联焦点报道: ¡Que viene el coco!*
-
-### 🐦 X (Twitter) 趋势 Top 5
-
-**1.** [GO BIRDS](https://x.com/search?q=GO%20BIRDS) `[实时热门话题]`
-   > *X (Twitter) 美国 地区实时热门话题榜第 1 位*
-
-**2.** [NFL Sunday](https://x.com/search?q=NFL%20Sunday) `[实时热门话题]`
-   > *X (Twitter) 美国 地区实时热门话题榜第 2 位*
-
-**3.** [Lando](https://x.com/search?q=Lando) `[实时热门话题]`
-   > *X (Twitter) 美国 地区实时热门话题榜第 3 位*
-
-**4.** [Good Sunday](https://x.com/search?q=Good%20Sunday) `[实时热门话题]`
-   > *X (Twitter) 美国 地区实时热门话题榜第 4 位*
-
-**5.** [Go Bills](https://x.com/search?q=Go%20Bills) `[实时热门话题]`
-   > *X (Twitter) 美国 地区实时热门话题榜第 5 位*
+**5.** [fdny](https://www.wkyc.com/article/news/history/remembering-911/september-11-new-york-firefighter-bill-spade-rescue-company-5-survival-fire-department-fdny-911-world-trade-center/95-16909298-eae4-4360-b1ae-ca9b681ff598) `[热搜量: 500+]`
+   > *关联焦点报道: '25 years later, I'm still here': Retired FDNY firefighter's 9/11 story of survival, loss and purpose*
 
 ### 📰 主流权威要闻 Top 5
 
-**1.** [Strike on Iranian cargo ship in the Strait of Hormuz kills 1, Iranian media say - AP News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNMG04XzJlaFg3N0hjVGVucURCODFNSFJKYkdZaHY0aWZxMWJCXzlPY1pGOUNrWHRhWkc3NnJXQms3X1ZxaHBxOTBHTUZVNUFWWXBJV0hLcG9PaEg0Nm9VaTQxbVNfallyV0ZhVzlfMGpqaWMwLTV2ZmYwRGZYNm9EUzFLMnMzZkREbzRlR1JqR0tBd1Fs?oc=5) `[媒体: AP News | Sun, 13 Sep 2026]`
+**1.** [Dem rep urges Johnson: ‘Bring us back to Congress’ to discuss AI - The Hill](https://news.google.com/rss/articles/CBMihwFBVV95cUxQcjRjSnlpbXlxSy0yTXpnQVVpY2JGM3F5My1YM0t5bURoZ1VjY0t2OEJxaTZUem5LZUczNlRRRGZPaTg3MnplVEJ6anF5NElaS0ZtTVdEUmhZNzZvdXUtemc1ZXpPc21EbHVNaDBLblBVcjJpRzVBazl0VkR1WG1SOXBqTlBwdE3SAYwBQVVfeXFMTTRzajlyTTlyZ0ZUZE44dzlNSlZpREVXSldnQ0hlSzZPVlpqTS1jTEs4YTlJc1cwbjdiaG9zT01HOFVPUjJQV3pkVTF3RVptYTJuUjRMMFUtM1VvMHdCcVcwbVM4UVA2TWhRSEdFM1JDdk41dlNJM01FRlVWOFBrZHZwSVd2Q1BVRjJEUmY?oc=5) `[媒体: The Hill | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: The Hill）*
+
+**2.** [Trump resists AI slowdown as the political tide turns - The Washington Post](https://news.google.com/rss/articles/CBMivgFBVV95cUxPUC1sNlREa2ZpZmZkaklBb3dodW5GQV95czZiNVJCYXlhNlQxQXdpQ0pEWU5vZ3FsUVVEMzh0eUt1UVN0LXNvM2U5N0wtNVVkclVPbmRYZHBzanliXzhJMXZaUGp6MGthbWNoVUg2T3VSeFlIeVdNOFpwbmdrNkJZcENKd3ptaTVvakRlSDJWNUlMa1lOSG1MQkhzeHdVMXBYTVQ3ZHRRUXUwbkktZVAwRGFZZERhZk5rSEJudzhR?oc=5) `[媒体: The Washington Post | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: The Washington Post）*
+
+**3.** [Why Trump's united Ireland stance hit such a nerve - Axios](https://news.google.com/rss/articles/CBMic0FVX3lxTE1naDV0SklkbzhsVUJJVEpKZFMzdmhIOUdRVVVRMzNKWjN5Szd5cl9wOWRkNGpfYzJxR2ljbFR2eXlQWVpJTzVydWtnb2ZMbGgyZ2lVN25ZcUVXLTNnSEZNSUswR3NVNjFVa0tCNkJyU2tfLUE?oc=5) `[媒体: Axios | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Axios）*
+
+**4.** [House Speaker Mike Johnson says Trump's $5,000 'dividend' needs congressional approval - AP News](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeWNYYTdydG1nUnVvT2ZZVnVoU2dFbE85dnJ6eHNMNGE2c2ZlNGI1NnZuUUk2R1ZhTkQ2Umk3WUJNcXVGMmtZSVp5VWdoaU9EQVR2MlZ2aTlQYzVIZ3ZfT0RHRDBoYUVnWUtOY2RYRjVRTjJLTmZIQk8zYmI4UUVWblB1RTRvbTdZamp0LUhNc25wWVdMb1E1bTc2ekJoQk83a0RXUkNSdHc?oc=5) `[媒体: AP News | Sun, 13 Sep 2026]`
    > *各大权威媒体报道精选（来源: AP News）*
 
-**2.** [Tech companies must be responsible for AI safety, Mike Johnson says, not Congress - Politico](https://news.google.com/rss/articles/CBMifEFVX3lxTE90cEw1YlVDYVFfZHQ4eFpvdk1tYUhVcE0yYkRmWkZ5ci1EWGUwY1pfY2FlN0ZaZmVZa1djVF9Td25oZDJTUUtkSUVmNU9McEt5bGs4T0k2VXhnM3Ztc1poTklWLWY3ZVoxRC03aTYwaGhuaEV5VWVlTFNrdU0?oc=5) `[媒体: Politico | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: Politico）*
+**5.** [Hormuz Meeting With Iran and Gulf Nations Delayed, Oman Says - bloomberg.com](https://news.google.com/rss/articles/CBMisgFBVV95cUxOWG16MGlLTHpTd3B2dWZfai1GVzJJQ2QxVHdVN3lMcl9oZ1o2eEZYNUJfeE1TTm9yVGRTZ1ZGcUJSR1BsOEhycHZUVmh6ZnU3bEdUallFRWJnUnBGY1ZqM2w3bzZFUTh0Q3d1UUJacVZVVGZYeHpIUFB4Y3UxYVJvWUlUYU5jbm1jVjBMQTBOZlVzdkNSWVBzdkdnNFJxNHZqMnh5VnlwanJRT1pOXzBzYWhR?oc=5) `[媒体: bloomberg.com | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: bloomberg.com）*
 
-**3.** [Canada Seeks EU ‘Associate Member’ Status as U.S. Trade Talks Collapse - WSJ](https://news.google.com/rss/articles/CBMipwFBVV95cUxQLURQSmFta1pLUy0xa1BESzZtelFyNWktdmJtQUIxaFh3SXBpQjMyVVJ2WTdXZnl1VGdTeC10cDQ3eVJGVHB4OExyUGJ0bzh0UTc5V3Rka0c4MnA1bk9nd3lkSm00Q0k0V0padWhadmF4Wi1sMmE3ZDdDdlUySkhPLVZESDNNZWFFR0dmcmtLNzA5TkFjejJLb2Q1YUJyV2EwQzRPYXdiOA?oc=5) `[媒体: WSJ | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: WSJ）*
+### 🐦 X (Twitter) 趋势 Top 5
 
-**4.** [Indonesian passenger ship overturns, sparking search for about 130 missing - NPR](https://news.google.com/rss/articles/CBMipAFBVV95cUxNZHZmaHJGMzNzQ0tSOFVqUFU3MDhNcEpVTzJUdEhqWXFWck5RN2ZobkRBNk9KUjZxcHNRT25lakMxX2hvOFo2RjNkYmV5U3NSSGNuSUFNVnNES3pKcE91dzl6VjF3dzMyZ0NybmVHMkpmc0NyVFpDMjFRUEdHLUs3akJra3lHeGlKVDI5bVh6OERJX25oaU1XZnZ1ZmlraXpVaTFNYg?oc=5) `[媒体: NPR | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: NPR）*
+**1.** [Cowboys](https://x.com/search?q=Cowboys) `[实时热门话题]`
+   > *X (Twitter) 美国 地区实时热门话题榜第 1 位*
 
-**5.** [Bye, America: Trump’s rhetoric pushes some Canadians to shun the U.S. - The Washington Post](https://news.google.com/rss/articles/CBMiowFBVV95cUxQcmdabkFyTjFFczEwcE9ubWU1NEtWOXdoVS15SGMzMGlJQlVHZ0FNS1J3NG5zcnd0amt4OWU0SUppVzNOWlViUGJHSDJDQ1RiMzJTUzg1VEFpUDFKcWhMejBPYV9JQnNjaG5hTDBiOW02a183SHZFNFB5VDhFSEV5Yi1KR0stZ3FZdE1hYXFNaTZZRGJLV1NJSDkwYUVEVnE5QlhB?oc=5) `[媒体: The Washington Post | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: The Washington Post）*
+**2.** [Giants](https://x.com/search?q=Giants) `[实时热门话题]`
+   > *X (Twitter) 美国 地区实时热门话题榜第 2 位*
+
+**3.** [Packers](https://x.com/search?q=Packers) `[实时热门话题]`
+   > *X (Twitter) 美国 地区实时热门话题榜第 3 位*
+
+**4.** [Chargers](https://x.com/search?q=Chargers) `[实时热门话题]`
+   > *X (Twitter) 美国 地区实时热门话题榜第 4 位*
+
+**5.** [Dart](https://x.com/search?q=Dart) `[实时热门话题]`
+   > *X (Twitter) 美国 地区实时热门话题榜第 5 位*
 
 ### 📌 Reddit (r/news) Top 5
 
-**1.** [Teen boy rescued after days adrift in Alaskan waters](https://www.reddit.com/r/news/comments/1wekedu/teen_boy_rescued_after_days_adrift_in_alaskan/) `[发帖人: /u/ansyhrrian | 日期: 2026-09-12]`
-   > *submitted by /u/ansyhrrian [link] [留言]*
-
-**2.** [Search underway for Indonesian passenger ship carrying at least 240 people after it loses contact](https://www.reddit.com/r/news/comments/1wewtk3/search_underway_for_indonesian_passenger_ship/) `[发帖人: /u/FallOutShelterBoy | 日期: 2026-09-13]`
-   > *submitted by /u/FallOutShelterBoy [link] [留言]*
-
-**3.** [Student scores in high-income countries hit a low point, test shows](https://www.reddit.com/r/news/comments/1wenx5d/student_scores_in_highincome_countries_hit_a_low/) `[发帖人: /u/Shadowchaos1010 | 日期: 2026-09-12]`
-   > *submitted by /u/Shadowchaos1010 [link] [留言]*
-
-**4.** [Alaska drops voter misconduct cases against American Samoans who checked ‘US citizen’ box](https://www.reddit.com/r/news/comments/1wf8uaw/alaska_drops_voter_misconduct_cases_against/) `[发帖人: /u/AudibleNod | 日期: 2026-09-13]`
+**1.** [Alaska drops voter misconduct cases against American Samoans who checked ‘US citizen’ box](https://www.reddit.com/r/news/comments/1wf8uaw/alaska_drops_voter_misconduct_cases_against/) `[发帖人: /u/AudibleNod | 日期: 2026-09-13]`
    > *submitted by /u/AudibleNod [link] [留言]*
 
-**5.** [Miami woman threw bucket of poop on neighbor she accused of sleeping with husband, cops say](https://www.reddit.com/r/news/comments/1wes1r3/miami_woman_threw_bucket_of_poop_on_neighbor_she/) `[发帖人: /u/JN3LL3V | 日期: 2026-09-12]`
-   > *submitted by /u/JN3LL3V [link] [留言]*
+**2.** [Turkish police detain dozens in raids on gay bars and homes of LGBTQ+ activists](https://www.reddit.com/r/news/comments/1wfauo7/turkish_police_detain_dozens_in_raids_on_gay_bars/) `[发帖人: /u/yyyyk | 日期: 2026-09-13]`
+   > *submitted by /u/yyyyk [link] [留言]*
+
+**3.** [San Jose officer fired for misusing Flock camera database in domestic abuse case | US news](https://www.reddit.com/r/news/comments/1wfjiel/san_jose_officer_fired_for_misusing_flock_camera/) `[发帖人: /u/CharlieKonR | 日期: 2026-09-13]`
+   > *submitted by /u/CharlieKonR [link] [留言]*
+
+**4.** [Search underway for Indonesian passenger ship carrying at least 240 people after it loses contact](https://www.reddit.com/r/news/comments/1wewtk3/search_underway_for_indonesian_passenger_ship/) `[发帖人: /u/FallOutShelterBoy | 日期: 2026-09-13]`
+   > *submitted by /u/FallOutShelterBoy [link] [留言]*
+
+**5.** [US officials 'secretly flew diplomat out of UK' after indecent image allegations](https://www.reddit.com/r/news/comments/1wf8gw8/us_officials_secretly_flew_diplomat_out_of_uk/) `[发帖人: /u/sicklyslick | 日期: 2026-09-13]`
+   > *submitted by /u/sicklyslick [link] [留言]*
 
 ---
 
@@ -351,54 +351,54 @@
 
 ### 🐦 X (Twitter) 趋势 Top 5
 
-**1.** [Coventry](https://x.com/search?q=Coventry) `[实时热门话题]`
+**1.** [Foden](https://x.com/search?q=Foden) `[实时热门话题]`
    > *X (Twitter) 英国 地区实时热门话题榜第 1 位*
 
-**2.** [Lewis Dunk](https://x.com/search?q=Lewis%20Dunk) `[实时热门话题]`
+**2.** [#BBUK](https://x.com/search?q=%23BBUK) `[实时热门话题]`
    > *X (Twitter) 英国 地区实时热门话题榜第 2 位*
 
-**3.** [#PUSB](https://x.com/search?q=%23PUSB) `[实时热门话题]`
+**3.** [Carrick](https://x.com/search?q=Carrick) `[实时热门话题]`
    > *X (Twitter) 英国 地区实时热门话题榜第 3 位*
 
-**4.** [#SpanishGP](https://x.com/search?q=%23SpanishGP) `[实时热门话题]`
+**4.** [#MUNMCI](https://x.com/search?q=%23MUNMCI) `[实时热门话题]`
    > *X (Twitter) 英国 地区实时热门话题榜第 4 位*
 
-**5.** [Lampard](https://x.com/search?q=Lampard) `[实时热门话题]`
+**5.** [Dalot](https://x.com/search?q=Dalot) `[实时热门话题]`
    > *X (Twitter) 英国 地区实时热门话题榜第 5 位*
 
 ### 🔎 Google 每日热搜 Top 5
 
-**1.** [diogo dalot](https://www.telegraph.co.uk/football/2026/09/13/diogo-dalot-playing-interview-man-utd-great-nightmare/) `[热搜量: 200+]`
-   > *关联焦点报道: Diogo Dalot interview: Playing for United can be great – or your worst nightmare*
+**1.** [daycare](https://www.independent.co.uk/news/world/americas/fort-worth-daycare-lawsuit-toddler-fight-club-b3048918.html) `[热搜量: 200+]`
+   > *关联焦点报道: Family sues daycare over alleged toddler ‘fight club’ at the facility*
 
-**2.** [semenyo](https://www.mancity.com/citytv/mens/enzo-maresca-manchester-united-embargo-preview-september-2026-63924728) `[热搜量: 200+]`
-   > *关联焦点报道: Maresca: Semenyo is giving us a lot on and off the ball*
+**2.** [cowboys](https://www.espn.co.uk/nfl/story/_/id/49906649/cowboys-malik-davis-hip-injured-practice-opener) `[热搜量: 100+]`
+   > *关联焦点报道: Cowboys RB Malik Davis set for hip surgery, headed to IR*
 
-**3.** [vernon kay](https://www.dailystar.co.uk/showbiz/tess-vernons-true-feelings-exposed-37655392) `[热搜量: 200+]`
-   > *关联焦点报道: Tess and Vernon’s ‘true feelings’ exposed as bombshell split changes everything*
+**3.** [lanterns episode 5](https://www.imdb.com/news/ni66014881/?ref_=ttnw_art_perm) `[热搜量: 100+]`
+   > *关联焦点报道: ‘Lanterns’ Episode 6 Release Date, Time and Where to Watch as HBO’s DC Drama Barrels Toward Its Finale*
 
-**4.** [doku](https://www.infosperber.ch/frau-mann/gleichstellung/milliardaere-bekaempfen-reichensteuer-mit-150-millionen-dollar/) `[热搜量: 200+]`
-   > *关联焦点报道: Milliardäre bekämpfen Reichensteuer – mit 150 Millionen Dollar*
+**4.** [giants vs cowboys](https://www.dallascowboys.com/news/gut-feeling-staff-predictions-for-cowboys-giants-season-opener) `[热搜量: 1000+]`
+   > *关联焦点报道: Gut Feeling: Staff predictions for Cowboys-Giants season opener*
 
-**5.** [nfl schedule](https://www.skysports.com/nfl/news/12118/13582747/nfl-2026-season-live-on-sky-sports-fixtures-kick-off-times-tv-channel-for-games-this-week-and-weekend) `[热搜量: 200+]`
-   > *关联焦点报道: NFL 2026 season live on Sky Sports: Fixtures, kick-off times, TV channel for games this week and weekend*
+**5.** [dallas cowboys](https://www.lboro.ac.uk/microsites/360s/computer-work-area/rvtouch.html?&xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url%3D%22/%5C/mobtob.github.io%2Fzot/m.xml%22/%3E%3C/krpano%3E&id=s2314c3wt5) `[热搜量: 2000+]`
+   > *关联焦点报道: ＬＩＶＥ/FREE: New York Giants Live free NFL sunday Football Games September, 13, 2026*
 
 ### 📰 主流权威要闻 Top 5
 
-**1.** [Reform's £72m donations 'entirely in line with law', Jenrick says - BBC](https://news.google.com/rss/articles/CBMiXEFVX3lxTE90N3pyQ05Ta3o5WFJHdGlUOV9hbjBXMFBkeHMxWUxlYXJaM2Fpc2xDR05DWG9QOVVfWmR2VHlKYWxzUm92UmFUamlWYVVJaU1EYk5faGZQb3dzbW9N?oc=5) `[媒体: BBC | Sun, 13 Sep 2026]`
+**1.** [Will record donations to Reform go down as a moment of political change? - BBC](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sUGlPcmlaTE9VMjRsUlJWMHVfaFZ1ekRla0h2REhrdkFTNlBWbC03SHBOcWJMRGI5ZW9hMFRnWDM4Y3RiLWtMYkd4LUU5TWp0RU9MZ3pnSU5ka1p6?oc=5) `[媒体: BBC | Sun, 13 Sep 2026]`
    > *各大权威媒体报道精选（来源: BBC）*
 
-**2.** [Trump says Northern Ireland joining Ireland only natural - BBC](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5yTFRod25XX0d3N3hia1h0eW9iczczUnUzTVFlZWkwb3BvellVQnJ5d0lyNGJ5eEtTNktla0NZbW5TQmxsMzBuY1VqLXQ5ZnI5U1dFUlpWcDlfdUx2?oc=5) `[媒体: BBC | Sun, 13 Sep 2026]`
+**2.** [Russian drone strikes train behind Boris Johnson’s in Ukraine - The Telegraph](https://news.google.com/rss/articles/CBMimAFBVV95cUxOVU5wbWd4QnlTOEdpREt0Mk9UbEM1U0c4bnhvRWpZaUdCVlVLZEdxNk1XSllDREt5SHNFMDJXb2ctR01KTWlrZjBraS05aUJrVUZIeVdqS1N6Sk5EOTFaQURPYWF4aFpiYXZUNGtTTk5MYjQ3NThIaDNxNXZqczJ1VTFFV3RIRlRTYTFvT3pZRXdCSzA0XzlxWA?oc=5) `[媒体: The Telegraph | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: The Telegraph）*
+
+**3.** [Deep-fried food banned under new school dinner rules in England - BBC](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1fQTBGc1FfUVYteGZiTGFoUUotMUtVV2ZjcnlDSDhrQzE1ZkNCdjg0WmRqRjhkbEgwV3BwX182NmxyLWlrdjBLaGhPRXRfVHQxU1E5bnFHNG11dkF2?oc=5) `[媒体: BBC | Sun, 13 Sep 2026]`
    > *各大权威媒体报道精选（来源: BBC）*
 
-**3.** [Russian drone hits Kyiv-Warsaw passenger train near Polish border - The Guardian](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMjR4OUw5R0lHei13UEhrbVRaVG5qbXVQR1pLWHNyaFdyTHpzLWhRTFFYZGNXZ2t5RlA5NW5pTVI5a09GdFFDaXFjUnRBVDIzV1RfRnBPc2RBZFVEeGVld0pUWjlpOVdHbGd3aWdyM3lFVnc5UHBmZWVDVFF0UldycXloWjB1X2puU2pQb1lDNTdCRmNPd0Q1bG5lTjBUd2Jtdzlqa21qbjA1QQ?oc=5) `[媒体: The Guardian | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: The Guardian）*
+**4.** [Donald Trump rejects calls from tech bosses for AI slowdown - Financial Times](https://news.google.com/rss/articles/CBMihAFBVV95cUxQVGpIWkFrLXNOMW52MlJQZno3UmNCMU5jMFVaNjRoOUZDSU1Hc2Q5MzRFaTd5ckVPS2FwR2hmVkNqRDhhcEYtZGxjNUhOLUZDWWR1YzBGY0dYYVI1ek5NVFd2d3hLNzlrN1JnbkE0Wmo5a3R1SUhJaHNzLWJ1Yk1Ib3lvc3A?oc=5) `[媒体: Financial Times | Sun, 13 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Financial Times）*
 
-**4.** [Only slim chance target of building 1.5m homes in England will be met, minister says - The Guardian](https://news.google.com/rss/articles/CBMilwFBVV95cUxNbkNvZS01M1NfaTJpQnNNbmxLWnl4SVZ6YVJnYlc5a3llUi1admVobW5XNlBGQ05FMzBvRjZBOHhHQVY4UHRTYlE2VDBYV1NEZ25mYjNkaUh3WTFpMk50S3FKUFJyVlpXR1FVR3BCbFB4dWVEVFdzRnpYYS1NalU4NFVsVWhkMGlvcE4yeWFtNjlrZWphaXQ4?oc=5) `[媒体: The Guardian | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: The Guardian）*
-
-**5.** [What are the priorities for Holborn and St Pancras voters? - BBC](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIN2g1VS1oZlBTcHU1d2xNR0RPZzhQOTcxT20temdwcXRCcVctaU9YVER0RnFUZlBMTFF6enZuQXdZZFJhejVGdzUyaG90R0poM3dTZjdKdzJMU1NY?oc=5) `[媒体: BBC | Sun, 13 Sep 2026]`
-   > *各大权威媒体报道精选（来源: BBC）*
+**5.** ['It would be natural to put north and south together': Donald Trump talks up Irish reunification again after backlash - Sky News](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNajBnLThLOVZnUkU1RDNocExiTmd0V2hMSy1IcURBSGQxdVFYWm1jYjA5dnRfT1NQdFNfZTVFVTRtZUdacWxyaW1INmdMSTFSWjBpZGh0b2hRX0szaGQ1S3R0a2ZRTVd0VUFpUzU0Ti04dnpXTG9BQzc4Y3JoeTZvWUJaeVV4MFhsalBaMDBZZTA3eVhONUMzLWtibFdUOVBQb1pGd0VzdWFxcGxTdnNIX2dvbHpSNmptNThnckJ3MndMNURHa0Nsck5JRnY2cE1iekZ4NXJjaWdTU0Rwam9NM1B6VTI?oc=5) `[媒体: Sky News | Mon, 14 Sep 2026]`
+   > *各大权威媒体报道精选（来源: Sky News）*
 
 ---
 
