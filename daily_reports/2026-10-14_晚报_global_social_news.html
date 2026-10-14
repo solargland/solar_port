@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌍 全球主流社交媒体【晚报】(2026-10-14)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-gradient: linear-gradient(135deg, #38bdf8, #818cf8);
+      --gold: #fbbf24;
+      --silver: #cbd5e1;
+      --bronze: #f97316;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.1) 0px, transparent 50%);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding: 2rem 1rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(12px);
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.8rem;
+    }
+    .meta-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .meta-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      border: 1px solid var(--card-border);
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .search-box {
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      border-radius: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 0.5rem 1.1rem;
+      border-radius: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 600;
+      border-color: var(--accent);
+    }
+    .country-section {
+      margin-bottom: 3rem;
+    }
+    .country-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.8rem;
+    }
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+    .platform-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+    .platform-header {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .news-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .news-item {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      padding: 0.5rem 0.6rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .news-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateX(4px);
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+    }
+    .rank-1 { background: var(--gold); color: #000; box-shadow: 0 0 10px rgba(251, 191, 36, 0.4); }
+    .rank-2 { background: var(--silver); color: #000; }
+    .rank-3 { background: var(--bronze); color: #fff; }
+    .news-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .news-title {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      word-break: break-word;
+      display: block;
+      transition: color 0.2s;
+    }
+    .news-title:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .news-extra {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+    .news-summary {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 0.3rem;
+      border-left: 2px solid rgba(255, 255, 255, 0.1);
+      padding-left: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 全球主流社交媒体【晚报】Top 5</h1>
+      <div class="meta-bar">
+        <span class="meta-badge">📅 日期: 2026-10-14</span>
+        <span class="meta-badge">⏰ 采集时间: 2026-10-14 16:12:31 (晚报)</span>
+        <span class="meta-badge">📊 总归集条目: 90</span>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchInput" class="search-box" placeholder="🔍 搜索热搜话题、国家、平台或关键词...">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="tab-btn active" data-filter="all">全部国家/区域</button>
+      </div>
+    </div>
+
+    <main id="newsContainer"></main>
+
+    <footer>
+      <p>© 2026 Global Daily Social News Crawler • 自动调度生成</p>
+    </footer>
+  </div>
+
+  <script>
+    const rawData = {"美国": {"主流权威要闻": [{"country": "美国", "platform": "主流权威要闻", "rank": 1, "title": "Starlink restrictions affecting Ukraine's front line operations, Kyiv says - BBC", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxQ2dNaDItdmx5VHFaSFYwaGtCTW5LNWdWdkEtVE1DYVZKN1IzcHQyeEl4dUJnUkZQS0hBTGx2aUdFZmZjRHRKekdibjB5b0FqN3BvWERKNlNzLTA?oc=5", "extra": "媒体: BBC | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 2, "title": "Vance gives pointed warning after federal raid on Ilhan Omar's home and more top headlines - Fox News", "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeFpYOFNZRnk2Q2xaanJuNk9pWXFac05uakxEV1kwRGFfZG5JbWZjbHZsVW5hUXp1WklaX1dobGRlaVFhVmR5bXMtaVU1TXhrNmY1Q3piNVRmWDRUWmIzaG85MEFkMjNodjRpVEQ0U0N0ZGtrRDRsOGNVRThiek11bjNPbm1uY3hBVU9fenVHaC1qakZwWWhCSUJ3TGxKclpLZTNySHhHTUFfMkFiZXc?oc=5", "extra": "媒体: Fox News | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Fox News）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 3, "title": "Pope Leo recovering \"as expected\" after surgery and lung cancer diagnosis, Vatican says - CBS News", "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIcF9LQk83TVFabnlRTVdUQURWSkxQcS10OEtQYXYxYWcwYlBNMFVlbnJwWUgyTmtUdnRQamFqcnFfQ3RvOVpPODQzQWtYUUpmUlZvQ05GVFU4M0RJZENISjZfTjJpUEM4OXFtMWtyY2dOcVdBdmE4?oc=5", "extra": "媒体: CBS News | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: CBS News）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 4, "title": "Katie Zacharia's debut shows the pitfalls and possibilities of White House press secretary's role - AP News", "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUEdlNE9WLXlUSFJzbHBZV3A2OVp2bXZvYzdhYWhldE1nWW5LeFlhTy1nTlRkcExQMWpLdUNLNDVtNzFUTE5Fcm42eHVBalE0V1JqUWhKVGJUQUxFLWFRTU5vSmJURVprdVVYMnpyU1BIWElWMV81UHktZ0c5a2EtNlNkczJnV0ozSHJkTlZFMHY?oc=5", "extra": "媒体: AP News | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: AP News）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 5, "title": "The skincare scheme that led to consumer complaints, lawsuits and a federal investigation - NPR", "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUGpmNGRsLXdJdTlBalN0WnZEUjQtTDFTeVJIZXUzZUh6X09Zb0ZYLTVzRUp3UmVaRC1NWlJLelhRSXI4Yi15VzluNWhBTTRuSWVEcS0wSGpkVjRsclFmNnhqUDVmMnhCRkJRWmNuS21GOUg2WjJFRmp1VzVsV1Yzdzc3dVdzQmtNQVZRT3lVRQ?oc=5", "extra": "媒体: NPR | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: NPR）"}], "Google 每日热搜": [{"country": "美国", "platform": "Google 每日热搜", "rank": 1, "title": "lask vs liverpool", "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-lask", "extra": "热搜量: 5000+", "summary": "关联焦点报道: Team news: Confirmed Liverpool line-up v LASK"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 2, "title": "feyenoord vs como", "url": "https://as.com/futbol/champions/montana-rusa-de-nico-paz-f202610-n/", "extra": "热搜量: 200+", "summary": "关联焦点报道: Montaña rusa de Nico Paz"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 3, "title": "cricbuzz", "url": "https://trends.google.com/trending/rss?geo=US", "extra": "热搜量: 500+", "summary": "Google 趋势搜索指数热度榜"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 4, "title": "joe espada", "url": "https://www.espn.com/mlb/story/_/id/50182001/astros-not-renew-contract-manager-joe-espada", "extra": "热搜量: 500+", "summary": "关联焦点报道: Astros will not renew contract of manager Joe Espada"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 5, "title": "dudus", "url": "https://www.tmz.com/2026/10/12/diddy-leaves-prison-fort-dix-transported-medical-treatment/", "extra": "热搜量: 2000+", "summary": "关联焦点报道: Diddy Rushed Out of Prison After Medical Emergency"}], "Reddit (r/news)": [{"country": "美国", "platform": "Reddit (r/news)", "rank": 1, "title": "US hits Bank of America with $1.2 billion fine over money laundering", "url": "https://www.reddit.com/r/news/comments/1x57pht/us_hits_bank_of_america_with_12_billion_fine_over/", "extra": "发帖人: /u/jrsinhbca | 日期: 2026-10-13", "summary": "submitted by /u/jrsinhbca [link] [留言]"}, {"country": "美国", "platform": "Reddit (r/news)", "rank": 2, "title": "Cornell bans frat parties in wake of gang rape allegation", "url": "https://www.reddit.com/r/news/comments/1x52z3n/cornell_bans_frat_parties_in_wake_of_gang_rape/", "extra": "发帖人: /u/One-Emu-1103 | 日期: 2026-10-13", "summary": "submitted by /u/One-Emu-1103 [link] [留言]"}, {"country": "美国", "platform": "Reddit (r/news)", "rank": 3, "title": "Bay Area woman poisoned by co-worker speaks out after his felony conviction expunged by judge", "url": "https://www.reddit.com/r/news/comments/1x58uqd/bay_area_woman_poisoned_by_coworker_speaks_out/", "extra": "发帖人: /u/tonic613 | 日期: 2026-10-13", "summary": "submitted by /u/tonic613 [link] [留言]"}, {"country": "美国", "platform": "Reddit (r/news)", "rank": 4, "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says", "url": "https://www.reddit.com/r/news/comments/1x57tyg/pope_diagnosed_with_lung_cancer_but_had/", "extra": "发帖人: /u/BarbaricOklahoma | 日期: 2026-10-13", "summary": "submitted by /u/BarbaricOklahoma [link] [留言]"}, {"country": "美国", "platform": "Reddit (r/news)", "rank": 5, "title": "Kroger to lay off 3K corporate employees over 3 years as it leans into AI", "url": "https://www.reddit.com/r/news/comments/1x53n3t/kroger_to_lay_off_3k_corporate_employees_over_3/", "extra": "发帖人: /u/VaderH8er | 日期: 2026-10-13", "summary": "submitted by /u/VaderH8er [link] [留言]"}], "X (Twitter) 趋势": []}, "中国": {"哔哩哔哩热搜": [{"country": "中国", "platform": "哔哩哔哩热搜", "rank": 1, "title": "Karsa终于跟RNG老队友重逢", "url": "https://search.bilibili.com/all?keyword=Karsa%E7%BB%88%E4%BA%8E%E8%B7%9FRNG%E8%80%81%E9%98%9F%E5%8F%8B%E9%87%8D%E9%80%A2", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 1 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 2, "title": "朱雀二号改进型遥四运载火箭发射成功", "url": "https://search.bilibili.com/all?keyword=%E6%9C%B1%E9%9B%80%E4%BA%8C%E5%8F%B7%E6%94%B9%E8%BF%9B%E5%9E%8B%E9%81%A5%E5%9B%9B%E8%BF%90%E8%BD%BD%E7%81%AB%E7%AE%AD%E5%8F%91%E5%B0%84%E6%88%90%E5%8A%9F", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 2 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 3, "title": "如何从零开始学习AI", "url": "https://search.bilibili.com/all?keyword=%E5%A6%82%E4%BD%95%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0AI", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 3 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 4, "title": "BFX战胜KT 德玛西亚杯", "url": "https://search.bilibili.com/all?keyword=KT%20BFX", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 4 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 5, "title": "杭州LGD.NBW战胜重庆狼队赛后数据", "url": "https://search.bilibili.com/all?keyword=%E6%9D%AD%E5%B7%9ELGD.NBW%E6%88%98%E8%83%9C%E9%87%8D%E5%BA%86%E7%8B%BC%E9%98%9F%E8%B5%9B%E5%90%8E%E6%95%B0%E6%8D%AE", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 5 位"}], "微博热搜": [{"country": "中国", "platform": "微博热搜", "rank": 1, "title": "入职第一天因截图社死", "url": "https://s.weibo.com/weibo?q=%E5%85%A5%E8%81%8C%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%9B%A0%E6%88%AA%E5%9B%BE%E7%A4%BE%E6%AD%BB", "extra": "热度: 1830796 | 热", "summary": "入职第一天因截图社死"}, {"country": "中国", "platform": "微博热搜", "rank": 2, "title": "好一个乖乖女热度登顶", "url": "https://s.weibo.com/weibo?q=%E5%A5%BD%E4%B8%80%E4%B8%AA%E4%B9%96%E4%B9%96%E5%A5%B3%E7%83%AD%E5%BA%A6%E7%99%BB%E9%A1%B6", "extra": "热度: 913241 | 新", "summary": "好一个乖乖女热度登顶"}, {"country": "中国", "platform": "微博热搜", "rank": 3, "title": "90多年前红军的承诺生生不息", "url": "https://s.weibo.com/weibo?q=90%E5%A4%9A%E5%B9%B4%E5%89%8D%E7%BA%A2%E5%86%9B%E7%9A%84%E6%89%BF%E8%AF%BA%E7%94%9F%E7%94%9F%E4%B8%8D%E6%81%AF", "extra": "热度: 665965", "summary": "90多年前红军的承诺生生不息"}, {"country": "中国", "platform": "微博热搜", "rank": 4, "title": "在高铁座位上排便男子已被拘", "url": "https://s.weibo.com/weibo?q=%E5%9C%A8%E9%AB%98%E9%93%81%E5%BA%A7%E4%BD%8D%E4%B8%8A%E6%8E%92%E4%BE%BF%E7%94%B7%E5%AD%90%E5%B7%B2%E8%A2%AB%E6%8B%98", "extra": "热度: 515089 | 新", "summary": "在高铁座位上排便男子已被拘"}, {"country": "中国", "platform": "微博热搜", "rank": 5, "title": "绿泡泡对标红果", "url": "https://s.weibo.com/weibo?q=%E7%BB%BF%E6%B3%A1%E6%B3%A1%E5%AF%B9%E6%A0%87%E7%BA%A2%E6%9E%9C", "extra": "热度: 335311", "summary": "绿泡泡对标红果"}], "百度热搜": [{"country": "中国", "platform": "百度热搜", "rank": 1, "title": "习近平向中国进出口商品交易会致贺信", "url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%90%91%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%87%BA%E5%8F%A3%E5%95%86%E5%93%81%E4%BA%A4%E6%98%93%E4%BC%9A%E8%87%B4%E8%B4%BA%E4%BF%A1&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7904439", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 2, "title": "今年双11告别算数题", "url": "https://www.baidu.com/s?wd=%E4%BB%8A%E5%B9%B4%E5%8F%8C11%E5%91%8A%E5%88%AB%E7%AE%97%E6%95%B0%E9%A2%98&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7809437", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 3, "title": "多地组织筛查干部档案 有何深意", "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E5%9C%B0%E7%BB%84%E7%BB%87%E7%AD%9B%E6%9F%A5%E5%B9%B2%E9%83%A8%E6%A1%A3%E6%A1%88+%E6%9C%89%E4%BD%95%E6%B7%B1%E6%84%8F&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7712250", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 4, "title": "今年国庆消费 有啥不一样", "url": "https://www.baidu.com/s?wd=%E4%BB%8A%E5%B9%B4%E5%9B%BD%E5%BA%86%E6%B6%88%E8%B4%B9+%E6%9C%89%E5%95%A5%E4%B8%8D%E4%B8%80%E6%A0%B7&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7617764", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 5, "title": "今年冬天会更冷还是更暖", "url": "https://www.baidu.com/s?wd=%E4%BB%8A%E5%B9%B4%E5%86%AC%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%86%B7%E8%BF%98%E6%98%AF%E6%9B%B4%E6%9A%96&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7522315", "summary": ""}]}, "俄罗斯": {"塔斯社 (TASS)": [{"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 1, "title": "Теннисный турнир в Саудовской Аравии перенесли с октября на декабрь", "url": "https://tass.ru/sport/28214767", "extra": "塔斯社国家通讯社", "summary": "俄罗斯塔斯社焦点要闻报道"}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 2, "title": "Жданова: милитаризация НАТО привела к бесконтрольной торговле западным оружием", "url": "https://tass.ru/politika/28214765", "extra": "塔斯社国家通讯社", "summary": "俄罗斯塔斯社焦点要闻报道"}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 3, "title": "В Большом театре прошла премьера балета \"Игрок\" по Достоевскому", "url": "https://tass.ru/kultura/28214757", "extra": "塔斯社国家通讯社", "summary": "Балет по роману ставится впервые"}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 4, "title": "Росатом обсуждает с Бангладеш строительство еще больших блоков АЭС", "url": "https://tass.ru/ekonomika/28214755", "extra": "塔斯社国家通讯社", "summary": "俄罗斯塔斯社焦点要闻报道"}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 5, "title": "МАГАТЭ продолжает переговоры о ремонте украинской стороной ЛЭП \"Днепровская\"", "url": "https://tass.ru/ekonomika/28214751", "extra": "塔斯社国家通讯社", "summary": "俄罗斯塔斯社焦点要闻报道"}], "俄新社 (RIA Novosti)": [{"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 1, "title": "Глава МИД КНР назвал встречу Путина и Си Цзиньпина важной для развития АТР", "url": "https://ria.ru/20261014/vstrecha-2124534199.html", "extra": "发布时间: Wed, 14 Oct 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 2, "title": "Китай и Россия должны укреплять взаимодействие в Евразии, заявил Ван И", "url": "https://ria.ru/20261014/vzaimodeystvie-2124533848.html", "extra": "发布时间: Wed, 14 Oct 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 3, "title": "Ситуация в Йемене развивается по неблагоприятному сценарию, заявили в МИД", "url": "https://ria.ru/20261014/yemen-2124533648.html", "extra": "发布时间: Wed, 14 Oct 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 4, "title": "В Одесской области прогремел взрыв", "url": "https://ria.ru/20261014/vzryv-2124533369.html", "extra": "发布时间: Wed, 14 Oct 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 5, "title": "МАГАТЭ помогает в вопросе о ремонте ЛЭП \"Днепровская\", сообщил Лихачев", "url": "https://ria.ru/20261014/magate-2124533201.html", "extra": "发布时间: Wed, 14 Oct 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}], "Lenta.ru (俄罗斯门户热榜)": [{"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 1, "title": "Директор ФБР прибыл в Россию", "url": "https://lenta.ru/news/2026/10/14/direktor-fbr-pribyl-v-rossiyu/", "extra": "分类: Мир", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 1 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 2, "title": "Louis Vuitton представил сумку в виде избы по цене дома в деревне", "url": "https://lenta.ru/news/2026/10/14/louis-vuitton-predstavil-sumku-v-vide-izby-po-tsene-doma-v-derevne/", "extra": "分类: Ценности", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 2 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 3, "title": "101-летний мужчина назвал секрет своего долголетия", "url": "https://lenta.ru/news/2026/10/14/101-letniy-muzhchina-nazval-sekret-svoego-dolgoletiya/", "extra": "分类: Из жизни", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 3 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 4, "title": "Директор известного российского рэпера отреагировал на его задержание в Казахстане", "url": "https://lenta.ru/news/2026/10/14/direktor-izvestnogo-rossiyskogo-repera-otreagiroval-na-ego-zaderzhanie-v-kazahstane/", "extra": "分类: Культура", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 4 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 5, "title": "Российские таможенники задержали стопки с сотнями тысяч долларов", "url": "https://lenta.ru/news/2026/10/14/rossiyskie-tamozhenniki-zaderzhali-stopki-s-sotnyami-tysyach-dollarov/", "extra": "分类: Силовые структуры", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 5 位"}]}, "英国": {"主流权威要闻": [{"country": "英国", "platform": "主流权威要闻", "rank": 1, "title": "Family of man killed by tiger criticise online content after Trump reposts video - The Guardian", "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRnhvdG1pT2FLLWl0X0VVSHBuZmx4R0RnQlFPN1dfYUVjR3F3V3R4UVQ2QW1wQlV6eFdveURvRmVzcExMQVNHMW82TEdianQxZGk0SXd2R2xLMzIteEpoLU5YdkRyQ3Fkd0pVeUUwWFNNaVpyUnF2RHpkTmpPSWRfQkxBQnZ1eGZPeVlFcnM2aWlEVjBSSFFlMk5XdUpnUG5Ibkc0YjhFZ3FId3J5UWNjcC1YbGUyLVd6aUE?oc=5", "extra": "媒体: The Guardian | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: The Guardian）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 2, "title": "Starlink restrictions affecting Ukraine's front line operations, Kyiv says - BBC", "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5EdnZ0dWdlazJpMUR4dU9zMGRkdkFhVTlVREI0WkxaUnRrb2FYY3B4WlBpejdGYjFnNF9jQVFibEpxQlNrQ09Iem02ZE00OUU1RThabTB0RjY4Uy1mWEE?oc=5", "extra": "媒体: BBC | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 3, "title": "Burnham rules out coalition with Greens while ‘Zionism is Racism’ policy remains - Financial Times", "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ1lwTjNnZWlYQjZ6Q2tLalg1V2t3VVVsNVRhNk9kQ3AyQzQtajdGZjNTYWkyVnhIVnp4a05rRG4xTW1xM1RBZDR2QXQxN1BLM2tCLTZLcTl6VVJUbXRvNXY5SnFfbFVCMTFCeWtBanREMERpOXNsY0JqV0NPQ1JsZXZ1bW8?oc=5", "extra": "媒体: Financial Times | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Financial Times）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 4, "title": "Vehicle thefts at highest level in decade in Devon and Cornwall - BBC", "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jcndoam5BTEZNRm1KTDhNVGM2SVQ1NHF3SDZXTFNSVXR1LVllT1ZMZHJEMmlDenFEZkI3YXRLclg5MDVFWS10N0JiajRXNTdRbEdMWVRHMmtKMDRkWmc?oc=5", "extra": "媒体: BBC | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 5, "title": "Pope's cancer diagnosis leaves Catholics questioning what comes next - BBC", "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0UUtiYXB1NXpJaWd6Q2poZ3hkNjc5WnJ5MElkTUQtXy1SYUtiZTZ5cFZYLWJtN2EzYUtTUmdSMjB6RzdMWlNpQUp1XzhXX2ZOTHRIY05aRlhUX0tQRGc?oc=5", "extra": "媒体: BBC | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}], "Google 每日热搜": [{"country": "英国", "platform": "Google 每日热搜", "rank": 1, "title": "cricbuzz", "url": "https://trends.google.com/trending/rss?geo=GB", "extra": "热搜量: 500+", "summary": "Google 趋势搜索指数热度榜"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 2, "title": "iphone", "url": "https://www.engadget.com/2284584/beat-preorder-iphone-duo-rush-apple-get-ready-tool/", "extra": "热搜量: 500+", "summary": "关联焦点报道: Beat The iPhone Duo Pre-Order Rush With Apple's Get Ready Tool"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 3, "title": "feyenoord vs como", "url": "https://as.com/futbol/champions/montana-rusa-de-nico-paz-f202610-n/", "extra": "热搜量: 200+", "summary": "关联焦点报道: Montaña rusa de Nico Paz"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 4, "title": "lask vs liverpool", "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-lask", "extra": "热搜量: 20000+", "summary": "关联焦点报道: Team news: Confirmed Liverpool line-up v LASK"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 5, "title": "magill estate restaurant", "url": "https://www.bbc.com/news/articles/crje5we583qwo", "extra": "热搜量: 200+", "summary": "关联焦点报道: Australia's first-ever Michelin stars go to 11 restaurants in one state"}], "X (Twitter) 趋势": []}, "日本": {"X (Twitter) 趋势": [{"country": "日本", "platform": "X (Twitter) 趋势", "rank": 1, "title": "#水曜日のダウンタウン", "url": "https://x.com/search?q=%23%E6%B0%B4%E6%9B%9C%E6%97%A5%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%82%BF%E3%82%A6%E3%83%B3", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 1 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 2, "title": "#ポリティカルパン", "url": "https://x.com/search?q=%23%E3%83%9D%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%91%E3%83%B3", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 2 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 3, "title": "#Aぇヤンタン", "url": "https://x.com/search?q=%23A%E3%81%87%E3%83%A4%E3%83%B3%E3%82%BF%E3%83%B3", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 3 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 4, "title": "#JO1ANNX", "url": "https://x.com/search?q=%23JO1ANNX", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 4 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 5, "title": "ローランド", "url": "https://x.com/search?q=%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 5 位"}], "主流权威要闻": [{"country": "日本", "platform": "主流权威要闻", "rank": 1, "title": "［深層ＮＥＷＳ］簗農相辞任、「麻生氏から自立して行った内閣改造裏目に」「高市カラー確立に時間」…渡辺喜美氏 - 読売新聞", "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5X09SVFRNcVVHV2RlLTNXdmdQODE2b1NWWkZ4ZlAwLXRpOW4ydGQtNnlOUmNYZ3R5b1VOeWVCbVZ6eURxQ1BjQjNBeU1lRWJocDdsUXlWTnR5OTlYeWR6d3piQTl5UQ?oc=5", "extra": "媒体: 読売新聞 | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: 読売新聞）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 2, "title": "北海道新聞の記者をロシアが拘束 スパイ容疑でモスクワ移送 道新「詳細確認中」 - テレ朝NEWS", "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9MVkduZEJMcnJqcXY1YVdySVh1M3BZc21UWEtCUDZEWjNIb2xvN1B1SEtoSFlUU0NkR2F1bWZ4Y3JqeG9MaUl0Vm5rVGFQcWdEQS1Gb2xwOERIdVNxdjJXd2hfbkFqU1pucnAwM3BWWGo2c3l3UjVhaXZn?oc=5", "extra": "媒体: テレ朝NEWS | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: テレ朝NEWS）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 3, "title": "台風発生予想 13年ぶりの台風30号か しばらく西進し発達 - ウェザーニュース", "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE56TFIyNUIxYmVxYXo5ZHV1SXYyS3daN01SX1dIS01aN2hPd05VSWJpN2h3Y3JPeFBxTmxjZWFCMUMySlZLZTdfUmpScnNxaTNwR2pKeA?oc=5", "extra": "媒体: ウェザーニュース | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: ウェザーニュース）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 4, "title": "フーシ激しくサウジ越境攻撃、石油施設で火災・住宅地に迎撃ミサイル残骸落下…トランプ氏「ひどい振る舞い」 - 読売新聞", "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtLU5zbXVrS0RxNXRRMGdpUHNadzVEeXlhS1ZvSElDSTFMUmdQcUhVbkhXUy1XYUxqUFBPTkh4MTYzZ244cGdaSE5VcFpZMExULU5OTmxzMzlNVS0wbDBaMWRB?oc=5", "extra": "媒体: 読売新聞 | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: 読売新聞）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 5, "title": "ユーチューバー「ＫＥＮＺＯ」逮捕 名誉毀損容疑、被害者死去―京都府警：時事ドットコム - 時事ドットコム", "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBReVlKdzJMLTUyQ21PWXVhdTNhU0RDSFJkYzNremNEdmt3UEFfVFFlZG1qT2YyM3NiQlFXVlBRdllIdUx4UmN0MkRzY20tazBZc2tWS1UxNnBFbHBLRDhWMEVOUQ?oc=5", "extra": "媒体: 時事ドットコム | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: 時事ドットコム）"}], "Yahoo! JAPAN 热点要闻": [{"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 1, "title": "農相辞表 内閣改造後わずか1カ月", "url": "https://news.yahoo.co.jp/pickup/6598790?source=rss", "extra": "发布时间: Wed, 14 Oct 2026 14:12:54 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 1 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 2, "title": "海峡で機雷接触の貨物船沈没 報道", "url": "https://news.yahoo.co.jp/pickup/6598794?source=rss", "extra": "发布时间: Wed, 14 Oct 2026 15:05:35 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 2 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 3, "title": "道新記者の拘束 日本政府に衝撃", "url": "https://news.yahoo.co.jp/pickup/6598791?source=rss", "extra": "发布时间: Wed, 14 Oct 2026 14:34:55 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 3 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 4, "title": "新宿109KENZO 池田容疑者を逮捕", "url": "https://news.yahoo.co.jp/pickup/6598783?source=rss", "extra": "发布时间: Wed, 14 Oct 2026 13:01:56 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 4 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 5, "title": "万博未払い アンゴラ異例対応の訳", "url": "https://news.yahoo.co.jp/pickup/6598795?source=rss", "extra": "发布时间: Wed, 14 Oct 2026 15:20:27 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 5 位"}]}, "德国": {"主流权威要闻": [{"country": "德国", "platform": "主流权威要闻", "rank": 1, "title": "Linken-Politikerin Eralp verbittet sich „Einmischung“ von Merz - WELT", "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOXIxY3VudUx4WWVNeU5waHYyNkdsVGRpTFlXcmdXZzlDdGZsR0NOUVhfOWNybXdMYVUxcGRBbjZFeGhya3U5VDFtOFZ4WjV5VXRVTUFnOEJoWmtCX3g1TzNHb2tnSG9hcXA2dUt2X1ltMXpUUmREQ1BkeXQ3cFFQdkwySkdidFlBOThvZFE5bnZ5OEVUY2hIbkhDMFNLTHpTV0hhTnNRN09pS2o2b2pLcnBkVktDcUFVM3l4YUQ0aWM?oc=5", "extra": "媒体: WELT | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: WELT）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 2, "title": "Sachsen-Anhalt: Landtag beschließt umstrittenen Ukraine-Antrag von AfD und BSW - Berliner Morgenpost", "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNm13ZVd1ek5nZ3E3QUg5SUhya3lTb2k2d0pnUVRrNmR0NGVvV2pTTmlDRHZQM3ctMGdidThoa2l6N1B4dGF1WEt0b2dpOGdwelBQUndocXlJbGZCZUZPOEJjRFpnMGxER1ZFN2NYaWlNTERFZ2NHSmp5Rm5iR1lvWnMtS3RxUHV0VUdfQlVxN1A4eF9OWV9GU2g2NWhRTzAyN21pQ2tHc2dKWTE3aF91eTUtTWJHRXFlYkpwZ1RjUQ?oc=5", "extra": "媒体: Berliner Morgenpost | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Berliner Morgenpost）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 3, "title": "CDU fordert Entschuldigung von Schwesig nach Bas-Rücktritt - NDR.de", "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQc0tuZGNudEFRUnR1cVFESm43YmFlOFoxLTQ4bFJad0JEZE1TaVN4eGk0VkI5cXllV2xaWkdCTTZpTHRrVDlsQkFsNU1KQ05YZ3NaSDZiNG55MGVtckVRa2RydlcyRy1kWHdTSjdKNmhKdnpnNkE3UVNaNUZfRXd1RkM2WldMbHJQU2FMLTBOTDdUZE0wZzZyUlJQVG9BaVEzVi15U1RPcGl3em5OampEY2FHYzNMU28zUDhyNDEtNnRZUFFt?oc=5", "extra": "媒体: NDR.de | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: NDR.de）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 4, "title": "Mehreinnahmen - Schwarz-rote Koalition einigt sich auf Zuckersteuer - Deutschlandfunk", "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNM3dnY1RuSFIxVXhWMzY5TE5Xb19taEJFQTVROEh2YjlaV2Y0SzV0aGhWd2JacElnYS1zR291OWlhQWJOOGR4VUcyWlVKaFlBSk5ZdGdIcUtKQlkteDN1dWhBVXZXUjM2Z3RvM1NkVDBmZlRBTHZtWXFDNF9YTkp6OXFWVEw5QXVCdGp4LUp0VHlUc0NMTVE?oc=5", "extra": "媒体: Deutschlandfunk | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Deutschlandfunk）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 5, "title": "Hatte Journalistin „Dinge im Vertrauen erzählt“ Entführte Block-Tochter besorgt nach Sicherstellung von Podcast-Aufnahmen - Tagesspiegel", "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQTTlLQVFVWFhidk0zMEpNUk5xTUlJZzl3M1YtckU2UnRUX2J0aWNEdkRYUzlvNmQyZW1xcWgxclZzMzJzM0QyX201NmhGb0J3VVpQYXV2ZTVnUE9RVnA3RGlhWmhnNklJUjBYUk1HZmVfUHljcVJkR0x4RkpTaWZGdUhwOE5uZWhobXh6LW1VOXFzUkxKUC1nYV9zcEJRd0NFNXRrbkd6aUpMNnp3MkhHTkh1Sk15QWt2RmdfT2lNRWFyNlBUYmkwN2ZUekk5ZnJxVHZtbVkyVjNOQ29zbUJUeEtZN1Zoa3c3QVJVZTRRY2pQdUlLb3lRZ1ZhTkctalRkVUh4UmFLM2xlVUlkUzZVQw?oc=5", "extra": "媒体: Tagesspiegel | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Tagesspiegel）"}], "Google 每日热搜": [{"country": "德国", "platform": "Google 每日热搜", "rank": 1, "title": "besoldung", "url": "https://www.zeit.de/news/2026-10/14/vorgabe-aus-karlsruhe-brandenburgs-beamte-kriegen-mehr-geld", "extra": "热搜量: 2000+", "summary": "关联焦点报道: Höhere Beamtenbesoldung: Vorgabe aus Karlsruhe: Brandenburgs Beamte kriegen mehr Geld"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 2, "title": "schwarzes meer", "url": "https://trends.google.com/trending/rss?geo=DE", "extra": "热搜量: 1000+", "summary": "Google 趋势搜索指数热度榜"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 3, "title": "feyenoord – como", "url": "https://www.bbc.com/sport/football/live/cmx2q49qypv9t", "extra": "热搜量: 200+", "summary": "关联焦点报道: Feyenoord vs Como: UEFA Champions League stats & head-to-head"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 4, "title": "enshrouded", "url": "https://www.gamestar.de/artikel/enshrouded-1-0-test-steam-review,3461120.html", "extra": "热搜量: 200+", "summary": "关联焦点报道: Enshrouded im Test: Version 1.0 des deutschen Survivalspiels ist da und sprengt alle meine Wertungsprognosen"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 5, "title": "lask – liverpool", "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-lask", "extra": "热搜量: 2000+", "summary": "关联焦点报道: Team news: Confirmed Liverpool line-up v LASK"}], "X (Twitter) 趋势": []}, "全球": {"主流权威要闻": [{"country": "全球", "platform": "主流权威要闻", "rank": 1, "title": "Yemen's Houthis vow more attacks on Saudi airports, oil facilities after Aramco HQ hit - Reuters", "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV3VzaTd1VDVxNXczQ2FRa2FsXzdOV0Y5ZlFoaUthcVJhUnlFMHROUUMtWWZzUGZNWFd5WVNZbnJyZ3A4azRaUzNabVQ1U2ZMMmNYTzM1R2ZoeDF5dVQ0Q3FldDNEMW5lVC1oaVQ3Rmdaei01eS1GaFVla0prYUVZeEtJZlBZV2hoUm8yVTJNR3RYSXlhZTBPVWswNmdTWE5nclRiSldzUE91cXNZbzRGZzVOSFpMX294VWs3UlFpV2Q1Z09xTnl4Rw?oc=5", "extra": "媒体: Reuters | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Reuters）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 2, "title": "Sudden Starlink Restrictions Deepen Ukraine’s Vulnerability as Russia Escalates - The New York Times", "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNXdEMlRSTDR5bVVYU1RhR1ljMjB3RU5iaFZYZmdndGg5UWdtdjVLOEdibVlXLUtRSVB3S3RGYXhkZnJWY2dNQjlwMWZaSnJ3NTliaTZrQ0p6X2RWYm9CSEZiTmFDWEJVNnZjeGsyMUlPdkVCajIya2tXWWlNeFFTcVBn?oc=5", "extra": "媒体: The New York Times | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: The New York Times）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 3, "title": "Two Cargo Ships Sink Near Strait of Hormuz, as Iranian Attacks Increase - WSJ", "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeVJzcVMzeW15SzZXQ09EZHdZNzdXY0lmbWVJNjRDLVlodjE0SVBTeFBES1VudmJROGNiQ3RlYU1NM2FlLWs0eVhadlR1Q3luYnoxTDBkRjBwcFdoN052cUxSOVBkQTFBSkdVYTd0elBuX3F0X19feXBuRGgtTVZfZmVvY21yU0F0RkdKX01DMHZDZE5ITUtMTzFZTnBJX1VnSWpwRW4xQQ?oc=5", "extra": "媒体: WSJ | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: WSJ）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 4, "title": "Russia’s arrest of Japanese journalist: Why are tensions rising? - Al Jazeera", "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM3NpS2Fiek9lTkxFWko5TkpNUTJkekM2V081aXBEVmJDcmhCRDNBUjhPenNiWE9SeHJ5VWZYLVJsMmhqcGVKOVYzWmNudHVqdl9yS1huNmZMLXVBaF92a2cyM3RCMXZING9IWDNVeG9DZ1g0UnBaLVNlb1BNczUyNG9NRGp1cXhvdTB0XzhSTmdURUttOS1GY3NiQXVQYndyMktHMWln0gGrAUFVX3lxTE1taXFnX3p5RHFGcFVwWVdLaFZkMWNudF9ZTFQwamN6T0tmRnJodjl3aFdIV0o2NVg2V0FrZlM5Y3VOS1F0T2hPbHZTcThyZlJIMkJxb1JKNmwtdHJ4Uzh2czN4TEZaN3h2Y0RNcnQydjhmV09qWFh5eVJBc2U0UVB3WmdOUURkcnpfMEUtcGhBZDU4eU43cUtqV2VDSXptODVsQ3BIX3pMS01Tcw?oc=5", "extra": "媒体: Al Jazeera | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: Al Jazeera）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 5, "title": "U.S. may have withheld warnings to Ukraine of Russian strikes that killed 6, cut power to 600,000, sources say - CBS News", "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZzBha3hkak5PVXhhdTB1RzZSQTVMYzkweE9kUDNqdVFUOUZWN1FxQ3RlUVI1ZVhKa2RQLVFJclBpeFRFeHZyTVdKVDN6cWluTERiZERqYjZCdlRZVFFQZVV2X0VKNC1aS2dlS3V4YXlLbGxUVjJZQ0V0b2U2QTVlUDljM2JHRk03OW9SY0pDZ05FNVpSTUVyRkNHWXRXcGht?oc=5", "extra": "媒体: CBS News | Wed, 14 Oct 2026", "summary": "各大权威媒体报道精选（来源: CBS News）"}], "Reddit (r/worldnews)": []}, "全球科技": {"Hacker News (科技与商业)": [{"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 1, "title": "Iosevka is an open-source, sans-serif and slab-serif, monospace font", "url": "https://typeof.net/Iosevka/", "extra": "点赞: 464 | 评论: 190 | 发帖人: otobrglez", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50084240"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 2, "title": "Running Windows desktop tests from Linux with disposable VMs", "url": "https://www.qawolf.com/blog/how-we-solved-windows-desktop-automation", "extra": "点赞: 21 | 评论: 7 | 发帖人: jadenlemmon", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50088643"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 3, "title": "Pg_vectorsearch: An index that is faster than pgvector's IVFFlat and HNSW", "url": "https://github.com/timescale/pg_vectorsearch", "extra": "点赞: 116 | 评论: 35 | 发帖人: jascha_eng", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50086165"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 4, "title": "Passkeys Are Not a Trap", "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/", "extra": "点赞: 186 | 评论: 225 | 发帖人: speckx", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50088935"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 5, "title": "AI is mass decompiling games. That's both awesome and scary", "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/", "extra": "点赞: 39 | 评论: 17 | 发帖人: popcar2", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50088534"}]}};
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    const countryIcons = {
+      '中国': '🇨🇳',
+      '俄罗斯': '🇷🇺',
+      '美国': '🇺🇸',
+      '英国': '🇬🇧',
+      '日本': '🇯🇵',
+      '德国': '🇩🇪',
+      '法国': '🇫🇷',
+      '全球科技': '🌐',
+      '全球': '🌍'
+    };
+
+    function initFilters() {
+      const filterTabs = document.getElementById('filterTabs');
+      const countries = Object.keys(rawData);
+      countries.forEach(c => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn';
+        btn.dataset.filter = c;
+        btn.textContent = (countryIcons[c] || '🌐') + ' ' + c;
+        btn.onclick = () => {
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = c;
+          render();
+        };
+        filterTabs.appendChild(btn);
+      });
+
+      document.querySelector('[data-filter="all"]').onclick = function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentFilter = 'all';
+        render();
+      };
+
+      document.getElementById('searchInput').addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        render();
+      });
+    }
+
+    function render() {
+      const container = document.getElementById('newsContainer');
+      container.innerHTML = '';
+
+      const countries = Object.keys(rawData).filter(c => currentFilter === 'all' || currentFilter === c);
+
+      countries.forEach(country => {
+        const platforms = rawData[country];
+        let countryHasMatch = false;
+
+        const countrySection = document.createElement('section');
+        countrySection.className = 'country-section';
+
+        const title = document.createElement('h2');
+        title.className = 'country-title';
+        title.innerHTML = `<span>${countryIcons[country] || '🌐'}</span> <span>${country} 热门社交媒体</span>`;
+
+        const grid = document.createElement('div');
+        grid.className = 'platforms-grid';
+
+        Object.keys(platforms).forEach(platform => {
+          const items = platforms[platform];
+          const matchedItems = items.filter(it => {
+            if (!searchQuery) return true;
+            return it.title.toLowerCase().includes(searchQuery) ||
+                   (it.extra && it.extra.toLowerCase().includes(searchQuery)) ||
+                   (it.summary && it.summary.toLowerCase().includes(searchQuery)) ||
+                   platform.toLowerCase().includes(searchQuery) ||
+                   country.toLowerCase().includes(searchQuery);
+          });
+
+          if (matchedItems.length > 0) {
+            countryHasMatch = true;
+            const card = document.createElement('div');
+            card.className = 'platform-card';
+
+            const header = document.createElement('div');
+            header.className = 'platform-header';
+            header.innerHTML = `<span>${platform}</span> <small style="color: var(--text-muted); font-size: 0.8rem;">Top ${matchedItems.length}</small>`;
+            card.appendChild(header);
+
+            const ul = document.createElement('ul');
+            ul.className = 'news-list';
+
+            matchedItems.forEach(it => {
+              const li = document.createElement('li');
+              li.className = 'news-item';
+              const rankClass = it.rank <= 3 ? `rank-${it.rank}` : '';
+
+              li.innerHTML = `
+                <div class="rank-badge ${rankClass}">${it.rank}</div>
+                <div class="news-content">
+                  <a href="${it.url}" target="_blank" rel="noopener noreferrer" class="news-title">${it.title}</a>
+                  ${it.extra ? `<div class="news-extra">${it.extra}</div>` : ''}
+                  ${it.summary ? `<div class="news-summary">${it.summary}</div>` : ''}
+                </div>
+              `;
+              ul.appendChild(li);
+            });
+
+            card.appendChild(ul);
+            grid.appendChild(card);
+          }
+        });
+
+        if (countryHasMatch) {
+          countrySection.appendChild(title);
+          countrySection.appendChild(grid);
+          container.appendChild(countrySection);
+        }
+      });
+
+      if (container.children.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding: 4rem; color: var(--text-muted);">未找到符合条件的搜索结果。</div>`;
+      }
+    }
+
+    initFilters();
+    render();
+  </script>
+</body>
+</html>
