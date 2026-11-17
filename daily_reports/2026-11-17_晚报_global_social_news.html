@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌍 全球主流社交媒体【晚报】(2026-11-17)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-gradient: linear-gradient(135deg, #38bdf8, #818cf8);
+      --gold: #fbbf24;
+      --silver: #cbd5e1;
+      --bronze: #f97316;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      background-image: radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.1) 0px, transparent 50%);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding: 2rem 1rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(12px);
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.8rem;
+    }
+    .meta-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .meta-badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      border: 1px solid var(--card-border);
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .search-box {
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      border-radius: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 0.5rem 1.1rem;
+      border-radius: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 600;
+      border-color: var(--accent);
+    }
+    .country-section {
+      margin-bottom: 3rem;
+    }
+    .country-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.8rem;
+    }
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+    .platform-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+    .platform-header {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .news-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .news-item {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      padding: 0.5rem 0.6rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .news-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateX(4px);
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+    }
+    .rank-1 { background: var(--gold); color: #000; box-shadow: 0 0 10px rgba(251, 191, 36, 0.4); }
+    .rank-2 { background: var(--silver); color: #000; }
+    .rank-3 { background: var(--bronze); color: #fff; }
+    .news-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .news-title {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      word-break: break-word;
+      display: block;
+      transition: color 0.2s;
+    }
+    .news-title:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .news-extra {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+    .news-summary {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 0.3rem;
+      border-left: 2px solid rgba(255, 255, 255, 0.1);
+      padding-left: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 全球主流社交媒体【晚报】Top 5</h1>
+      <div class="meta-bar">
+        <span class="meta-badge">📅 日期: 2026-11-17</span>
+        <span class="meta-badge">⏰ 采集时间: 2026-11-17 20:15:12 (晚报)</span>
+        <span class="meta-badge">📊 总归集条目: 100</span>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchInput" class="search-box" placeholder="🔍 搜索热搜话题、国家、平台或关键词...">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="tab-btn active" data-filter="all">全部国家/区域</button>
+      </div>
+    </div>
+
+    <main id="newsContainer"></main>
+
+    <footer>
+      <p>© 2026 Global Daily Social News Crawler • 自动调度生成</p>
+    </footer>
+  </div>
+
+  <script>
+    const rawData = {"美国": {"主流权威要闻": [{"country": "美国", "platform": "主流权威要闻", "rank": 1, "title": "Classified N.S.A. Network Goes Down, Causing Work Disruptions - The New York Times", "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPa2l0QmN5NDdtbHpuM3Bsc2s1LWJPckU2a25pWFJETmhpY3ZlVzFpa3VHaWd0REZOaWNpbXl2cHlBOU0yaW1WZkVhbGpHYV9wSjF4NGx0cV9wZmMxbGpmYWZvanpkUVdaR202cXlUQTJCOFVVMjBxX1FvbUtheGdsS3BrOHBXcGRCY1E?oc=5", "extra": "媒体: The New York Times | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The New York Times）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 2, "title": "What to expect during Tuesday’s nationwide FEMA emergency alert test - NBC News", "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQeDZWTkh2ZVh3VTd3WHRqRURPdUpVSVJZY3FlQ053RGFlSWM4b0F1RTl5c0pOUTljdVdYc2VNMWp1MEtvV1pXcElYQVd4M2FfZ05XeERUVXllMnVEQjRPaG5pTXhDM251SGlqT1BueEFWQm5EQjAwc0dRbWdMcVJUM3pQLXZ2Mk1RV0p0N01UblQzejlVTmVwazY4Y2puNW9vM1E?oc=5", "extra": "媒体: NBC News | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: NBC News）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 3, "title": "Trump arrives just as Southeast Asian summit is ending, but still looms over talks - The Washington Post", "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzNpMHl4YWlFZVFsYW1qNFZmcEVyV2p5QnNiRzczWlhBa1QxZ2lYV1p2c1gwRUp2VzNaNjl6WkU3Y2tENnJ3N0hRMlhkRHd0cGNGc21vU3hiRlVyZFNBV2JzYUU1UV9lUVJkWWhfVEZRVmJrQWRMY3h5NHhqZDJRYW1aa3otdEhXT25XOHg3M2cwRmt5SzdCNXRrcXVreGJHZF8tRVQ3Ul96dE5GY1k5Mw?oc=5", "extra": "媒体: The Washington Post | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The Washington Post）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 4, "title": "Trump says US taking 'very seriously' any Iranian plot against Washington - BBC", "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE51MFBvRkdVUGJFOWFoSTlkbk5WV29OOTc1X09HVFhYYlVxQ1o5LXlMem8zdHJNTDFqYjd3NDUteUtvUWZTT3BNMTFqcnE4dEkwMGFyVVhLS3liN2s?oc=5", "extra": "媒体: BBC | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}, {"country": "美国", "platform": "主流权威要闻", "rank": 5, "title": "Ukraine damages Putin’s prized Crimea bridge as Zelenskyy lauds ‘unprecedented operation’ - CNBC", "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObWIxTlpMR010WGZUNWNiRGIxRFVpOFRuRVNQdTBmRFl0ZXVhYnQtNkxWeWQ3cGxac28wam8tckhnQUdDdEprZ3dhUldlaEkwVGN5c2xXT3h0QzdDdU1CazY5MzI4QVpPNmdOQmlSaGpkS0VheVZ1aGNSMTNXeDZabdIBhgFBVV95cUxNRE5Vejd0MVVJTmdVMmM1cTNFb0NQODA3SjdLdFdaTFFWeXl5VlgySHYyc2x4SVIxd0NMcWlscTFPRUc2UVhxcDI5R0lvUS1naHpxa3lGbFNFRkJFQ1I0a2EwQ21iel9XXzRnZzlBaFNETzZrTzk0NkE5eVJIRERXWWp5Q0xadw?oc=5", "extra": "媒体: CNBC | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: CNBC）"}], "Google 每日热搜": [{"country": "美国", "platform": "Google 每日热搜", "rank": 1, "title": "alexander zverev", "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/t2zHtLNMIMTO/", "extra": "热搜量: 2000+", "summary": "关联焦点报道: ATP Finals 2026 live updates: Latest as Shelton takes on Zverev after Fils defeats Jodar on day three - The Athletic"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 2, "title": "portugal", "url": "https://www.abola.pt/video/sem-ronaldo-meia-duzia-de-pessoas-esperaram-a-selecao-no-hotel-em-cardiff-2026111520000169987", "extra": "热搜量: 2000+", "summary": "关联焦点报道: Sem Ronaldo, meia dúzia de pessoas esperaram a Seleção no hotel em Cardiff"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 3, "title": "uefa nations league schedule", "url": "https://www.uefa.com/uefanationsleague/news/02ab-22096ba64f4d-f179d6d05013-1000--nations-league-quarter-finals-who-is-through-who-can-joi/", "extra": "热搜量: 500+", "summary": "关联焦点报道: Nations League quarter-finals: Who is through? Who can join them? What is the state of play in each League A group?"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 4, "title": "iran attack us", "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071", "extra": "热搜量: 500+", "summary": "关联焦点报道: Iran live updates: CENTCOM says drone attack on Bahrain defeated 'without any damage'"}, {"country": "美国", "platform": "Google 每日热搜", "rank": 5, "title": "paris hilton", "url": "https://www.cosmopolitan.com/style-beauty/fashion/a74444439/paris-hilton-old-navy-exclusive-jingle-jammies/", "extra": "热搜量: 1000+", "summary": "关联焦点报道: Paris Hilton Just Made Old Navy Jingle Jammies So Chic With an Exclusive Pink Set—Shop It Here"}], "X (Twitter) 趋势": [{"country": "美国", "platform": "X (Twitter) 趋势", "rank": 1, "title": "GOTY", "url": "https://x.com/search?q=GOTY", "extra": "实时热门话题", "summary": "X (Twitter) 美国 地区实时热门话题榜第 1 位"}, {"country": "美国", "platform": "X (Twitter) 趋势", "rank": 2, "title": "GTA 6", "url": "https://x.com/search?q=GTA%206", "extra": "实时热门话题", "summary": "X (Twitter) 美国 地区实时热门话题榜第 2 位"}, {"country": "美国", "platform": "X (Twitter) 趋势", "rank": 3, "title": "Apple Pay", "url": "https://x.com/search?q=Apple%20Pay", "extra": "实时热门话题", "summary": "X (Twitter) 美国 地区实时热门话题榜第 3 位"}, {"country": "美国", "platform": "X (Twitter) 趋势", "rank": 4, "title": "#CollaborativeStudio", "url": "https://x.com/search?q=%23CollaborativeStudio", "extra": "实时热门话题", "summary": "X (Twitter) 美国 地区实时热门话题榜第 4 位"}, {"country": "美国", "platform": "X (Twitter) 趋势", "rank": 5, "title": "#TheGameAwards", "url": "https://x.com/search?q=%23TheGameAwards", "extra": "实时热门话题", "summary": "X (Twitter) 美国 地区实时热门话题榜第 5 位"}], "Reddit (r/news)": []}, "中国": {"哔哩哔哩热搜": [{"country": "中国", "platform": "哔哩哔哩热搜", "rank": 1, "title": "外交部谈中俄美元首会晤", "url": "https://search.bilibili.com/all?keyword=%E5%A4%96%E4%BA%A4%E9%83%A8%E8%B0%88%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E4%BC%9A%E6%99%A4", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 1 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 2, "title": "在APEC感受跨越山海的情谊", "url": "https://search.bilibili.com/all?keyword=%E5%9C%A8APEC%E6%84%9F%E5%8F%97%E8%B7%A8%E8%B6%8A%E5%B1%B1%E6%B5%B7%E7%9A%84%E6%83%85%E8%B0%8A", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 2 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 3, "title": "BLG夺冠赛事语音", "url": "https://search.bilibili.com/all?keyword=BLG%E5%A4%BA%E5%86%A0%E8%B5%9B%E4%BA%8B%E8%AF%AD%E9%9F%B3", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 3 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 4, "title": "3分钟看懂APEC与你我的关系", "url": "https://search.bilibili.com/all?keyword=3%E5%88%86%E9%92%9F%E7%9C%8B%E6%87%82APEC%E4%B8%8E%E4%BD%A0%E6%88%91%E7%9A%84%E5%85%B3%E7%B3%BB", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 4 位"}, {"country": "中国", "platform": "哔哩哔哩热搜", "rank": 5, "title": "我的S16预测成绩单", "url": "https://search.bilibili.com/all?keyword=%E6%88%91%E7%9A%84S16%E9%A2%84%E6%B5%8B%E6%88%90%E7%BB%A9%E5%8D%95", "extra": "B站热门话题", "summary": "Bilibili 搜索实时热门热词榜第 5 位"}], "微博热搜": [{"country": "中国", "platform": "微博热搜", "rank": 1, "title": "豆包加聊天功能或威胁微信", "url": "https://s.weibo.com/weibo?q=%E8%B1%86%E5%8C%85%E5%8A%A0%E8%81%8A%E5%A4%A9%E5%8A%9F%E8%83%BD%E6%88%96%E5%A8%81%E8%83%81%E5%BE%AE%E4%BF%A1", "extra": "热度: 66322", "summary": "豆包加聊天功能或威胁微信"}, {"country": "中国", "platform": "微博热搜", "rank": 2, "title": "雷军APEC现场挨个发名片", "url": "https://s.weibo.com/weibo?q=%E9%9B%B7%E5%86%9BAPEC%E7%8E%B0%E5%9C%BA%E6%8C%A8%E4%B8%AA%E5%8F%91%E5%90%8D%E7%89%87", "extra": "热度: 65814", "summary": "雷军APEC现场挨个发名片"}, {"country": "中国", "platform": "微博热搜", "rank": 3, "title": "2026APEC这些看点值得期待", "url": "https://s.weibo.com/weibo?q=2026APEC%E8%BF%99%E4%BA%9B%E7%9C%8B%E7%82%B9%E5%80%BC%E5%BE%97%E6%9C%9F%E5%BE%85", "extra": "热度: 61870", "summary": "2026APEC这些看点值得期待"}, {"country": "中国", "platform": "微博热搜", "rank": 4, "title": "字节被指只差聊天软件", "url": "https://s.weibo.com/weibo?q=%E5%AD%97%E8%8A%82%E8%A2%AB%E6%8C%87%E5%8F%AA%E5%B7%AE%E8%81%8A%E5%A4%A9%E8%BD%AF%E4%BB%B6", "extra": "热度: 58810", "summary": "字节被指只差聊天软件"}, {"country": "中国", "platform": "微博热搜", "rank": 5, "title": "深圳人全妆出街迎APEC", "url": "https://s.weibo.com/weibo?q=%E6%B7%B1%E5%9C%B3%E4%BA%BA%E5%85%A8%E5%A6%86%E5%87%BA%E8%A1%97%E8%BF%8EAPEC", "extra": "热度: 54153", "summary": "深圳人全妆出街迎APEC"}], "百度热搜": [{"country": "中国", "platform": "百度热搜", "rank": 1, "title": "习近平会见智利总统卡斯特", "url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E6%99%BA%E5%88%A9%E6%80%BB%E7%BB%9F%E5%8D%A1%E6%96%AF%E7%89%B9&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7904706", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 2, "title": "小米回应雷军APEC发言紧张", "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E7%B1%B3%E5%9B%9E%E5%BA%94%E9%9B%B7%E5%86%9BAPEC%E5%8F%91%E8%A8%80%E7%B4%A7%E5%BC%A0&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7808888", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 3, "title": "U19国足2比1韩国夺冠", "url": "https://www.baidu.com/s?wd=U19%E5%9B%BD%E8%B6%B32%E6%AF%941%E9%9F%A9%E5%9B%BD%E5%A4%BA%E5%86%A0&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7712892", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 4, "title": "APEC工商领导人峰会聚焦哪些议题", "url": "https://www.baidu.com/s?wd=APEC%E5%B7%A5%E5%95%86%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%B3%B0%E4%BC%9A%E8%81%9A%E7%84%A6%E5%93%AA%E4%BA%9B%E8%AE%AE%E9%A2%98&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7616180", "summary": ""}, {"country": "中国", "platform": "百度热搜", "rank": 5, "title": "深圳市民为了APEC不穿拖鞋了", "url": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%B8%82%E6%B0%91%E4%B8%BA%E4%BA%86APEC%E4%B8%8D%E7%A9%BF%E6%8B%96%E9%9E%8B%E4%BA%86&sa=fyb_news&rsv_dl=fyb_news", "extra": "热搜指数: 7519879", "summary": ""}]}, "俄罗斯": {"俄新社 (RIA Novosti)": [{"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 1, "title": "Писториус заявил о выделении Киеву миллиардов евро", "url": "https://ria.ru/20261117/germanija-2132229103.html", "extra": "发布时间: Tue, 17 Nov 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 2, "title": "СК возбудил уголовное дело после крушения Ан-12 в Кузбассе", "url": "https://ria.ru/20261117/sk-2132228887.html", "extra": "发布时间: Tue, 17 Nov 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 3, "title": "Безруков намекнул Борисову, что в России теперь есть свой \"Оскар\"", "url": "https://ria.ru/20261117/bezrukov-2132228682.html", "extra": "发布时间: Tue, 17 Nov 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 4, "title": "Брэд Питт хочет сыграть злодея в новом фильме о Джеймсе Бонде", "url": "https://ria.ru/20261117/pitt-2132228130.html", "extra": "发布时间: Tue, 17 Nov 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}, {"country": "俄罗斯", "platform": "俄新社 (RIA Novosti)", "rank": 5, "title": "Россиянам рассказали, во сколько обойдется приготовление борща с говядиной", "url": "https://ria.ru/20261117/borsch-2132227915.html", "extra": "发布时间: Tue, 17 Nov 2026", "summary": "俄罗斯国家通讯社（俄新社）实时焦点"}], "塔斯社 (TASS)": [{"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 1, "title": "HeadHunter ожидает почти 9 млрд рублей выручки от дополнительных продуктов в 2026 году", "url": "https://tass.ru/ekonomika/28328083", "extra": "塔斯社国家通讯社", "summary": "Доля дополнительных продуктов в выручке группы, по прогнозу компании, увеличится с 10% в 2023 году до 18% в этом году"}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 2, "title": "WSJ: Kalshi прекратит принимать ставки на содержание выступлений Трампа", "url": "https://tass.ru/obschestvo/28328085", "extra": "塔斯社国家通讯社", "summary": "Решение было принято после того, как Комиссия по торговле товарными фьючерсами США потребовала приостановить такие ко..."}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 3, "title": "Агентство нацбезопасности США подтвердило данные о сбое в его сети", "url": "https://tass.ru/mezhdunarodnaya-panorama/28328081", "extra": "塔斯社国家通讯社", "summary": "В спецслужбе уточнили, что были затронуты некоторые внутренние системы, но способность АНБ обеспечивать национальную ..."}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 4, "title": "Во Франции считают, что солдаты республики на Украине не участвуют в конфликте", "url": "https://tass.ru/mezhdunarodnaya-panorama/28328073", "extra": "塔斯社国家通讯社", "summary": "Поэтому одобрение парламента на их миссию не требуется, заявил Министр иностранных дел страны Жан-Ноэль Барро"}, {"country": "俄罗斯", "platform": "塔斯社 (TASS)", "rank": 5, "title": "Axios назвал цель удара США по острову Кешм", "url": "https://tass.ru/mezhdunarodnaya-panorama/28328079", "extra": "塔斯社国家通讯社", "summary": "Сотрудник американского военного ведомства сообщил порталу, что истребители атаковали объект, с которого Корпус страж..."}], "Lenta.ru (俄罗斯门户热榜)": [{"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 1, "title": "Число жертв крушения Ан-12 выросло", "url": "https://lenta.ru/news/2026/11/17/minoborony-sdelalo-zayavlenie-o-krushenii-an-12/", "extra": "分类: Россия", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 1 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 2, "title": "Карпин оценил победу сборной России над Венесуэлой", "url": "https://lenta.ru/news/2026/11/17/karpin-otsenil-pobedu-sbornoy-rossii-nad-venesueloy/", "extra": "分类: Спорт", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 2 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 3, "title": "Водителей предупредили о мощном снегопаде в Центральной России", "url": "https://lenta.ru/extlink/2026/11/17/voditeley-predupredili-o-moschnom-snegopade-v-tsentralnoy-rossii/", "extra": "俄语第一大热榜门户", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 3 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 4, "title": "Власти КНДР отказались принимать письма Трампа", "url": "https://lenta.ru/news/2026/11/17/vlasti-kndr-otkazalis-prinimat-pisma-trampa/", "extra": "分类: Интернет и СМИ", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 4 位"}, {"country": "俄罗斯", "platform": "Lenta.ru (俄罗斯门户热榜)", "rank": 5, "title": "В Пентагоне сделали признание об ударах ВСУ по России", "url": "https://lenta.ru/news/2026/11/17/v-pentagone-sdelali-priznanie-ob-udarah-vsu-po-rossii/", "extra": "分类: Мир", "summary": "Lenta.ru 俄罗斯全网高关注度热点第 5 位"}]}, "英国": {"主流权威要闻": [{"country": "英国", "platform": "主流权威要闻", "rank": 1, "title": "Neet ideas: what’s in Alan Milburn’s report on young people not in education, employment or training? - The Guardian", "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRTVVN2c1aDZyQndBRE1BZVg4dHRrRE1mZGl6dUFQbWNvSnFpYXRabkZHTzNpdC1jRTc2dEtYNVMwZWFkS2YxOFNYYUQ4Qjc2V3B1R3I1MVQtblpqeW9tWS1FdzVTdjBFelZ2VVljSlpNWk5LTVB0SERtZlU1Y1NxOEpCXzBObmMxVzlFVmdTckxVY0lNVkNaNW96MmtsSTY1a0pkdXItQmdyZGlBeUtEVUNJcmxvQnBJallFMU5tU1hrQjQ?oc=5", "extra": "媒体: The Guardian | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The Guardian）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 2, "title": "Burnham says Brexit has dramatically diminished Britain’s global standing - The Guardian", "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUGlSei1fbUcwZnJlcFNnX19kWkR3NnNVN1o5akI2UFJ0N0x0bDM5eVIxVzNpREl4UUx4aVlLdy1sTGk1VTU2bkE4MlRRRjd3aVVqZ2RpNjhsX1BTYlZNTFBCLTJWRmdpdDZOQzlFWUo4MFhqd3Y5WWtBVmYyTmRKOU4tbWpDZ0xlbzRkcUlrdnJBMDhKWWdjOVRLYWY0eU03RDNWN2JmM3BUcDFCX2RhNlpoMU1Sc0hySE5ja1FR?oc=5", "extra": "媒体: The Guardian | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The Guardian）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 3, "title": "UK sanctions firms over Israeli West Bank settlements - BBC", "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9jY015YVhxSmEycHFuQkhQYmVJVnJNM1ZsYnNzZnNBeDZwQzNqa1VyZU1wTDFLYnU1RXFqR0N2UE9WZm9kZHgxMlZLb0pYR3VOOERxQk0wRWNRV3ZzVXc?oc=5", "extra": "媒体: BBC | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: BBC）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 4, "title": "Alan Milburn: Private ADHD clinics should be defunded - The Telegraph", "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbHBNMDJKcmxhRm95djJubkRnZFR5Ti1oUW1VWmZ5aGdSbEgtblpKdDMzOUxPNVNkRy1yRjh1QXNKTGd2UzZIVjJINXZuekdWbGFIcl9pd3FraXpxcGVub0tVV0plUE55VDd3QVRUejhJa1BoQ3RmTzdjRmF2NGNJa3BTQ1hxS0tvYXNYdU12UVZ5NXVUdkhGZDhYdkE?oc=5", "extra": "媒体: The Telegraph | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The Telegraph）"}, {"country": "英国", "platform": "主流权威要闻", "rank": 5, "title": "American soldier arrested in UK by counter terror police taken into US custody - Sky News", "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYVc2T3cwMnM4cmtQMC0wRFQ4N2VfNEpqcU4yMVk4ZDc1WDgyOGh2RHdZOEJBTWNSZ0VjQVQ2MTdNdFJCU1plYld4VzBRNlFfSkpKbEhGd3ZOeTdDeXNDRkwzVjBPQ2VxTHZpVUVHTE91UENwSHJwZTNlMTJoODlSRXBQa0RGMzhubk1zTFI5ZFdITlEwcjB4eGZ1aF9NTEprZ3dMTHBvSjF0VHpuR2ZTT2pIM00?oc=5", "extra": "媒体: Sky News | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: Sky News）"}], "Google 每日热搜": [{"country": "英国", "platform": "Google 每日热搜", "rank": 1, "title": "harry wilson", "url": "https://www.leedsunited.news/news/dan-james-knows-why-harry-wilson-has-been-struggling-at-leeds-united/", "extra": "热搜量: 200+", "summary": "关联焦点报道: Dan James knows why Harry Wilson has been struggling at Leeds United"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 2, "title": "an-12", "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo", "extra": "热搜量: 200+", "summary": "关联焦点报道: Russian military plane crashes killing all 19 on board"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 3, "title": "south shields fc", "url": "https://www.southshieldsfc.co.uk/match-postponed-harborough-town-h/", "extra": "热搜量: 200+", "summary": "关联焦点报道: Match Postponed – Harborough Town (H)"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 4, "title": "bośnia i hercegowina – rumunia", "url": "https://www.meczyki.pl/wyniki-na-zywo/bosnia-i-hercegowina-rumunia/6064794/sklady-meczowe", "extra": "热搜量: 200+", "summary": "关联焦点报道: Składy meczowe Bośnia i Hercegowina - Rumunia - 17.11.2026"}, {"country": "英国", "platform": "Google 每日热搜", "rank": 5, "title": "grand theft auto vi", "url": "https://www.bbc.co.uk/news/articles/crp3e10kpz19o", "extra": "热搜量: 2000+", "summary": "关联焦点报道: GTA 6: How one school is battling the 'GTA flu' with warnings to parents and prizes for pupils"}], "X (Twitter) 趋势": [{"country": "英国", "platform": "X (Twitter) 趋势", "rank": 1, "title": "GOTY", "url": "https://x.com/search?q=GOTY", "extra": "实时热门话题", "summary": "X (Twitter) 英国 地区实时热门话题榜第 1 位"}, {"country": "英国", "platform": "X (Twitter) 趋势", "rank": 2, "title": "#TheGameAwards", "url": "https://x.com/search?q=%23TheGameAwards", "extra": "实时热门话题", "summary": "X (Twitter) 英国 地区实时热门话题榜第 2 位"}, {"country": "英国", "platform": "X (Twitter) 趋势", "rank": 3, "title": "GTA 6", "url": "https://x.com/search?q=GTA%206", "extra": "实时热门话题", "summary": "X (Twitter) 英国 地区实时热门话题榜第 3 位"}, {"country": "英国", "platform": "X (Twitter) 趋势", "rank": 4, "title": "JJ Gabriel", "url": "https://x.com/search?q=JJ%20Gabriel", "extra": "实时热门话题", "summary": "X (Twitter) 英国 地区实时热门话题榜第 4 位"}, {"country": "英国", "platform": "X (Twitter) 趋势", "rank": 5, "title": "#pufc", "url": "https://x.com/search?q=%23pufc", "extra": "实时热门话题", "summary": "X (Twitter) 英国 地区实时热门话题榜第 5 位"}]}, "日本": {"主流权威要闻": [{"country": "日本", "platform": "主流权威要闻", "rank": 1, "title": "日米豪印首脳会談、輸出規制含む経済的威圧に「深刻な懸念」表明…名指し避けつつ中国をけん制 - 読売新聞", "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1qNEtRRW9wLUc0cXZ0Y2hVWW5MR2x3em83d2xiR1ZfX1dFT0l1US1PTXVBdGhtMnVkQ1FzZGJLSzdaVFBEbkVTUldCMUE0Wkszc1Z4bFIxZ1BWWFBpaVlvdlBYS0VVUQ?oc=5", "extra": "媒体: 読売新聞 | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: 読売新聞）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 2, "title": "【独自】非核三原則、前文から削除 防衛装備品の輸出ルール改定案 - 47NEWS", "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4xVW5aN2tqZ1lXZ1NoME8zaHQwN1YzMUZ6MkI1a2Q1ZFkxVThVZjNMZm04VU9iVkt2UERRLWNkTXBDQ1ZHS0Vid2dLWQ?oc=5", "extra": "媒体: 47NEWS | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: 47NEWS）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 3, "title": "陰謀論や都市伝説紹介のユーチューバー起用 政府、安全保障の広報で - 朝日新聞", "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1HTGZJdzFTVWh3S1FWam02Sms3N0EwT3dpNld2VThmb251aGd6ZG51Z09ZbGdWRldHUy1KUUYwR2d6Y1lCRkNLUUlPQlM5djl4OVNvbk1IeVRSOU9ERndNd3FERkxhRWc?oc=5", "extra": "媒体: 朝日新聞 | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: 朝日新聞）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 4, "title": "「付き合えなかったら殺して死のうと」 東京・中野女性刺殺事件 逮捕の男が供述 - 産経ニュース", "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9OUXp0eERQclNINlpON01hWWhvbnRrSlktYnBqSmRWWENwN2E2UVJ1RXVKWS1fQm12UUIxa01LX0loNDdvQzVHSzdlNGh6cjNGVG1BUS1SSlUxdVRxYnBSdV9LM2JPZjNPVEZlZVk4NUN2MnFUTkE?oc=5", "extra": "媒体: 産経ニュース | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: 産経ニュース）"}, {"country": "日本", "platform": "主流权威要闻", "rank": 5, "title": "高市首相、ＡＺＥＣで緊急時の石油調達枠組み「アジア版ＩＥＡ」の創設を提唱「地域を強く豊かに」 - 読売新聞", "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lc3owZTFja095SUNMdmo5WU9SZFo4T004enlONzhDak9pRkptWVZlUzVMVzBhdmhrYl8tbV9aNTFiR01vdUlMZnE5NGtmOUw3cVFULXJlWGNjd2VLVEVnamZGemVxdw?oc=5", "extra": "媒体: 読売新聞 | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: 読売新聞）"}], "X (Twitter) 趋势": [{"country": "日本", "platform": "X (Twitter) 趋势", "rank": 1, "title": "森保監督", "url": "https://x.com/search?q=%E6%A3%AE%E4%BF%9D%E7%9B%A3%E7%9D%A3", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 1 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 2, "title": "パラグアイ", "url": "https://x.com/search?q=%E3%83%91%E3%83%A9%E3%82%B0%E3%82%A2%E3%82%A4", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 2 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 3, "title": "#サッカー日本代表", "url": "https://x.com/search?q=%23%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E6%97%A5%E6%9C%AC%E4%BB%A3%E8%A1%A8", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 3 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 4, "title": "森保さん", "url": "https://x.com/search?q=%E6%A3%AE%E4%BF%9D%E3%81%95%E3%82%93", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 4 位"}, {"country": "日本", "platform": "X (Twitter) 趋势", "rank": 5, "title": "#松田好花ANN0", "url": "https://x.com/search?q=%23%E6%9D%BE%E7%94%B0%E5%A5%BD%E8%8A%B1ANN0", "extra": "实时热门话题", "summary": "X (Twitter) 日本 地区实时热门话题榜第 5 位"}], "Yahoo! JAPAN 热点要闻": [{"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 1, "title": "日米豪印が共同文書 中国念頭", "url": "https://news.yahoo.co.jp/pickup/6602965?source=rss", "extra": "发布时间: Tue, 17 Nov 2026 14:00:52 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 1 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 2, "title": "ASEAN 米大統領へ「特別待遇」", "url": "https://news.yahoo.co.jp/pickup/6602954?source=rss", "extra": "发布时间: Tue, 17 Nov 2026 13:02:27 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 2 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 3, "title": "米大統領 冗談交じりに高市氏評す", "url": "https://news.yahoo.co.jp/pickup/6602960?source=rss", "extra": "发布时间: Tue, 17 Nov 2026 13:57:09 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 3 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 4, "title": "韓国野党前代表 日本で入国拒否", "url": "https://news.yahoo.co.jp/pickup/6602969?source=rss", "extra": "发布时间: Tue, 17 Nov 2026 15:15:40 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 4 位"}, {"country": "日本", "platform": "Yahoo! JAPAN 热点要闻", "rank": 5, "title": "交際1人でも子宮頸がん 子供諦め", "url": "https://news.yahoo.co.jp/pickup/6602962?source=rss", "extra": "发布时间: Tue, 17 Nov 2026 13:48:07 GMT", "summary": "雅虎日本国民级每日焦点关注议题第 5 位"}]}, "德国": {"主流权威要闻": [{"country": "德国", "platform": "主流权威要闻", "rank": 1, "title": "„Verdeutlicht Russlands Unvermögen“ Wie die Beschädigung der Krim-Brücke jetzt den Ukraine-Krieg verändern könnte - Tagesspiegel", "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPZ3dJWUR4bWxKeXY0T0lrMlVhRVF5djk3TVlCMzV3Ty10M2FDclJteEhpcmdKTlBGSW40N3Z4bEtCWUZxZmF4ZFJndXBWU25uV21TOTR1X1RlWW9MZ1dXVjV0RFhTZGprWjFCUlRfRXJXb2llVjBhQzNuOTlnSEpyZjBJWGphbmg1eFdPVHdwLVk4R21LcVBsdmZwTFpoMW93X19tSWJIc1RXWkNQcHFKamdLY05wbi0wZ1BDRTB0amdSd051Q28xMXBjUnFSV25RQjBCRWZXUUFrZWdjMmRqZ0hxM0FZT0l1VFY2Qm1QRmlhUjJlbHByTElQUVR5Zw?oc=5", "extra": "媒体: Tagesspiegel | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: Tagesspiegel）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 2, "title": "SPD-Vorsitz: Giffey hält sich Kandidatur für SPD-Bundesvorsitz offen - DIE ZEIT", "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVy1JOE1yY05zbDg3TFVRX0Q3WkhYeXE4cFl6cFpXd3luODdIZzJXejZTSGlaX19DUkZVdTVBSm5pQnlQSmt6aFNfd1NMSjhOSDRiQ3BZZWlSNW1BbUlKcFZGRXMtNEVwLXp1QTNmeWN5aWxpRmQ5em9nMkR1bVMwaVFJVndyMWJZTFdvenljMUFnWXQ0WkJ0bnhpNzVySDE3VUhSU29WcFhXaDdQRWJVZlJiVk1acXA0UGl4YlBvU2NFZw?oc=5", "extra": "媒体: DIE ZEIT | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: DIE ZEIT）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 3, "title": "Stromsteuersenkung: DIHK-Präsident fordert Senkung der Stromsteuer - DIE ZEIT", "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQURZNm1VbDBQNGRveEJNbEw4T0s0MkxCUzlmZVFvTmh0WWVoenZuaE5pUkNXVHVyTXZQTjg2RmV1NWR2dV83NGRKTnc0ZTNzVG5ZSkJBLXM4eFRaTTNXZ044NDJTczA3LU81am9FVXNZWDZZZmdCQ0VWclhIUWFoSE5iNlpITHpRX1pjY1FrRTZnREgtdTBDYUpVZEF2S2RTbmVBNEFmaVZUWmE3bFg4?oc=5", "extra": "媒体: DIE ZEIT | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: DIE ZEIT）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 4, "title": "Expertenkommission fordert Eigenbeteiligung Müssen Kassenpatienten bald für Arzttermine zahlen? - Tagesspiegel", "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNM1ZsXzZiemEtcDc2TXpweEdrVjRNV2xpLUY2ZzB2ZTQ1Rmx1NDhDMC1OWHFHQm9xNTZ4bjZjSW13UXVQU0p5UTdZN0h6NlZJUXc3VTRLdGNlNGxGbmFnWTlNQnotOUF1XzRGM1RPekVvT2dwVVNOSl9CVlJNUjF3dUFfMFBQUEo4a0hmYVFCMWF1dHJYT3F5MnJRR0JLVi03MGZIQ1F4MlN0d3dlLVBnV3BPZWQ1S1lsenNTMEQ2N3VzNjEzdlRTODUwUmhSc2p3VTdyQ2pjUFBwSldV?oc=5", "extra": "媒体: Tagesspiegel | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: Tagesspiegel）"}, {"country": "德国", "platform": "主流权威要闻", "rank": 5, "title": "Linkenfraktion in Berlin: Berliner Linkenspitze beantragt Ausschluss von Vanessa Emde - DIE ZEIT", "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWEFORzVoUU14N3FpbWttS1BmeHJ4QjNYeUxXQXVNMnFoTnR3QVhlYTZUSGhldXZjX2ZMY1RVZnNxNTUwUkYxNklISFhhdDE4MlY4bFNpT1ZfNXREU2h4MWJEQy1JZDFOMWZlR2hOQjk2NFpjVm1DZDNrQU1yZFAtRVE2QVZXcGliT3ZOTVJucEs1R25YRTJnaUtuRVQ?oc=5", "extra": "媒体: DIE ZEIT | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: DIE ZEIT）"}], "Google 每日热搜": [{"country": "德国", "platform": "Google 每日热搜", "rank": 1, "title": "walia – portugalia", "url": "https://www.vietnam.vn/pl/nhan-dinh-xu-wales-vs-bo-dao-nha-02h45-ngay-18-11-trut-gian-sau-cu-nga-dau", "extra": "热搜量: 200+", "summary": "关联焦点报道: Walia kontra Portugalia, 02:45, 18 listopada: Dają upust swojej złości po bolesnej porażce."}, {"country": "德国", "platform": "Google 每日热搜", "rank": 2, "title": "bosnien spiel", "url": "https://www.dazn.com/de-DE/news/fussball/livestream-bosnien-herzegowina-rumaenien-nations-league-fussball/1oha170dnm3t216562kan96wvt", "extra": "热搜量: 200+", "summary": "关联焦点报道: Kann Rumänien den Abstieg noch verhindern? | DAZN News Deutschland"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 3, "title": "nitto atp finals", "url": "https://www.atptour.com/en/news/fils-jodar-nitto-atp-finals-2026-tuesday", "extra": "热搜量: 200+", "summary": "关联焦点报道: Fils off the mark in Turin! Frenchman outlasts Jodar for first win"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 4, "title": "nvidia earnings", "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-interim-ceo-kress-prepares-for-q3-earnings-with-huang-reportedly-planning-comeback-153114076.html", "extra": "热搜量: 1000+", "summary": "关联焦点报道: Nvidia live updates: Nvidia to report Q3 earnings after the bell with Colette Kress to host first call as interim CEO"}, {"country": "德国", "platform": "Google 每日热搜", "rank": 5, "title": "wetter morgen", "url": "https://www1.wdr.de/nrw/wetter/aktuell/wetter-heute-november-regen-100.html", "extra": "热搜量: 100000+", "summary": "关联焦点报道: Stürmisches Regenwetter in NRW: Örtlich können auch ausgewachsene Sturmböen den Westen treffen"}], "X (Twitter) 趋势": [{"country": "德国", "platform": "X (Twitter) 趋势", "rank": 1, "title": "Bond", "url": "https://x.com/search?q=Bond", "extra": "实时热门话题", "summary": "X (Twitter) 德国 地区实时热门话题榜第 1 位"}, {"country": "德国", "platform": "X (Twitter) 趋势", "rank": 2, "title": "Brücke", "url": "https://x.com/search?q=Br%C3%BCcke", "extra": "实时热门话题", "summary": "X (Twitter) 德国 地区实时热门话题榜第 2 位"}, {"country": "德国", "platform": "X (Twitter) 趋势", "rank": 3, "title": "#dasperfektedinner", "url": "https://x.com/search?q=%23dasperfektedinner", "extra": "实时热门话题", "summary": "X (Twitter) 德国 地区实时热门话题榜第 3 位"}, {"country": "德国", "platform": "X (Twitter) 趋势", "rank": 4, "title": "#GERNED", "url": "https://x.com/search?q=%23GERNED", "extra": "实时热门话题", "summary": "X (Twitter) 德国 地区实时热门话题榜第 4 位"}, {"country": "德国", "platform": "X (Twitter) 趋势", "rank": 5, "title": "Ruanda", "url": "https://x.com/search?q=Ruanda", "extra": "实时热门话题", "summary": "X (Twitter) 德国 地区实时热门话题榜第 5 位"}]}, "全球": {"Reddit (r/worldnews)": [], "主流权威要闻": [{"country": "全球", "platform": "主流权威要闻", "rank": 1, "title": "Ukraine updates: Strike appears to partially destroy part of key Kerch bridge in occupied Crimea - DW.com", "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZzI2MnFXVXB1VmNqYTdHWGFWbUE2Y1haeGNTOWlPQjE3ZzRRX1c2OHhPN1prV1AzTE1iTEV2dlRFWXpTTGxJYklHYU9SeFphZXpUc2V0R2lWMXBlQld3enZ2VnRmMTJWMTBaOHJUT2QwTkdqQmZuVF9Tak5LZUtzbmF2NkNKb1RhdEkxYjhhdkRudjlydG5xbG1ldkdQRjBQNERfbU13?oc=5", "extra": "媒体: DW.com | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: DW.com）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 2, "title": "Trump arrives just as Southeast Asian summit is ending, but still looms over talks - The Washington Post", "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzNpMHl4YWlFZVFsYW1qNFZmcEVyV2p5QnNiRzczWlhBa1QxZ2lYV1p2c1gwRUp2VzNaNjl6WkU3Y2tENnJ3N0hRMlhkRHd0cGNGc21vU3hiRlVyZFNBV2JzYUU1UV9lUVJkWWhfVEZRVmJrQWRMY3h5NHhqZDJRYW1aa3otdEhXT25XOHg3M2cwRmt5SzdCNXRrcXVreGJHZF8tRVQ3Ul96dE5GY1k5Mw?oc=5", "extra": "媒体: The Washington Post | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The Washington Post）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 3, "title": "A 2-month lull ends with Iran’s third strike on US targets in Bahrain - AP News", "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU2lESUxmdF9UMGE1eWlZcmZkUFJtNWxyNm5kZWM0cTExSGtIZXRxNTZNTjR3OXlqeFlQMjlWYWdjenZnazlJRUo1NlRndVRZWWY0VFVBcUJybG1NRTRhVkdtZFd4SUZiVlFPRWNLcmFVQjlYM3lZUUFlbUhuT0JJckg5cjNYZ2xEMlNjNVhuMVliMkRnWlFXVw?oc=5", "extra": "媒体: AP News | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: AP News）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 4, "title": "Carney and Xi Announce Canada-China Trade Pact - The New York Times", "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVEY2ZTltbjNhU0hQMjFPdnpzdDNjekkxWTg1UWZXMkhIMGxMa1EtbXRhZmxHMXRKejF3c2xNY1F4ODN1YXkzSENrOTB1eFM3eWVLb0dpeU9zc2x2eTRjU1RDMVdWR3h0SHVRT2otbjRkRVRpdFdUdzlaMk1zYjZ4amNZeXJ4dw?oc=5", "extra": "媒体: The New York Times | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: The New York Times）"}, {"country": "全球", "platform": "主流权威要闻", "rank": 5, "title": "Why Neither Trump Nor Xi Is Likely to Raise Nvidia at Their Summit - WSJ", "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVGh0bmJObHpuamE0THBab0FlVkplMFE2SmlzWGliRkZad2JIdVg0bkMxVUNPdi1TSDlic2J3R1JoTEtpTXlHVlNTcG5XeVZLRDY0eWpOOVpDYUU3M2hPOHBoSUNlWl9FY0NkOF9oNUgzR2VUdWtnaFlET1UwRnpnYXhmVFA0aHdmX0VXckVkdVJSU2xxNWpMZWlCaFRsWVdvWmJyN3ZscENTZ0E?oc=5", "extra": "媒体: WSJ | Tue, 17 Nov 2026", "summary": "各大权威媒体报道精选（来源: WSJ）"}]}, "全球科技": {"Hacker News (科技与商业)": [{"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 1, "title": "GPT‑6.2 Astra and Sol", "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/", "extra": "点赞: 698 | 评论: 418 | 发帖人: jasondavies", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50535230"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 2, "title": "Apple Services Down", "url": "https://developer.apple.com/system-status/", "extra": "点赞: 392 | 评论: 220 | 发帖人: willy_k", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50535238"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 3, "title": "MAI Code 2 and Code 2 Flash", "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/", "extra": "点赞: 123 | 评论: 57 | 发帖人: lemonish97", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50535885"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 4, "title": "jQuery 4.1.0", "url": "https://github.com/jquery/jquery/releases/tag/4.1.0", "extra": "点赞: 30 | 评论: 17 | 发帖人: petecooper", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50537156"}, {"country": "全球科技", "platform": "Hacker News (科技与商业)", "rank": 5, "title": "350 years ago, this man discovered that light has a finite speed", "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969", "extra": "点赞: 46 | 评论: 4 | 发帖人: dxs", "summary": "Hacker News 讨论链接: https://news.ycombinator.com/item?id=50536813"}]}};
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    const countryIcons = {
+      '中国': '🇨🇳',
+      '俄罗斯': '🇷🇺',
+      '美国': '🇺🇸',
+      '英国': '🇬🇧',
+      '日本': '🇯🇵',
+      '德国': '🇩🇪',
+      '法国': '🇫🇷',
+      '全球科技': '🌐',
+      '全球': '🌍'
+    };
+
+    function initFilters() {
+      const filterTabs = document.getElementById('filterTabs');
+      const countries = Object.keys(rawData);
+      countries.forEach(c => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-btn';
+        btn.dataset.filter = c;
+        btn.textContent = (countryIcons[c] || '🌐') + ' ' + c;
+        btn.onclick = () => {
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = c;
+          render();
+        };
+        filterTabs.appendChild(btn);
+      });
+
+      document.querySelector('[data-filter="all"]').onclick = function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        currentFilter = 'all';
+        render();
+      };
+
+      document.getElementById('searchInput').addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        render();
+      });
+    }
+
+    function render() {
+      const container = document.getElementById('newsContainer');
+      container.innerHTML = '';
+
+      const countries = Object.keys(rawData).filter(c => currentFilter === 'all' || currentFilter === c);
+
+      countries.forEach(country => {
+        const platforms = rawData[country];
+        let countryHasMatch = false;
+
+        const countrySection = document.createElement('section');
+        countrySection.className = 'country-section';
+
+        const title = document.createElement('h2');
+        title.className = 'country-title';
+        title.innerHTML = `<span>${countryIcons[country] || '🌐'}</span> <span>${country} 热门社交媒体</span>`;
+
+        const grid = document.createElement('div');
+        grid.className = 'platforms-grid';
+
+        Object.keys(platforms).forEach(platform => {
+          const items = platforms[platform];
+          const matchedItems = items.filter(it => {
+            if (!searchQuery) return true;
+            return it.title.toLowerCase().includes(searchQuery) ||
+                   (it.extra && it.extra.toLowerCase().includes(searchQuery)) ||
+                   (it.summary && it.summary.toLowerCase().includes(searchQuery)) ||
+                   platform.toLowerCase().includes(searchQuery) ||
+                   country.toLowerCase().includes(searchQuery);
+          });
+
+          if (matchedItems.length > 0) {
+            countryHasMatch = true;
+            const card = document.createElement('div');
+            card.className = 'platform-card';
+
+            const header = document.createElement('div');
+            header.className = 'platform-header';
+            header.innerHTML = `<span>${platform}</span> <small style="color: var(--text-muted); font-size: 0.8rem;">Top ${matchedItems.length}</small>`;
+            card.appendChild(header);
+
+            const ul = document.createElement('ul');
+            ul.className = 'news-list';
+
+            matchedItems.forEach(it => {
+              const li = document.createElement('li');
+              li.className = 'news-item';
+              const rankClass = it.rank <= 3 ? `rank-${it.rank}` : '';
+
+              li.innerHTML = `
+                <div class="rank-badge ${rankClass}">${it.rank}</div>
+                <div class="news-content">
+                  <a href="${it.url}" target="_blank" rel="noopener noreferrer" class="news-title">${it.title}</a>
+                  ${it.extra ? `<div class="news-extra">${it.extra}</div>` : ''}
+                  ${it.summary ? `<div class="news-summary">${it.summary}</div>` : ''}
+                </div>
+              `;
+              ul.appendChild(li);
+            });
+
+            card.appendChild(ul);
+            grid.appendChild(card);
+          }
+        });
+
+        if (countryHasMatch) {
+          countrySection.appendChild(title);
+          countrySection.appendChild(grid);
+          container.appendChild(countrySection);
+        }
+      });
+
+      if (container.children.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding: 4rem; color: var(--text-muted);">未找到符合条件的搜索结果。</div>`;
+      }
+    }
+
+    initFilters();
+    render();
+  </script>
+</body>
+</html>
